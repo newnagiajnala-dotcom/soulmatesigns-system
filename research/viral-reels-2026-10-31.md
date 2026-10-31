@@ -35,6 +35,27 @@ sample (3.3M, a general "comment for link" tech account). Typical viral ceiling 
 | 115K | thekaurcards | "3 signs someone is manifesting you" | 38 |
 | 114K | fett.astrology | "Write your sign to get your gift" | 1.3K |
 
+## zodiacbear — 68+ reels at 100K+ (grid scan, mostly 2023–24 posts)
+
+Format: "zodiac signs as…" label memes — a funny clip (kids, animals, sitcom moments) with sign
+names written over each person ("scorpio aries sagittarius… vs gemini cancer virgo…"), one-line
+caption, CTA "send this to your friends 😂 / tag someone". These are reposted clips with credit —
+we must NOT reuse other people's footage; we make original label memes instead.
+
+1M+ reels: CyjCitot320 40.9M · CxtDo1ItULG 25.4M · Cxn7XCoNdLC 7.0M · Cy1GIHUtOVY 6.9M ·
+C1H8LnkCFsf 4.8M · CwstqrzNhU_ 3.2M · Cy8_xoNN0Qf 3.1M · CxyRcOKNI9s 2.6M · C1AI-mBC_ky 2.5M ·
+Cx3VxvMN0Ve 2.5M · Cxvou2JtotM 2.4M · CxqiVcDtGA8 2.2M · C1C7lsGCz-M 2.0M · C2F0yeLC2g4 1.8M ·
+C1FpUzliBNt 1.6M · CxLyHfitSaS 1.5M · Cz4MB75C-p2 1.3M ("kids as zodiac signs explaining love") ·
+CzeU1LetIJZ 1.3M · Cz5_pBYN8qA 1.1M · CyGsmBLtWwn 1.1M · Cw8GFkPtbGF 1.0M
+100K–1M: 47+ more (927K down to ~260K, list truncated in scan).
+
+Engagement: the 40.9M reel had ~1M likes and 11K comments — driven by SHARES ("send this to your bestie").
+
+## Total collected
+- zodiacbear: 68+ reels ≥100K (21 over 1M)
+- Other accounts (table above): 21 reels ≥100K + 4 more at 100–156K (glossy_zodiac)
+- **Total: 110+ reels with 100K+ views; 22 over 1M**
+
 ## High-engagement posts from keyword search (likes)
 
 | Likes | Comments | Account | Hook |

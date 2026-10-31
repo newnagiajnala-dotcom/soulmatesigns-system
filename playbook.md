@@ -13,6 +13,7 @@ Start state = research from 31 Oct 2026 (research/viral-reels-2026-10-31.md).
 ## Winning formats (ranked by evidence)
 | # | Format | Why it works | Evidence |
 |---|---|---|---|
+| F0 | "Zodiac signs as…" label meme (sign names over a funny scene) + "send this to your bestie" | Shares + relatability = biggest reach in niche | 40.9M, 25.4M, 7M (zodiacbear) |
 | F1 | Pick-a-pile / pick-a-card ("Pile 1, 2 or 3 — your future spouse") | Forces a choice → watch time + comments | 763K, 258K, 118K |
 | F2 | Birth-month / birth-date groups ("Find your birth month…") | Personal, everyone has one → comments | 271K, 189K, 170K |
 | F3 | Zodiac ranking/tribute ("3 signs you should marry instantly") | Identity + sharing/tagging | 415K, 340K, 306K |
@@ -34,8 +35,12 @@ Start state = research from 31 Oct 2026 (research/viral-reels-2026-10-31.md).
 - CTA rotation: "Comment your sign 👇" / "Save this" / "Tag them" / "Link in bio for your sketch 💫".
 - Caption: 1-line hook + 3–5 niche hashtags (#soulmate #zodiac #twinflame #astrology #lovesigns).
 
+## Funnel logic
+- F0 memes = reach + followers (no selling). F1/F2/F4 = clicks to bio link (selling).
+- F0 must be ORIGINAL scenes/text (no reused clips) — e.g. text-message memes, "signs as texts", chat screenshots, illustrated scenes.
+
 ## Mix per week (14 reels)
-- 4× F1 pick-a-pile, 3× F2 birth month, 3× F3 zodiac, 2× F4 comment-bait, 1× F5, 1× F6.
+- 4× F0 zodiac label memes, 3× F1 pick-a-pile, 2× F2 birth month, 2× F3 zodiac, 2× F4 comment-bait, 1× F5.
 - Every 7 days: double the format with best views/reel, drop the worst.
 
 ## Learning log
