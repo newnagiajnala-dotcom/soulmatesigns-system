@@ -3,67 +3,128 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Soulmate Signs · See Your Soulmate Sketch</title>
-<meta name="description" content="Curious what your soulmate might look like? A hand-drawn soulmate sketch and reading by psychic artist Tina Aldea.">
-<meta property="og:title" content="What does your soulmate look like?">
-<meta property="og:description" content="A hand-drawn soulmate sketch and personal reading. For fun and reflection.">
+<title>Soulmate Signs · What's Your Soulmate's Energy?</title>
+<meta name="description" content="A 30-second quiz: find your soulmate's energy from your sign and what you want in love.">
+<meta property="og:title" content="What's your soulmate's energy? 💫">
+<meta property="og:description" content="5 quick taps. A fun quiz by @soulmatesigns.daily.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
 <style>
-:root{--bg1:#0e0a26;--bg2:#2e1854;--bg3:#702e6a;--ink:#f6f1ff;--muted:#cbbfe8;--gold:#ffd666;--violet:#7c5cff;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.14)}
+:root{--bg1:#0e0a26;--bg2:#2e1854;--bg3:#702e6a;--ink:#f6f1ff;--muted:#cbbfe8;--gold:#ffd666;--violet:#7c5cff;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.16)}
 *{box-sizing:border-box}
 html,body{margin:0}
-body{min-height:100vh;color:var(--ink);font:16px/1.6 "Poppins",system-ui,sans-serif;background:linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 58%,var(--bg3) 100%) fixed;
- padding:calc(28px + env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) calc(40px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px))}
-.wrap{max-width:520px;margin:0 auto;display:grid;gap:22px}
+body{min-height:100vh;color:var(--ink);font:16px/1.55 "Poppins",system-ui,sans-serif;background:linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 58%,var(--bg3) 100%) fixed;
+ padding:calc(22px + env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) calc(36px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px))}
+.wrap{max-width:500px;margin:0 auto;display:grid;gap:18px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:500;color:var(--muted);font-size:14px}
-.moon{width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 65% 40%,transparent 38%,#ffecd6 39%);position:relative}
-h1{font-size:clamp(30px,8vw,40px);line-height:1.12;margin:0;font-weight:700;text-wrap:balance}
+.moon{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 65% 40%,transparent 38%,#ffecd6 39%)}
+.progress{height:6px;border-radius:3px;background:var(--card);overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--gold);transition:width .35s ease}
+h1{font-size:clamp(28px,7.5vw,38px);line-height:1.12;margin:0;font-weight:700;text-wrap:balance}
 h1 span{color:var(--gold)}
-.lede{color:var(--muted);margin:0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 18px}
-.card h2{font-size:17px;margin:0 0 10px}
-.steps{margin:0;padding:0;list-style:none;display:grid;gap:12px}
-.steps li{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start}
-.steps b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--violet);font-size:14px}
-.cta{display:block;text-align:center;text-decoration:none;background:var(--gold);color:#1d1533;font-weight:700;font-size:19px;padding:17px 20px;border-radius:16px;box-shadow:0 10px 30px rgba(255,214,102,.25)}
-.cta:active{transform:translateY(1px)}
+h2{font-size:clamp(22px,6vw,28px);line-height:1.2;margin:0;font-weight:700;text-wrap:balance}
+p{margin:0}
+.muted{color:var(--muted)}
+.opts{display:grid;gap:10px}
+.opts.grid{grid-template-columns:repeat(3,1fr)}
+.opt{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);font:500 16px "Poppins",sans-serif;padding:14px 14px;border-radius:14px;text-align:left;cursor:pointer;transition:transform .1s,background .2s,border-color .2s}
+.opts.grid .opt{text-align:center;padding:12px 6px;font-size:14px}
+.opts.grid .opt b{display:block;font-size:22px;font-weight:400;color:var(--gold)}
+.opt:hover{border-color:var(--gold)}
+.opt:active{transform:scale(.98)}
+.opt:focus-visible,.cta:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.cta{display:block;width:100%;border:0;text-align:center;text-decoration:none;background:var(--gold);color:#1d1533;font:700 19px "Poppins",sans-serif;padding:17px 20px;border-radius:16px;box-shadow:0 10px 30px rgba(255,214,102,.25);cursor:pointer}
 .cta small{display:block;font-weight:500;font-size:13px;opacity:.75}
-.fine{font-size:12.5px;color:var(--muted);line-height:1.55;margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.badge{display:inline-block;background:var(--violet);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:500}
+.traits{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.traits span{border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:13.5px}
+.loader{display:grid;place-items:center;gap:14px;padding:40px 0;text-align:center}
+.orb{width:88px;height:88px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff3d1,var(--gold) 35%,var(--violet) 75%);animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.08);filter:brightness(1.2)}}
+@media (prefers-reduced-motion:reduce){.orb{animation:none}.progress i{transition:none}}
+.fine{font-size:12.5px;color:var(--muted);line-height:1.55}
 .fine a{color:var(--muted)}
-ul.facts{margin:0;padding-left:18px;color:var(--ink)}
-ul.facts li{margin:4px 0}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
 <main class="wrap">
   <div class="brand"><span class="moon" aria-hidden="true"></span>@soulmatesigns.daily</div>
-  <h1>Ever wondered what your <span>soulmate</span> looks like?</h1>
-  <p class="lede">Psychic artist Tina Aldea draws a hand-made sketch of the person she sees for you, with a short personal reading. People get it for fun, for curiosity, or as a moment to think about what they really want in love.</p>
+  <div class="progress" aria-hidden="true"><i id="bar"></i></div>
 
-  <a class="cta" id="go" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=igbio" rel="sponsored noopener">See my soulmate sketch →<small>Opens Tina's official page</small></a>
-
-  <section class="card">
-    <h2>How it works</h2>
-    <ol class="steps">
-      <li><b>1</b><span>Answer a few questions about yourself on Tina's page.</span></li>
-      <li><b>2</b><span>She draws your soulmate sketch by hand.</span></li>
-      <li><b>3</b><span>You get the sketch and reading by email.</span></li>
-    </ol>
+  <section id="intro">
+    <div style="display:grid;gap:14px">
+      <h1>What's your <span>soulmate's</span> energy?</h1>
+      <p class="muted">5 quick taps. Based on your sign and what you want in love. Just for fun 💫</p>
+      <button class="cta" id="start">Start the quiz →</button>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>Good to know</h2>
-    <ul class="facts">
-      <li>Price and delivery time are shown on Tina's page before you pay.</li>
-      <li>Payment is handled by ClickBank, which offers a refund policy on its products.</li>
-      <li>It's for entertainment and reflection. Nobody can guarantee who you'll meet.</li>
-    </ul>
+  <section id="quiz" hidden aria-live="polite">
+    <div style="display:grid;gap:16px">
+      <p class="muted" id="qnum"></p>
+      <h2 id="qtext"></h2>
+      <div class="opts" id="opts"></div>
+    </div>
   </section>
 
-  <a class="cta" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=igbio2" rel="sponsored noopener">Get my sketch →</a>
+  <section id="loading" hidden>
+    <div class="loader"><div class="orb"></div><p class="muted" id="loadtxt">Reading your answers…</p></div>
+  </section>
 
-  <p class="fine"><b>Affiliate disclosure:</b> this page is run by Soulmate Signs, an independent fan page. If you buy through these links we may earn a commission at no extra cost to you. We are not Tina Aldea and don't handle orders, payments or support. ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410, Boise, ID 83709, USA, and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.</p>
+  <section id="result" hidden>
+    <div style="display:grid;gap:16px">
+      <p class="muted">Your soulmate's energy</p>
+      <h1 id="rtitle"></h1>
+      <div class="card">
+        <span class="badge" id="rsign"></span>
+        <p style="margin-top:12px" id="rdesc"></p>
+        <div class="traits" id="rtraits"></div>
+      </div>
+      <div class="card">
+        <h2 style="font-size:20px">Want to see what they might look like?</h2>
+        <p class="muted" style="margin-top:8px">Psychic artist Tina Aldea draws a hand-made sketch of the person she sees for you, with a short reading. Price and delivery time are shown on her page before you pay.</p>
+      </div>
+      <a class="cta" id="go" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=quiz" rel="sponsored noopener">See my soulmate sketch →<small>Opens Tina's official page</small></a>
+      <button class="opt" id="again" style="text-align:center">Retake the quiz</button>
+    </div>
+  </section>
+
+  <p class="fine"><b>Affiliate disclosure:</b> Soulmate Signs is an independent fan page. This quiz is for entertainment. If you buy through our links we may earn a commission at no extra cost to you. We are not Tina Aldea and don't handle orders, payments or support. ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410, Boise, ID 83709, USA, and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.</p>
 </main>
+<script>
+const SIGNS=[["♈","Aries","fire"],["♉","Taurus","earth"],["♊","Gemini","air"],["♋","Cancer","water"],["♌","Leo","fire"],["♍","Virgo","earth"],["♎","Libra","air"],["♏","Scorpio","water"],["♐","Sagittarius","fire"],["♑","Capricorn","earth"],["♒","Aquarius","air"],["♓","Pisces","water"]];
+const Q=[
+ {t:"What's your sign?",grid:true,o:SIGNS.map(s=>({l:`<b>${s[0]}</b>${s[1]}`,v:s}))},
+ {t:"What do you want most in love?",o:[["Feeling safe and chosen","safe"],["Passion and chemistry","fire"],["Adventure together","free"],["A deep, soul-level bond","deep"]].map(([l,v])=>({l,v}))},
+ {t:"How do you feel most loved?",o:[["Sweet words and texts","words"],["Quality time","time"],["Hugs and closeness","touch"],["When they do things for me","acts"]].map(([l,v])=>({l,v}))},
+ {t:"Do you feel like you've already met them?",o:[["Yes, I think so 👀","yes"],["Maybe… someone comes to mind","maybe"],["No, not yet","no"]].map(([l,v])=>({l,v}))},
+ {t:"Be honest: are you ready for them?",o:[["Yes, ready now","now"],["Almost, still healing","healing"],["Not sure yet","unsure"]].map(([l,v])=>({l,v}))}
+];
+const ARCH={
+ safe:{t:"The Steady Protector",d:"Calm, loyal and patient. Your person shows love through consistency: remembering small things, showing up, making you feel safe enough to be yourself.",tr:["loyal","patient","protective","grounded"]},
+ fire:{t:"The Magnetic Flame",d:"Bold, warm and a little intense. Your person loves out loud: big gestures, playful teasing and a pull you feel the moment you meet.",tr:["passionate","confident","playful","devoted"]},
+ free:{t:"The Free Spirit",d:"Curious, funny and spontaneous. Your person turns ordinary days into stories and loves exploring the world with you by their side.",tr:["adventurous","funny","open-minded","spontaneous"]},
+ deep:{t:"The Old Soul",d:"Quiet, intuitive and deep. Your person feels familiar right away, like you've known each other before. Late-night talks are your love language.",tr:["intuitive","gentle","deep","understanding"]}
+};
+const ELEM={fire:"Fire",earth:"Earth",air:"Air",water:"Water"};
+const MATCH={fire:"Air",earth:"Water",air:"Fire",water:"Earth"};
+let step=0,ans=[];
+const $=id=>document.getElementById(id);
+const show=id=>["intro","quiz","loading","result"].forEach(s=>$(s).hidden=s!==id);
+function render(){const q=Q[step];$("bar").style.width=(step/Q.length*100)+"%";$("qnum").textContent=`Question ${step+1} of ${Q.length}`;$("qtext").textContent=q.t;
+ const box=$("opts");box.className="opts"+(q.grid?" grid":"");box.innerHTML="";
+ q.o.forEach(o=>{const b=document.createElement("button");b.className="opt";b.innerHTML=o.l;b.onclick=()=>{ans[step]=o.v;step++;step<Q.length?render():finish()};box.appendChild(b)});}
+function finish(){$("bar").style.width="100%";show("loading");
+ const lines=["Reading your answers…","Matching your energy…","Almost there…"];let i=0;const iv=setInterval(()=>{i++;if(i<lines.length)$("loadtxt").textContent=lines[i]},700);
+ setTimeout(()=>{clearInterval(iv);const sign=ans[0],a=ARCH[ans[1]];
+  $("rtitle").textContent=a.t;$("rsign").textContent=`${sign[0]} ${sign[1]} · drawn to ${MATCH[sign[2]]} energy`;
+  const extra=ans[3]==="yes"||ans[3]==="maybe"?" You may already sense who they are.":" You haven't crossed paths yet, or you didn't notice them the first time.";
+  $("rdesc").textContent=a.d+extra;$("rtraits").innerHTML=a.tr.map(t=>`<span>${t}</span>`).join("");
+  $("go").href=`https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=quiz_${ans[1]}`;show("result");window.scrollTo(0,0)},2200);}
+$("start").onclick=()=>{step=0;ans=[];show("quiz");render()};
+$("again").onclick=()=>{step=0;ans=[];show("quiz");render()};
+</script>
 </body>
 </html>
