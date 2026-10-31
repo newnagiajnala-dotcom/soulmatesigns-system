@@ -1,0 +1,1 @@
+2026-10-31T19:45-04:00 stats: /{media_id}/insights (views and plays) returned OAuthException #10 'Application does not have permission for this action' for 17900565969611253 (reel 001). Likes taken from like_count. Token likely lacks instagram_manage_insights.
