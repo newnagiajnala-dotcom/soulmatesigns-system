@@ -1,0 +1,17 @@
+{
+  "template": "cards",
+  "format": "F2 birth month",
+  "hook": "find your birth month 👀",
+  "sub": "this is what your soulmate is like",
+  "items": [
+    "Jan · Feb — calm & loyal 🤍",
+    "Mar · Apr — funny & chaotic 😂",
+    "May · Jun — writes you love notes 💌",
+    "Jul · Aug — protective, a bit jealous 🔥",
+    "Sep · Oct — 2am deep talks 🌙",
+    "Nov · Dec — mysterious, loves forever 💫"
+  ],
+  "cta": "comment your month 👇 which one is you?",
+  "caption": "comment your birth month 👇 is it true? 💫\n\ncurious what your soulmate actually looks like? link in bio 🌙\n\n#soulmate #birthmonth #zodiac #astrology #twinflame #lovesigns",
+  "seed": 22
+}
