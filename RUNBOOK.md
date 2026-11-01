@@ -55,6 +55,15 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 9. Sundays (evening run only): add a dated entry to the Learning log in playbook.md — best and worst format by views/reel,
    one decision for next week. Keep the mix rules updated.
 
+## AI host face reels (budget: 10 reels in 30 days)
+- Face-reel days (evening slot only): Nov 2, 5, 8, 11, 14, 17, 20, 23, 26, 29 (2026). All other slots stay faceless (0 credits).
+- Nov 2 posts the finished test reel: video_url = https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/bcd3d116-436b-4c02-871d-1715cd8d1c48.mp4
+  (only after the owner has said "post" — check data/approvals.txt contains "host001 post").
+- Later face reels: follow tests/host001/NOTES.md (seed_audio hook ~6 s → intone 720p with [character sheet, selfie] → stitch in the
+  Higgsfield sandbox with a sign/code/names body + host outro). Hard cap 52 credits per reel; get_cost first; never use 1080p;
+  never retry a paid generation automatically. If Higgsfield tools are not available in the run, or balance < 60, post a faceless reel instead and log it.
+- Every face-reel caption starts with "AI host ✨". Never claim she is a real psychic or a real person.
+
 ## Safety limits
 - Never more than 2 published reels per calendar day (US Eastern). Check data/performance.csv first.
 - If the API returns an error about spam, action blocks or limits: stop, log it, and skip the next 24 h.
