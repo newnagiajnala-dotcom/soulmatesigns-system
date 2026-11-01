@@ -6,7 +6,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 ## Constants
 - Instagram API: https://graph.facebook.com/v21.0  (the environment's network secret adds the token; never print or log tokens)
 - IG user id: 17841459940404036
-- Facebook Page: Soulmate Signs, https://www.facebook.com/profile.php?id=61596275964324 (created 2 Nov 2026; not yet connected to the API, so the autopilot cannot post there yet)
+- Facebook Page: Soulmate Signs, https://www.facebook.com/profile.php?id=61596275964324 (created 2 Nov 2026; API page id 1402297082968632; app has pages_manage_posts/pages_read_engagement/pages_show_list; needs the regenerated token)
 - Repo: newnagiajnala-dotcom/soulmatesigns-system (branch main). Public raw base:
   https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/main/
 - Bio link (quiz landing page): https://soulmatesigns.org/ (old github.io URL redirects here)  → hoplink affiliate=abhi10k
@@ -54,6 +54,15 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    video_url=<raw url>, caption=<spec caption>. Poll `/{creation_id}?fields=status_code,status` every 10 s up to 5 min.
    On FINISHED → POST `/17841459940404036/media_publish` creation_id=… → GET permalink.
    On ERROR → do not retry publishing; record the error in data/errors.log and stop.
+7b. FACEBOOK (every reel, right after Instagram succeeds; owner wants every reel on both). Page id 1402297082968632 (Soulmate Signs).
+   a) GET /1402297082968632?fields=access_token → keep the page token in a shell variable only (never print, log or commit it).
+   b) POST /1402297082968632/video_reels upload_phase=start access_token=<page token> → video_id.
+   c) POST https://rupload.facebook.com/video-upload/v21.0/<video_id> with headers "Authorization: OAuth <page token>" and
+      "file_url: <same public raw/CDN video url used for Instagram>".
+   d) POST /1402297082968632/video_reels upload_phase=finish video_id=<id> video_state=PUBLISHED access_token=<page token>
+      description=<Instagram caption + "\n\nCurious what your soulmate looks like? 👉 https://soulmatesigns.org"> (face reels: keep "AI host ✨").
+   e) If any Facebook step fails (e.g. missing permission or token conflict), log it to data/errors.log and continue — never block Instagram,
+      never retry a publish twice. Log a separate performance.csv row with reel_id "FB-<video_id>" and format "<format> FB".
 8. Append to data/performance.csv: `date,media_id,hook,format,,,,,,`. Commit and push.
 9. Sundays (evening run only): add a dated entry to the Learning log in playbook.md — best and worst format by views/reel,
    one decision for next week. Keep the mix rules updated.
