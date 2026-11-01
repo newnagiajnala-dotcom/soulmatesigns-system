@@ -86,7 +86,7 @@ p{margin:0}
         <h2 style="font-size:20px">Want to see what they might look like?</h2>
         <p class="muted" style="margin-top:8px">Psychic artist Tina Aldea draws a hand-made sketch of the person she sees for you, with a short reading. Price and delivery time are shown on her page before you pay.</p>
       </div>
-      <a class="cta" id="go" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=quiz" rel="sponsored noopener">See my soulmate sketch →<small>Opens Tina's official page</small></a>
+      <a class="cta" id="go" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=igquiz" rel="sponsored noopener">See my soulmate sketch →<small>Opens Tina's official page</small></a>
       <p class="fine" style="text-align:center">We may earn a small commission if you buy, at no extra cost to you 💛</p>
       <button class="opt" id="again" style="text-align:center">Retake the quiz</button>
     </div>
@@ -130,7 +130,7 @@ function finish(){$("bar").style.width="100%";show("loading");
   $("rtitle").textContent=a.t;$("rsign").textContent=`${sign[0]} ${sign[1]} · drawn to ${MATCH[sign[2]]} energy`;
   const extra=ans[3]==="yes"||ans[3]==="maybe"?" You may already sense who they are.":" You haven't crossed paths yet, or you didn't notice them the first time.";
   $("rdesc").textContent=a.d+extra;$("rtraits").innerHTML=a.tr.map(t=>`<span>${t}</span>`).join("");
-  $("go").href=`https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=${SRC}_quiz_${ans[1]}`;show("result");window.scrollTo(0,0);track("result_shown",["result",ans[1]])},2200);}
+  $("go").href=`https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=${SRC.replace(/[^a-z0-9]/gi,"").slice(0,8)}quiz${ans[1]}`;show("result");window.scrollTo(0,0);track("result_shown",["result",ans[1]])},2200);}
 $("start").onclick=()=>{step=0;ans=[];track("quiz_start");show("quiz");render()};
 $("again").onclick=()=>{step=0;ans=[];track("retake");show("quiz");render()};
 $("go").addEventListener("click",()=>track("sketch_click",["clicked","yes"]));
