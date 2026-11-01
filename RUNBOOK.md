@@ -8,7 +8,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - IG user id: 17841459940404036
 - Repo: newnagiajnala-dotcom/soulmatesigns-system (branch main). Public raw base:
   https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/main/
-- Bio link (bridge page): https://newnagiajnala-dotcom.github.io/soulmatesigns-system/  → hoplink affiliate=abhi10k
+- Bio link (quiz landing page): https://soulmatesigns.org/ (old github.io URL redirects here)  → hoplink affiliate=abhi10k
 
 ## Steps each run
 1. `git pull`. Read playbook.md, data/performance.csv, research/top-reels.csv (skim), and the last 10 reels/*/spec.json.
