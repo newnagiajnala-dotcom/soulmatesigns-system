@@ -68,6 +68,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - Every face-reel caption starts with "AI host ✨". Never claim she is a real psychic or a real person.
 - Owner chose option B (1 Nov): label face reels only, not the profile. After a face reel publishes, the run's final message must
   say: "Face reel posted: <permalink> — open it in Instagram → ⋯ → Edit → turn on 'AI info' (AI label)". Faceless reels need no label.
+  (Instagram's own post composer has an 'Add AI label' switch; manual posts of face reels must switch it on.)
 
 ## Safety limits
 - Never more than 2 published reels per calendar day (US Eastern). Check data/performance.csv first.
