@@ -13,3 +13,9 @@ Pipeline (works):
 Final: https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/772dd25c-a160-466d-94f2-0e3c880903e2.mp4 (15.2 s)
 Cost of this test incl. failed tries: ~50.5 credits. Ongoing per hybrid reel: ~51 credits → ~10 more from 545.
 Rules: caption must say the host is AI (e.g. "AI host ✨"); turn on Instagram's AI label; no claims she is a real psychic.
+
+## Full version (22.1 s, 0 extra credits)
+https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/e091f110-ff78-4b60-8e64-06084c685b3b.mp4
+0–7 s host hook (caption + "AI host" tag) → 7–17.5 s sign body (3 messages, CTA) → 17.5–22 s slow zoom on host selfie,
+"Type 222 below / Curious what your soulmate looks like? Link in bio". One music bed (emotional, seed 21), ducked under voice, −16 LUFS.
+Built with Higgsfield sandbox h1/build.sh (cap output with -t; apad makes audio infinite).
