@@ -12,6 +12,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - Bio link (quiz landing page): https://soulmatesigns.org/ (old github.io URL redirects here)  → hoplink affiliate=abhi10k
 
 ## Steps each run
+0. Check the current US Eastern time. If it is between 12:00 and 16:00 this is the MIDDAY STORY run: follow only the "Daily story" section, then stop.
 1. `git pull`. Read playbook.md, data/performance.csv, research/top-reels.csv (skim), and the last 10 reels/*/spec.json.
 2. Update stats: for every row in data/performance.csv posted in the last 30 days, GET
    `/{media_id}/insights?metric=views,reach,likes,comments,shares,saved` (fall back to `plays` if `views` errors)
@@ -68,7 +69,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    one decision for next week. Keep the mix rules updated.
 
 ## Daily story (owner request, 2 Nov 2026): exactly 1 story per US day, Instagram + Facebook
-- Evening run only, after the reel is done (also during warm-up). Skip if stories/<today US Eastern>/ already has a "posted" file.
+- MIDDAY run only (the run that starts between 12:00 and 16:00 US Eastern). That run does ONLY the story — no reel, no stats.
+  The 7:41 AM / 7:41 PM runs never post stories. Skip if stories/<today US Eastern>/ already has a "posted" file.
 - Write stories/<YYYY-MM-DD>/spec.json: {date, title ("today's love message" / "your sign for tonight" / "a message from the universe"),
   number (angel number, different from the last 7 stories), message (≤ 18 words, warm, no guarantees, not repeated from the last 14),
   cta ("reply 💜 if this is for you" or "reply with your sign ✨"), seed}. Render: python3 reelgen/story_card.py <spec> stories/<date>/story.jpg
