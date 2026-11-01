@@ -63,6 +63,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
   Higgsfield sandbox with a sign/code/names body + host outro). Hard cap 52 credits per reel; get_cost first; never use 1080p;
   never retry a paid generation automatically. If Higgsfield tools are not available in the run, or balance < 60, post a faceless reel instead and log it.
 - Every face-reel caption starts with "AI host ✨". Never claim she is a real psychic or a real person.
+- Owner chose option B (1 Nov): label face reels only, not the profile. After a face reel publishes, the run's final message must
+  say: "Face reel posted: <permalink> — open it in Instagram → ⋯ → Edit → turn on 'AI info' (AI label)". Faceless reels need no label.
 
 ## Safety limits
 - Never more than 2 published reels per calendar day (US Eastern). Check data/performance.csv first.
