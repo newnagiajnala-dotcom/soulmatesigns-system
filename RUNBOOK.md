@@ -6,6 +6,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 ## Constants
 - Instagram API: https://graph.facebook.com/v21.0  (the environment's network secret adds the token; never print or log tokens)
 - IG user id: 17841459940404036
+- Facebook Page: Soulmate Signs, https://www.facebook.com/profile.php?id=61596275964324 (created 2 Nov 2026; not yet connected to the API, so the autopilot cannot post there yet)
 - Repo: newnagiajnala-dotcom/soulmatesigns-system (branch main). Public raw base:
   https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/main/
 - Bio link (quiz landing page): https://soulmatesigns.org/ (old github.io URL redirects here)  → hoplink affiliate=abhi10k
