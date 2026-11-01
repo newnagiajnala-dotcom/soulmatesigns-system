@@ -67,6 +67,17 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 9. Sundays (evening run only): add a dated entry to the Learning log in playbook.md — best and worst format by views/reel,
    one decision for next week. Keep the mix rules updated.
 
+## Daily story (owner request, 2 Nov 2026): exactly 1 story per US day, Instagram + Facebook
+- Evening run only, after the reel is done (also during warm-up). Skip if stories/<today US Eastern>/ already has a "posted" file.
+- Write stories/<YYYY-MM-DD>/spec.json: {date, title ("today's love message" / "your sign for tonight" / "a message from the universe"),
+  number (angel number, different from the last 7 stories), message (≤ 18 words, warm, no guarantees, not repeated from the last 14),
+  cta ("reply 💜 if this is for you" or "reply with your sign ✨"), seed}. Render: python3 reelgen/story_card.py <spec> stories/<date>/story.jpg
+- Commit + push; wait until the raw URL of story.jpg returns 200.
+- Instagram: POST /17841459940404036/media media_type=STORIES image_url=<raw url> → poll status → POST media_publish.
+- Facebook (page token as in 7b): POST /1402297082968632/photos url=<raw url> published=false → photo id;
+  POST /1402297082968632/photo_stories photo_id=<id>. If Facebook fails, log and continue.
+- Write stories/<date>/posted with the ids, commit + push. Never post more than 1 story per day.
+
 ## AI host face reels (budget: 10 reels in 30 days)
 - Face-reel days (evening slot only): Nov 2, 5, 8, 11, 14, 17, 20, 23, 26, 29 (2026). All other slots stay faceless (0 credits).
 - Nov 2 posts the finished test reel using tests/host001/post.json (caption, video_url, duration). video_url = https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/bcd3d116-436b-4c02-871d-1715cd8d1c48.mp4
