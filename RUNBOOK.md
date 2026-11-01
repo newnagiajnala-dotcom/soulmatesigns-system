@@ -12,7 +12,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - Bio link (quiz landing page): https://soulmatesigns.org/ (old github.io URL redirects here)  → hoplink affiliate=abhi10k
 
 ## Steps each run
-0. Check the current US Eastern time. If it is between 12:00 and 16:00 this is the MIDDAY STORY run: follow only the "Daily story" section, then stop.
+0. Check the current US Eastern time. 12:00–15:59 = MIDDAY STORY run: follow only the "Daily story" section, then stop.
+   16:00–18:59 = AFTERNOON POST run: follow only the "Daily carousel post" section, then stop.
 1. `git pull`. Read playbook.md, data/performance.csv, research/top-reels.csv (skim), and the last 10 reels/*/spec.json.
 2. Update stats: for every row in data/performance.csv posted in the last 30 days, GET
    `/{media_id}/insights?metric=views,reach,likes,comments,shares,saved` (fall back to `plays` if `views` errors)
@@ -79,6 +80,20 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - Facebook (page token as in 7b): POST /1402297082968632/photos url=<raw url> published=false → photo id;
   POST /1402297082968632/photo_stories photo_id=<id>. If Facebook fails, log and continue.
 - Write stories/<date>/posted with the ids, commit + push. Never post more than 1 story per day.
+
+## Daily carousel post (owner request, 2 Nov 2026): exactly 1 feed post per US day, Instagram + Facebook
+- AFTERNOON run only (16:00–18:59 US Eastern, scheduled 4:41 PM ET). No reel, no story in that run.
+  Skip if posts/<today US Eastern>/ already has a "posted" file.
+- Write posts/<YYYY-MM-DD>/spec.json: {title (listicle hook, e.g. "5 signs you've already met your soulmate",
+  "your soulmate's vibe by zodiac element", "3 things your person will notice first"), kicker, items (3–5 × {head ≤ 4 words, body ≤ 12 words}),
+  cta, caption (hook line + "which one is you? 👇" + "save this + send it to your person 💌" + "Curious what your soulmate looks like? Link in bio ✨"
+  + 5 hashtags), seed}. Title must be new (not used in posts/*/spec.json). Same honesty rules as reels.
+- Render: python3 reelgen/carousel.py <spec> posts/<date>  → slide1..N.jpg. Check slide1 and the last slide for overlaps. Commit + push; wait for raw URLs (200).
+- Instagram: for each slide POST /17841459940404036/media image_url=<raw> is_carousel_item=true → child ids;
+  POST /17841459940404036/media media_type=CAROUSEL children=<ids comma-separated> caption=<caption> → poll → media_publish.
+- Facebook (page token as in 7b): for each slide POST /1402297082968632/photos url=<raw> published=false → photo ids;
+  POST /1402297082968632/feed message=<caption> attached_media=[{"media_fbid":id},...]. If Facebook fails, log and continue.
+- Write posts/<date>/posted with ids; add a performance.csv row (format "carousel"). Never more than 1 post per day.
 
 ## AI host face reels (budget: 10 reels in 30 days)
 - Face-reel days (evening slot only): Nov 2, 5, 8, 11, 14, 17, 20, 23, 26, 29 (2026). All other slots stay faceless (0 credits).
