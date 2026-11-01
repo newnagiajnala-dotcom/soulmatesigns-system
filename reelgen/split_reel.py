@@ -202,7 +202,10 @@ def main():
         p.stdin.write(frame_at(i / FPS, BG, L).convert("RGB").tobytes())
     p.stdin.close()
     if p.wait() == 0:
-        os.replace(tmp, base + ".mp4"); print("ok", base + ".mp4")
+        os.replace(tmp, base + ".mp4")
+        sys.path.insert(0, os.path.dirname(__file__)); from music import add_to_video
+        add_to_video(base + ".mp4", spec.get("music", "playful"), spec.get("seed", 1))
+        print("ok", base + ".mp4")
     else:
         print("ffmpeg failed"); sys.exit(1)
 

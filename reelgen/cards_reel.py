@@ -73,7 +73,10 @@ def main():
         p.stdin.write(frame_at(i / FPS, BG, L).convert("RGB").tobytes())
     p.stdin.close()
     if p.wait() == 0:
-        os.replace(tmp, base + ".mp4"); print("ok", base + ".mp4", f"{end:.1f}s")
+        os.replace(tmp, base + ".mp4")
+        from music import add_to_video
+        add_to_video(base + ".mp4", spec.get("music", "dreamy"), spec.get("seed", 1))
+        print("ok", base + ".mp4", f"{end:.1f}s")
     else:
         print("ffmpeg failed"); sys.exit(1)
 

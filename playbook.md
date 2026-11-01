@@ -45,3 +45,15 @@ Start state = research from 31 Oct 2026 (research/viral-reels-2026-10-31.md).
 
 ## Learning log
 (The system appends: date — what was tested — result — decision.)
+
+## Audience: Tier-1 (added 1 Nov 2026)
+- Target viewers: US, UK, Canada, Australia — mostly women 18–34. Optimise every hook for them.
+- Language: natural US English, Gen Z/millennial tone, US spelling. Situations: texting, dating apps, situationships,
+  ghosting, roommates, coffee dates, work/college life. No India-specific references, currency or Hinglish.
+- Posting times (US Eastern): 7:41 AM (UK lunchtime + US morning) and 7:41 PM (US evening peak).
+- Signals that matter most for Tier-1 reach: shares (send to bestie) and saves — every CTA asks for one of them.
+
+## Music
+- Every reel has original background music baked in (reelgen/music.py): playful / dreamy / emotional by format.
+- Trending Instagram library songs can't be added via API and copyrighted songs get muted, so we never use them.
+- Learning: from week 2, compare views by music mood and keep the best one per format.
