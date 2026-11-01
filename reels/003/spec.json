@@ -1,4 +1,15 @@
-{"template":"names","format":"names","queued":true,"post_on":"2026-11-01","slot":"evening",
- "name1":"Ashley","name2":"Ryan","cta":"comment your names 👇 I'll write them next","music":"playful","seed":31,
- "hook":"names + love number (Ashley + Ryan)",
- "caption":"Ashley + Ryan = 💞 What's YOUR love number? Comment your names and I'll write them next 👇\n\n#soulmate #lovesigns #crush #twinflame #zodiac"}
+{
+ "template": "names",
+ "format": "names",
+ "queued": false,
+ "post_on": "2026-11-01",
+ "slot": "evening",
+ "name1": "Ashley",
+ "name2": "Ryan",
+ "cta": "comment your names 👇 I'll write them next",
+ "music": "playful",
+ "seed": 31,
+ "hook": "names + love number (Ashley + Ryan)",
+ "caption": "Ashley + Ryan = 💞 What's YOUR love number? Comment your names and I'll write them next 👇\n\n#soulmate #lovesigns #crush #twinflame #zodiac",
+ "posted_manually": "2026-11-02 IST via browser"
+}
