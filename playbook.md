@@ -40,7 +40,10 @@ Start state = research from 31 Oct 2026 (research/viral-reels-2026-10-31.md).
 - F0 must be ORIGINAL scenes/text (no reused clips) — e.g. text-message memes, "signs as texts", chat screenshots, illustrated scenes.
 
 ## Mix per week (14 reels)
-- 4× F0 zodiac label memes, 3× F1 pick-a-pile, 2× F2 birth month, 2× F3 zodiac, 2× F4 comment-bait, 1× F5.
+- Updated 1 Nov 2026 after the 173-reel sketch-niche scan (comment loops win):
+  3× names (handwritten names + love number), 3× code (birth-date code grid), 3× sign ("if you are seeing this on…"),
+  2× F0 zodiac memes, 2× F1 tarot pick-a-card, 1× reveal/souls.
+- When the AI host is live (1 face reel/day), it replaces one faceless reel per day; keep names/code/sign as the faceless slot.
 - Every 7 days: double the format with best views/reel, drop the worst.
 
 ## Learning log
