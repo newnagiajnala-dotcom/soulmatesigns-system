@@ -61,7 +61,8 @@ def build(spec):
          "cta": boxed(text_block(spec.get("cta", "type 222 to claim it 🙏"), 56, (20, 16, 40, 255), 820, gap=0.08), 42, 24, GOLD, 26),
          "floats": [(glow_num(rnd.choice(ANGEL), rnd.choice([44, 52, 64])), rnd.uniform(60, W - 220), rnd.choice([rnd.uniform(110, 330), rnd.uniform(1600, 1800)]),
                      rnd.uniform(0, 6.28), rnd.uniform(18, 40)) for _ in range(7)]}
-    L["t_msg"] = 4.2; L["t_cta"] = L["t_msg"] + 2.4 * len(L["msg"]) + 0.3; L["end"] = L["t_cta"] + 3.0
+    L["t_msg"] = 0.0 if spec.get("skip_intro") else 4.2  # skip_intro: body after an AI-host hook clip
+    L["t_cta"] = L["t_msg"] + 2.4 * len(L["msg"]) + 0.3; L["end"] = L["t_cta"] + 3.0
     return L
 
 def frame_at(t, L):
