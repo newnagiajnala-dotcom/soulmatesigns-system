@@ -101,8 +101,9 @@ def main():
     if p.wait() != 0:
         print("ffmpeg failed"); sys.exit(1)
     os.replace(tmp, base + ".mp4")
-    from music import add_to_video
-    add_to_video(base + ".mp4", spec.get("music", "emotional"), spec.get("seed", 1))
+    if not spec.get("no_music"):  # no_music: hybrid reels add one music track over the whole stitched reel
+        from music import add_to_video
+        add_to_video(base + ".mp4", spec.get("music", "emotional"), spec.get("seed", 1))
     print("ok", base + ".mp4", f"{L['end']:.1f}s")
 
 if __name__ == "__main__":
