@@ -95,6 +95,13 @@ p{margin:0}
   <details class="fine" style="margin-top:28px;opacity:.75"><summary style="cursor:pointer">Disclosure</summary><p style="margin-top:8px">Soulmate Signs is an independent fan page. This quiz is for entertainment. If you buy through our links we may earn a commission at no extra cost to you. We are not Tina Aldea and don't handle orders, payments or support. ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410, Boise, ID 83709, USA, and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.</p></details>
 </main>
 <script>
+/* ---- Tracking: Microsoft Clarity. Set CLARITY_ID to turn it on. ---- */
+const CLARITY_ID="";
+window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments)};
+if(CLARITY_ID){const s=document.createElement("script");s.async=1;s.src="https://www.clarity.ms/tag/"+CLARITY_ID;document.head.appendChild(s);}
+const SRC=(new URLSearchParams(location.search).get("utm_source")||(/instagram|l\.instagram/i.test(document.referrer)?"ig":"direct")).slice(0,20);
+const track=(name,tag)=>{try{clarity("event",name);if(tag)clarity("set",tag[0],tag[1]);}catch(e){}};
+clarity("set","source",SRC);track("view");
 const SIGNS=[["♈","Aries","fire"],["♉","Taurus","earth"],["♊","Gemini","air"],["♋","Cancer","water"],["♌","Leo","fire"],["♍","Virgo","earth"],["♎","Libra","air"],["♏","Scorpio","water"],["♐","Sagittarius","fire"],["♑","Capricorn","earth"],["♒","Aquarius","air"],["♓","Pisces","water"]];
 const Q=[
  {t:"What's your sign?",grid:true,o:SIGNS.map(s=>({l:`<b>${s[0]}</b>${s[1]}`,v:s}))},
@@ -116,16 +123,17 @@ const $=id=>document.getElementById(id);
 const show=id=>["intro","quiz","loading","result"].forEach(s=>$(s).hidden=s!==id);
 function render(){const q=Q[step];$("bar").style.width=(step/Q.length*100)+"%";$("qnum").textContent=`Question ${step+1} of ${Q.length}`;$("qtext").textContent=q.t;
  const box=$("opts");box.className="opts"+(q.grid?" grid":"");box.innerHTML="";
- q.o.forEach(o=>{const b=document.createElement("button");b.className="opt";b.innerHTML=o.l;b.onclick=()=>{ans[step]=o.v;step++;step<Q.length?render():finish()};box.appendChild(b)});}
+ q.o.forEach(o=>{const b=document.createElement("button");b.className="opt";b.innerHTML=o.l;b.onclick=()=>{ans[step]=o.v;track("q"+(step+1)+"_answered",["q"+(step+1),Array.isArray(o.v)?o.v[1]:o.v]);step++;step<Q.length?render():finish()};box.appendChild(b)});}
 function finish(){$("bar").style.width="100%";show("loading");
  const lines=["Reading your answers…","Matching your energy…","Almost there…"];let i=0;const iv=setInterval(()=>{i++;if(i<lines.length)$("loadtxt").textContent=lines[i]},700);
  setTimeout(()=>{clearInterval(iv);const sign=ans[0],a=ARCH[ans[1]];
   $("rtitle").textContent=a.t;$("rsign").textContent=`${sign[0]} ${sign[1]} · drawn to ${MATCH[sign[2]]} energy`;
   const extra=ans[3]==="yes"||ans[3]==="maybe"?" You may already sense who they are.":" You haven't crossed paths yet, or you didn't notice them the first time.";
   $("rdesc").textContent=a.d+extra;$("rtraits").innerHTML=a.tr.map(t=>`<span>${t}</span>`).join("");
-  $("go").href=`https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=quiz_${ans[1]}`;show("result");window.scrollTo(0,0)},2200);}
-$("start").onclick=()=>{step=0;ans=[];show("quiz");render()};
-$("again").onclick=()=>{step=0;ans=[];show("quiz");render()};
+  $("go").href=`https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=${SRC}_quiz_${ans[1]}`;show("result");window.scrollTo(0,0);track("result_shown",["result",ans[1]])},2200);}
+$("start").onclick=()=>{step=0;ans=[];track("quiz_start");show("quiz");render()};
+$("again").onclick=()=>{step=0;ans=[];track("retake");show("quiz");render()};
+$("go").addEventListener("click",()=>track("sketch_click",["clicked","yes"]));
 </script>
 </body>
 </html>
