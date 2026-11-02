@@ -2,3 +2,4 @@
 2026-11-01T07:45-05:00 stats: insights now work (views ok). Both reels 001 (17900565969611253) and 002 (17894086377616871) returned identical lifetime values views=124 reach=102 likes=1 — possibly an API quirk; recheck next run. profile_visits/link_clicks not supported for reels. Morning warm-up run: no post.
 2026-11-02T00:20+05:30 facebook: reel 003 (names Ashley+Ryan) posted manually via browser to FB page 61596275964324
 2026-11-01T16:50-05:00 env: container lacked Poppins fonts (reelgen/split_reel.py FONT_B/FONT_M) and had a broken system Pillow; installed pillow via pip and Poppins from google/fonts GitHub to render carousel.
+2026-11-01T19:58-05:00 env: container again lacked Poppins fonts and had broken system Pillow; installed pillow, numpy, scipy via python3 -m pip and Poppins from raw.githubusercontent.com to render reel 004.

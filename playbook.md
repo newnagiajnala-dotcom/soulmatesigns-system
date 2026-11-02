@@ -48,6 +48,7 @@ Start state = research from 31 Oct 2026 (research/viral-reels-2026-10-31.md).
 
 ## Learning log
 (The system appends: date — what was tested — result — decision.)
+- 2026-11-01 (Sun, week 1) — tested F0 split meme, F2 birth month (cards), names, sign; + 1 carousel. Views/reel: F0 124, F2 124 (identical lifetime values, likely API quirk), names 63 (only ~6 h live), sign just posted, carousel 0. Followers 0. Too early to call best/worst. Decision: keep the 1 Nov mix; next week fill code (0/3) and sign (1/3) first, then compare names/code/sign views at day 7.
 
 ## Audience: Tier-1 (added 1 Nov 2026)
 - Target viewers: US, UK, Canada, Australia — mostly women 18–34. Optimise every hook for them.
