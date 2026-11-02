@@ -69,6 +69,13 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 9. Sundays (evening run only): add a dated entry to the Learning log in playbook.md — best and worst format by views/reel,
    one decision for next week. Keep the mix rules updated.
 
+## Luna AI reels (owner request, 2 Nov 2026) — see ai/WORKFLOW.md and ai/STYLE.md
+- First run of each US day: run the trend step (ai/WORKFLOW.md §1) and save data/trends/<date>.json.
+- Reel slots: when Higgsfield tools are available and the balance is ≥ 120 credits, ONE of the day's reel slots
+  (morning on non-face-reel days; morning on face-reel days too, the evening slot stays the AI host) is a Luna AI reel built per ai/WORKFLOW.md.
+  The other slot stays a code template (names / code / sign / tarot …). Max 2 AI reels per day.
+- Post with the normal steps 7 (Instagram) and 7b (Facebook); performance.csv format "ai-luna".
+
 ## Daily story (owner request, 2 Nov 2026): exactly 1 story per US day, Instagram + Facebook
 - MIDDAY run only (the run that starts between 12:00 and 16:00 US Eastern). That run does ONLY the story — no reel, no stats.
   The 7:41 AM / 7:41 PM runs never post stories. Skip if stories/<today US Eastern>/ already has a "posted" file.
