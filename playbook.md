@@ -61,3 +61,14 @@ Start state = research from 31 Oct 2026 (research/viral-reels-2026-10-31.md).
 - Every reel has original background music baked in (reelgen/music.py): playful / dreamy / emotional by format.
 - Trending Instagram library songs can't be added via API and copyrighted songs get muted, so we never use them.
 - Learning: from week 2, compare views by music mood and keep the best one per format.
+
+## Stop-scroll hooks (2 Nov 2026, from top-10 niche reels: 2.6M–18.6M views)
+Patterns that won the first 3 s: (1) "this found you" fate + direct address, (2) participation with a timer ("make a wish in 5 seconds",
+"save this immediately", "affirm YES") → 16K–210K comments, (3) name it / contrarian ("that's not love, that's limerence"),
+(4) live reveal you must wait for (handwriting names), (5) 4–8 s destiny loop (quote + red string) → replays.
+New hooks to use (rotate; keep honest, entertainment framing):
+- SURPRISE: "Your soulmate already walked past you. Twice." → reveal by zodiac sign.
+- EGO: "Most people scroll past this. The ones meant to meet their person this year don't."
+- FEAR: "If you keep attracting the same person with a different face… watch this before you text them back."
+- DESIRE: "In 5 seconds I'll show your soulmate's first initial. Don't blink." (fast letter flash → replay; comment the letter)
+- CURIOSITY/CONTROVERSY: "The person you can't stop thinking about is probably NOT your soulmate. Here's the test."
