@@ -1,6 +1,6 @@
 # Luna AI reel workflow — fully automatic, repeatable, multi-post per day
 
-One reel = TREND → SCRIPT → 4 IMAGES → VOICE → VIDEO → CAPTION → POST (IG + FB). Cost ≈ 2.5 Higgsfield credits.
+One reel = TREND → SCRIPT → 4 IMAGES → VOICE → VIDEO → CAPTION → POST (IG + FB). Cost ≈ 3–3.5 Higgsfield credits (test 2 Nov: 4 images + voice).
 
 ## 1. Find today's trend (once per US day, first run of the day)
 - `python3 ai/trends.py <YYYY-MM-DD>` → data/trends/<date>.json (Instagram hashtag API, 6 rotating hashtags/day, ≤30/week).
@@ -10,7 +10,7 @@ One reel = TREND → SCRIPT → 4 IMAGES → VOICE → VIDEO → CAPTION → POS
   "if you're seeing this" sign · birthday / moon-phase match, and (c) not be used in the last 10 ai_reels.
   Record the choice in data/trends/<date>.json → "chosen".
 
-## 2. Script (20–28 s spoken, 55–75 words) — save as ai_reels/NNN/spec.json
+## 2. Script (20–28 s finished reel → 45–55 spoken words; the voice reads ~2 words/s) — save as ai_reels/NNN/spec.json
 Beats: HOOK (0–2 s) → TENSION/EMOTION (2–12 s) → PAYOFF / name it (12–20 s) → REPLAY LINE (20–24 s) → CTA (on screen).
 - Hook: use or remix a hook from playbook.md "Stop-scroll hooks" (surprise / ego / fear / desire / controversy). Max 9 words. Second person.
 - Plain US English, short sentences, "…" for pauses. No guarantees, no medical/clinical claims, no "you WILL meet", entertainment framing.
