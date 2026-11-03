@@ -12,6 +12,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - Bio link (quiz landing page): https://soulmatesigns.org/ (old github.io URL redirects here)  → hoplink affiliate=abhi10k
 
 ## Steps each run
+00. Tool check (every run, 10 s): note whether Higgsfield MCP tools are available (try the Higgsfield balance tool). Append one line to data/errors.log:
+    "<ISO time> tools: higgsfield=<yes|no> balance=<n|-> run=<morning|midday|afternoon|evening>".
 0. Check the current US Eastern time. 12:00–15:59 = MIDDAY STORY run: follow only the "Daily story" section, then stop.
    16:00–18:59 = AFTERNOON POST run: follow only the "Daily carousel post" section, then stop.
 1. `git pull`. Read playbook.md, data/performance.csv, research/top-reels.csv (skim), and the last 10 reels/*/spec.json.
