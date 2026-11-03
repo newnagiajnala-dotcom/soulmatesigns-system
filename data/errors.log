@@ -5,3 +5,4 @@
 2026-11-01T19:58-05:00 env: container again lacked Poppins fonts and had broken system Pillow; installed pillow, numpy, scipy via python3 -m pip and Poppins from raw.githubusercontent.com to render reel 004.
 2026-11-02T16:43-05:00 env: container lacked Poppins fonts and had broken system Pillow/numpy; installed pillow, numpy, scipy via pip and Poppins from google/fonts to render carousel 2026-11-02.
 2026-11-02T19:46-05:00 evening: face reel host001 posted IG 18099671783408526 (DfQntgYlPnM) + FB video 1715198190163090 (post 122095834605542532). Trend step (ai/WORKFLOW.md §1) not run today: morning was warm-up and no Luna AI reel was made. Cloudfront video URL not reachable from sandbox (proxy 403); IG/FB fetched it fine.
+2026-11-03T07:42-05:00 tools: higgsfield=yes balance=491 run=morning (warm-up: stats only, no post)
