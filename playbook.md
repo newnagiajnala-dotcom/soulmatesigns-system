@@ -72,3 +72,9 @@ New hooks to use (rotate; keep honest, entertainment framing):
 - FEAR: "If you keep attracting the same person with a different face… watch this before you text them back."
 - DESIRE: "In 5 seconds I'll show your soulmate's first initial. Don't blink." (fast letter flash → replay; comment the letter)
 - CURIOSITY/CONTROVERSY: "The person you can't stop thinking about is probably NOT your soulmate. Here's the test."
+
+## Birth-date CODE meanings (code reel, 8 codes; use the SAME meanings every time — replies + follow-up "what every code means" reel)
+1 (1,9,17,25) bold one who makes the first move 🔥 · 2 (2,10,18,26) sweet talker, good-morning texts 💌 · 3 (3,11,19,27) the funny one 😂 ·
+4 (4,12,20,28) the builder, stable & loyal 🏡 · 5 (5,13,21,29) the adventurer ✈️ · 6 (6,14,22,30) calm protector who remembers little things ☕️ ·
+7 (7,15,23,31) the deep soul, feels familiar 🌙 · 8 (8,16,24) the ambitious one, treats you like his biggest win 👑
+Reply format (owner replies manually): "Code X 💫 [days] babies! [line] does that sound like someone you know? 👀"
