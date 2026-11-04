@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-04",
+ "hashtags": [
+  "psychologyfacts",
+  "healingjourney",
+  "yourperson",
+  "futurehusband",
+  "soulmatesketch",
+  "spiritualawakening"
+ ],
+ "errors": [
+  {
+   "tag": "psychologyfacts",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "healingjourney",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "yourperson",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "futurehusband",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "soulmatesketch",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "spiritualawakening",
+   "error": "HTTP Error 400: Bad Request"
+  }
+ ],
+ "top": [],
+ "errors_note": "ig_hashtag_search returns OAuthException #10: 'Instagram Public Content Access' needs app review. Hashtag API unusable until approved.",
+ "web": [
+  "TikTok moon-phase soulmate test: combine moon phases of both birthdays; if they form a full moon = 'soulmates' (147M+ views reported; press: Yorkshire Post, AJC, Yahoo). No scientific basis -> entertainment framing.",
+  "Relationship-term trends circulating 2026: limerence, the ick (#TheIck 157M+), avoidant discard, low-vibrational boyfriend. No single term confirmed trending this week."
+ ],
+ "chosen": [
+  {
+   "topic": "moon-phase soulmate match",
+   "angle": "birthday / moon-phase match",
+   "slot": "morning ai-luna"
+  },
+  {
+   "topic": "avoidant discard",
+   "angle": "there's a name for this",
+   "slot": "backup"
+  }
+ ]
+}

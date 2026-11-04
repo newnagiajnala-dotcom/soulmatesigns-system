@@ -1,0 +1,35 @@
+{
+ "id": "ai-001",
+ "date": "2026-11-04",
+ "slot": "morning",
+ "format": "ai-luna",
+ "topic": "moon-phase soulmate match",
+ "angle": "birthday / moon-phase match",
+ "script": "Your soulmate might be hiding in the moon… Look up the moon phase on the night you were born. Then look up theirs. Here's the trend… if your two moons fit together and make a full moon… people call it a soulmate match. Just for fun… but you're checking tonight, aren't you?",
+ "hook_text": "CHECK YOUR BIRTH MOON.",
+ "cta_text": "COMMENT YOUR MOON PHASE",
+ "highlight": [
+  "moon",
+  "full",
+  "soulmate"
+ ],
+ "scenes": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261104_124455_02c8ee5c-f63e-45b1-997a-727cd8804bac.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261104_124458_895441f5-35e6-48fd-9e7e-e34e6997a414.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261104_124454_10645291-ce98-4058-8573-34d9cdf7a1e0.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261104_124457_d7fbfebd-d7af-4c0a-ba7c-70b55bece744.png"
+ ],
+ "voice_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261104_124501_420ed5ef-5b77-4f8b-9675-aa10ede64109.wav",
+ "music_url": "https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/main/ai/music_dreamy_1.wav",
+ "caption": "Do your birth moons make a full moon together? 🌕\nComment your moon phase 👇 or send this to your person\nCurious what your soulmate looks like? Link in bio ✨\n\n#soulmate #relationships #moonphase #zodiac #astrology #lovesigns #twinflame",
+ "jobs": {
+  "images": [
+   "02c8ee5c-f63e-45b1-997a-727cd8804bac",
+   "895441f5-35e6-48fd-9e7e-e34e6997a414",
+   "10645291-ce98-4058-8573-34d9cdf7a1e0",
+   "d7fbfebd-d7af-4c0a-ba7c-70b55bece744"
+  ],
+  "voice": "420ed5ef-5b77-4f8b-9675-aa10ede64109"
+ },
+ "cost_credits": 2.9
+}
