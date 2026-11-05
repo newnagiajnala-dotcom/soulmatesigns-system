@@ -23,13 +23,16 @@ Beats: HOOK (0–2 s) → TENSION/EMOTION (2–12 s) → PAYOFF / name it (12–
   prompt = PREFIX + SCENE + SUFFIX from STYLE.md. Scene 1 must be the most striking (it is the scroll-stopper and cover).
 - get_cost first; abort the AI reel (fall back to a code template) if a single image costs > 0.5 credits.
 
-## 4. Voice
-- generate_audio model seed_audio, voice_type preset, voice_id f878bf3f-115b-5842-8934-c789c7947733 (warm female), prompt = script.
-- Abort if cost > 2 credits.
+## 4. Voice (audio v2, 5 Nov 2026 — owner said the old voice sounded broken/unreal)
+- generate_audio model elevenlabs_v4, dialogue [{text: script, voice_type: preset, voice_id: <VOICE>}] (≈1.15 credits).
+  VOICE = f878bf3f-115b-5842-8934-c789c7947733 (Willow) until the owner picks one in data/approvals.txt ("voice: <name>"):
+  Willow f878bf3f-115b-5842-8934-c789c7947733 · Emily 6b3e3642-f7b7-4cb8-9688-51e233c4b92f · Naomi caeba733-3c17-43db-863e-69c7025512cd.
+- ElevenLabs reads faster (~2.6 words/s): 45–55 words ≈ 18–21 s. That is fine; do not pad.
+- Do NOT use seed_audio any more (24 kHz, sounds robotic). Abort if cost > 2 credits.
 
 ## 5. Video (Higgsfield sandbox — the only place that can read Higgsfield files)
 - Write spec (hook_text, cta_text, highlight, scenes = 4 image result URLs, voice_url, music_url =
-  raw GitHub URL of ai/music_dreamy_1.wav or ai/music_emotional_1.wav) into the sandbox, then:
+  a track from music/library.json — "dreamy" or "emotional" (real instrumentals; never the old ai/music_*.wav synth files)) into the sandbox, then:
   `curl -sO <raw>/ai/build_reel.py && python3 build_reel.py spec.json out` (use background:true and poll; ~2–4 min).
 - Inspect out/cover.jpg and 2 frames with image_paths: captions readable, nothing cut off. Fix spec once if needed.
 - Upload: media_upload (video/mp4) → append the curl PUT to the same sandbox command → media_confirm → public URL.

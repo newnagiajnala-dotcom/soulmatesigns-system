@@ -54,8 +54,14 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    Open reels/NNN/reel_cover.jpg and check nothing overlaps or is cut off; fix the spec once if needed.
    Check the mp4 has an audio stream (ffprobe); if not, re-run the render once.
 6. Commit and push reels/NNN/ (Co-Authored-By trailer as usual). Wait until the raw URL of reel.mp4 returns 200 (check with a HEAD request, up to 2 min).
+6b. REAL MUSIC (audio v2, 5 Nov 2026 — the code-generated music sounds fake): in the Higgsfield sandbox run
+   `curl -sfO <raw>/reelgen/remix_music.py && python3 remix_music.py <raw url of reel.mp4> <spec music> <spec seed> reel_music.mp4`
+   (swaps in a real instrumental from music/library.json, -14 LUFS). media_upload (video/mp4) → in the SAME sandbox command
+   `curl -X PUT -H "Content-Type: video/mp4" -H "If-None-Match: *" --data-binary @reel_music.mp4 '<upload_url>'` → media_confirm.
+   Use that Higgsfield URL as the video_url for steps 7 and 7b, and save it as "video_url" in spec.json.
+   If Higgsfield is unavailable, publish the raw GitHub URL as before and log "audio v2 skipped" to data/errors.log.
 7. Publish ONCE: POST `/17841459940404036/media` media_type=REELS, share_to_feed=true, thumb_offset=(duration_ms − 300),
-   video_url=<raw url>, caption=<spec caption>. Poll `/{creation_id}?fields=status_code,status` every 10 s up to 5 min.
+   video_url=<Higgsfield URL from 6b, else raw url>, caption=<spec caption>. Poll `/{creation_id}?fields=status_code,status` every 10 s up to 5 min.
    On FINISHED → POST `/17841459940404036/media_publish` creation_id=… → GET permalink.
    On ERROR → do not retry publishing; record the error in data/errors.log and stop.
 7b. FACEBOOK (every reel, right after Instagram succeeds; owner wants every reel on both). Page id 1402297082968632 (Soulmate Signs).
