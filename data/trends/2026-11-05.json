@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-05",
+ "hashtags": [
+  "soulmate",
+  "soulmatesigns",
+  "twinflame",
+  "twinflames",
+  "redstring",
+  "invisiblestring"
+ ],
+ "errors": [
+  {
+   "tag": "soulmate",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "soulmatesigns",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "twinflame",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "twinflames",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "redstring",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "invisiblestring",
+   "error": "HTTP Error 400: Bad Request"
+  }
+ ],
+ "top": [],
+ "errors_note": "ig_hashtag_search still blocked (OAuthException #10, needs 'Instagram Public Content Access' app review).",
+ "web": [
+  "Red string / invisible string theory: recurring TikTok topic (Daily Dot explainer, #redstringtheory videos up to 7.2M views; Yahoo, Vice, Glam coverage). No Nov 2026-dated coverage found.",
+  "Relationship terms circulating: limerence, the ick, bird theory, micro-cheating, weekend lover. None confirmed peaking this week."
+ ],
+ "chosen": [
+  {
+   "topic": "red string / invisible string",
+   "angle": "invisible string / twin flame",
+   "slot": "morning ai-luna"
+  },
+  {
+   "topic": "bird theory",
+   "angle": "there's a name for this",
+   "slot": "backup"
+  }
+ ]
+}
