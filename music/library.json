@@ -1,0 +1,12 @@
+{
+ "_note": "Original instrumentals generated with ElevenLabs Music v2.5 via Higgsfield (5 Nov 2026), ~35 s each. Hosted on the Higgsfield CDN (this repo's container cannot download them; only the Higgsfield sandbox and Instagram/Facebook can). Pick track = tracks[mood][seed % len].",
+ "dreamy": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261105_164936_d6d764cc-006d-4f5c-ba0e-026816534b0a.mp3"
+ ],
+ "playful": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261105_165203_50909980-4ad5-4cff-ad78-7ff2dbb34974.mp3"
+ ],
+ "emotional": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261105_165207_d1910127-d774-4647-b06e-bd064f6367d7.mp3"
+ ]
+}

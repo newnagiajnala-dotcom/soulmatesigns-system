@@ -90,13 +90,27 @@ def main():
     sh("ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(fc), "-map", f"[{last}]",
        "-t", f"{total:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", f"{out}/base.mp4")
     ws = words(voice); ass(spec, ws, total, f"{out}/subs.ass")
-    sh("ffmpeg", "-y", "-loglevel", "error", "-i", f"{out}/base.mp4", "-i", voice, "-i", music, "-filter_complex",
-       f"[0:v]ass={out}/subs.ass:fontsdir={FONTDIR}[v];"
-       f"[1:a]aresample=44100,aformat=channel_layouts=stereo,volume=1.6,apad[a1];"
-       f"[2:a]aresample=44100,aformat=channel_layouts=stereo,volume=0.16[a2];"
-       f"[a1][a2]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]",
+    # Audio (v2, 5 Nov 2026): cleaned + gently compressed voice, music ducked under speech (sidechain),
+    # music fades out at the end, then TWO-PASS loudness normalization (no pumping) to -14 LUFS / -1.5 dBTP.
+    mvol = spec.get("music_volume", 0.35)
+    mix = f"{out}/mix.wav"
+    sh("ffmpeg", "-y", "-loglevel", "error", "-i", voice, "-stream_loop", "-1", "-i", music, "-filter_complex",
+       f"[0:a]aresample=48000,aformat=channel_layouts=stereo,highpass=f=80,"
+       f"acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,deesser=i=0.4,apad,asplit[vo][sc];"
+       f"[1:a]aresample=48000,aformat=channel_layouts=stereo,volume={mvol},"
+       f"afade=t=in:d=0.6,afade=t=out:st={max(0.0, total - 1.6):.2f}:d=1.5[mus];"
+       f"[mus][sc]sidechaincompress=threshold=0.04:ratio=6:attack=30:release=450:makeup=1[duck];"
+       f"[vo][duck]amix=inputs=2:duration=first:normalize=0,aformat=channel_layouts=stereo[a]",
+       "-map", "[a]", "-t", f"{total:.2f}", "-c:a", "pcm_s16le", mix)
+    meas = subprocess.run(["ffmpeg", "-hide_banner", "-i", mix, "-af", "loudnorm=I=-14:TP=-1.5:LRA=7:print_format=json",
+                           "-f", "null", "-"], capture_output=True, text=True).stderr
+    m = json.loads(meas[meas.rindex("{"):meas.rindex("}") + 1])
+    ln = (f"loudnorm=I=-14:TP=-1.5:LRA=7:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+          f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+    sh("ffmpeg", "-y", "-loglevel", "error", "-i", f"{out}/base.mp4", "-i", mix, "-filter_complex",
+       f"[0:v]ass={out}/subs.ass:fontsdir={FONTDIR}[v];[1:a]{ln},alimiter=limit=0.84:level=false,aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[a]",
        "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-       "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart", f"{out}/reel.mp4")
+       "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", f"{out}/reel.mp4")
     sh("ffmpeg", "-y", "-loglevel", "error", "-ss", "1.2", "-i", f"{out}/reel.mp4", "-frames:v", "1", f"{out}/cover.jpg")
     print(json.dumps({"ok": True, "seconds": round(total, 1), "words": len(ws)}))
 
