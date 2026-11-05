@@ -24,3 +24,4 @@
 2026-11-05T07:55-05:00 morning: AI reel 002 (red string, ai-luna, ~2.7 credits, 29.2 s) posted IG DfXEYaMCeCQ + FB video 4519930291579065 (post 122098115589542532). Trend: ig_hashtag_search still blocked - web search only.
 2026-11-05T12:00-05:00 audio v2: owner said reel audio sounds broken/unreal. Cause: code-synth sine-wave music + 24 kHz seed_audio voice. Fix: ElevenLabs v4 voice, ElevenLabs Music library (music/library.json), ducked mix + two-pass loudnorm (-14 LUFS); template reels get real music via reelgen/remix_music.py (RUNBOOK 6b). Test spend ~16 credits.
 2026-11-05T13:44-05:00 tools: higgsfield=yes balance=466.97 run=midday
+2026-11-05T13:47-05:00 midday: story 2026-11-05 (333) posted IG 17992175931114484 + FB story 1690536776107304. Env: reinstalled pillow/numpy (python3 path mismatch) + Poppins fonts; title 'a message from the universe' overflowed card width, used 'today's love message'.
