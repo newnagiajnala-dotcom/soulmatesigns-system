@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-06",
+ "hashtags": [
+  "limerence",
+  "attachmentstyle",
+  "anxiousattachment",
+  "avoidantattachment",
+  "angelnumbers",
+  "1111"
+ ],
+ "errors": [
+  {
+   "tag": "limerence",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "attachmentstyle",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "anxiousattachment",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "avoidantattachment",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "angelnumbers",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "1111",
+   "error": "HTTP Error 400: Bad Request"
+  }
+ ],
+ "top": [],
+ "errors_note": "ig_hashtag_search still blocked (OAuthException #10, needs 'Instagram Public Content Access' app review).",
+ "web": [
+  "Limerence: long-running TikTok/IG topic (40K+ posts tagged #limerence per secondary sources; PureWow, Dazed, Crisis Text Line coverage). Not confirmed peaking this week.",
+  "Dating vocab circulating 2025-26: '6-7' dating, pocketing, beige flag, shrekking, 'date them til you hate them'. No Nov 2026-dated trend found."
+ ],
+ "chosen": [
+  {
+   "topic": "limerence vs love",
+   "angle": "there's a name for this",
+   "slot": "morning ai-luna"
+  },
+  {
+   "topic": "pocketing",
+   "angle": "there's a name for this",
+   "slot": "backup"
+  }
+ ]
+}

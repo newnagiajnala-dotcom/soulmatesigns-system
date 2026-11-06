@@ -1,0 +1,26 @@
+{
+ "id": "ai-003",
+ "date": "2026-11-06",
+ "slot": "morning",
+ "format": "ai-luna",
+ "topic": "limerence vs love",
+ "angle": "there's a name for this",
+ "script": "You're not in love… you might be in limerence. You check their story first. You replay one text for hours. A tiny 'haha' can make your whole day… or ruin it. There's actually a name for that rush. Real love feels calm… and it stays. So… which one is yours?",
+ "hook_text": "YOU'RE NOT IN LOVE.",
+ "cta_text": "COMMENT 'LIMERENCE' IF YOU FELT THAT",
+ "highlight": ["limerence", "calm", "stays"],
+ "scenes": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261106_124437_0b8f3037-074e-409e-96fa-738b8bb48b9d.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261106_124437_42435b38-a391-450e-b153-150c7c3b951a.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261106_124436_ee637883-4bf3-499f-a344-b2d337784bcb.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261106_124435_74bad1e5-b6a1-4959-a197-ffd3cfbb32bf.png"
+ ],
+ "voice_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261106_124453_c6769c51-d422-4320-a3be-47d9b8d2dd68.mp3",
+ "music_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261105_165207_d1910127-d774-4647-b06e-bd064f6367d7.mp3",
+ "caption": "Is it love… or is it limerence? 💭💗\nComment LIMERENCE 👇 or send this to the friend who needs it\nCurious what your soulmate looks like? Link in bio ✨\n\n#soulmate #relationships #limerence #situationship #datinglife #lovesigns #crush",
+ "jobs": {
+  "images": ["0b8f3037-074e-409e-96fa-738b8bb48b9d","42435b38-a391-450e-b153-150c7c3b951a","ee637883-4bf3-499f-a344-b2d337784bcb","74bad1e5-b6a1-4959-a197-ffd3cfbb32bf"],
+  "voice": "c6769c51-d422-4320-a3be-47d9b8d2dd68"
+ },
+ "cost_credits": 2.38
+}
