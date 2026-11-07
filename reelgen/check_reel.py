@@ -41,7 +41,7 @@ def spec_from_check(base, c, bg, music):
     def tx(key, text):
         x, y, s, t0, d = L[key]; return {"text": text, "x": x, "y": y, "size": s, "t": t0, "d": d}
     x0, y0, x1, y1, t0, d = L["rule"]; cx0, cy0, cx1, cy1, ct, cd = L["circle"]; hx, hy, hs, ht, hd = L["heart"]
-    return {"bg": bg, "music": music, "label": c["label"], "rot": base["rot"], "dur": base["dur"], "cta_t": base["cta_t"],
+    return {"bg": bg, "music": music, "label": c["label"], "rot": base["rot"], "dur": base["dur"], "cta_t": base["cta_t"], "cta": c.get("cta", "COMMENT YOUR NUMBER"),
             "steps": [tx("line1", c["line1"]), tx("line2", c["line2"]), {"line": [x0, y0, x1, y1], "t": t0, "d": d},
                       tx("result", c["result"]), {"circle": [cx0, cy0, cx1, cy1], "t": ct, "d": cd}, {"heart": [hx, hy, hs], "t": ht, "d": hd},
                       tx("t1", c["t1"]), tx("t2", c["t2"])]}
