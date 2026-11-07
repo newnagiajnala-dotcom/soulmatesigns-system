@@ -40,7 +40,7 @@ Beats: HOOK (0–2 s) → TENSION/EMOTION (2–12 s) → PAYOFF / name it (12–
 ## 6. Caption + hashtags (IG and FB)
 - Line 1: the hook as a question or statement (≤ 12 words) + 1 emoji.
 - Line 2: the engagement ask (comment X / send to someone).
-- Line 3: "Curious what your soulmate looks like? Link in bio ✨" (FB: "… 👉 https://soulmatesigns.org").
+- Line 3: "Curious what your soulmate looks like? Link in bio ✨" (FB: "… Link on our Page ✨", never a URL).
 - 5–8 hashtags: 2 broad (#soulmate #relationships) + 3 topic (#limerence #attachmentstyle …) + 1–2 from today's trend list.
 - Never claim the images are psychic drawings or from Tina.
 

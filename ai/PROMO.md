@@ -15,8 +15,7 @@ Template proven by promo 001 (148 views in 7 h = 2nd best ever). Morning slot, e
    {hook_text, cta_text: "LINK IN BIO", highlight, scenes: [{url: <hook clip url>, video: true, dur: 4.3}, {url: img1}, …, {url: img4}],
     voice_url, music_url: dreamy or emotional track from music/library.json}. The editor cuts pauses to 0.85 s automatically.
    Result must be 18–24 s. Check out/cover.jpg + 2 frames (captions readable). Upload: media_upload → PUT in the same command → media_confirm.
-5. Post with RUNBOOK steps 7 + 7b. Instagram caption = script caption. Facebook description = caption with "Link in bio" replaced by
-   "👉 https://soulmatesigns.org/sketch?src=fbpromo<NNN>". performance.csv format "promo-voice" / "promo-voice FB" (style B: "promo-text" / "promo-text FB"). Mark the script used=true, promo_id=NNN.
+5. Post with RUNBOOK steps 7 + 7b. Instagram caption = script caption. Facebook description = caption with "Link in bio" replaced by "Link on our Page" (NO URLs on Facebook). performance.csv format "promo-voice" / "promo-voice FB" (style B: "promo-text" / "promo-text FB"). Mark the script used=true, promo_id=NNN.
 If Higgsfield is unavailable or balance < 30: post the best template reel instead and log it.
 
 ## Style B — SHORT interactive text reel (EVENING slot) — updated 7 Nov after niche research (research/sales-reels-2026-11-07.md):
@@ -40,6 +39,5 @@ Promo 003 got 167 views + 2 comments in its first hour (best start ever). Cost 0
    curl -sfo page.png <checks.json base.bg_url>; curl -sfo music.mp3 <music/library.json "playful"[0]>
    python3 check_reel.py --check checks.json <id> page.png music.mp3 out   → out/reel.mp4 (15 s)
    Check 2 frames (t=7.5 and t=13.5): numbers and words on the page, nothing cut off. Upload (media_upload → PUT → media_confirm).
-3. Post with RUNBOOK 7 + 7b: caption = the check's caption; thumb_offset 7500; FB description = caption with "Link in bio ✨" →
-   "👉 https://soulmatesigns.org/sketch?src=fbcheck<NNN>". performance.csv format "promo-check". Mark used=true, promo_id.
+3. Post with RUNBOOK 7 + 7b: caption = the check's caption; thumb_offset 7500; FB description = caption with "Link in bio ✨" → "Link on our Page ✨" (NO URLs on Facebook). performance.csv format "promo-check". Mark used=true, promo_id.
 If the sandbox fails, skip the afternoon reel (do not post a fallback) and log it.

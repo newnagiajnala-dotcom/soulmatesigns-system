@@ -11,7 +11,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
   https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/main/
 - Bio link (MAIN, since 7 Nov 2026 = sketch sales page): https://soulmatesigns.org/ (same page also at /sketch). Quiz moved to https://soulmatesigns.org/quiz/ (linked at the bottom of the sales page).  → hoplink affiliate=abhi10k
 - Sales page for PROMO reels: https://soulmatesigns.org/sketch (headline matches promo reels; hoplink tid = ?src value + a/b, e.g. ?src=promo1 → tid promo1a).
-  Promo reel captions say "Link in bio ✨"; FB promo descriptions use https://soulmatesigns.org/sketch?src=fbpromo<NNN>. All other reels/stories/posts: the main link.
+  Promo reel captions say "Link in bio ✨". NO URLs in Facebook descriptions (7 Nov 2026 finding: the only FB reel without a link got 450 views; every reel with a link got 0-8 — Facebook buries reels with outside links). FB description = the Instagram caption with "Link in bio ✨" replaced by "Link on our Page ✨". The Page intro already links soulmatesigns.org.
 
 ## Steps each run
 00. Tool check (every run, 10 s): note whether Higgsfield MCP tools are available (try the Higgsfield balance tool). Append one line to data/errors.log:
@@ -72,7 +72,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    c) POST https://rupload.facebook.com/video-upload/v21.0/<video_id> with headers "Authorization: OAuth <page token>" and
       "file_url: <same public raw/CDN video url used for Instagram>".
    d) POST /1402297082968632/video_reels upload_phase=finish video_id=<id> video_state=PUBLISHED access_token=<page token>
-      description=<Instagram caption + "\n\nCurious what your soulmate looks like? 👉 https://soulmatesigns.org/?src=fb"> (face reels: keep "AI host ✨").
+      description=<Instagram caption with "Link in bio ✨" → "Link on our Page ✨" — NEVER a URL (see Constants)> (face reels: keep "AI host ✨").
    e) If any Facebook step fails (e.g. missing permission or token conflict), log it to data/errors.log and continue — never block Instagram,
       never retry a publish twice. Log a separate performance.csv row with reel_id "FB-<video_id>" and format "<format> FB".
 8. Append to data/performance.csv: `date,media_id,hook,format,,,,,,`. Commit and push.

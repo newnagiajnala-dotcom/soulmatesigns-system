@@ -80,3 +80,4 @@ New hooks to use (rotate; keep honest, entertainment framing):
 4 (4,12,20,28) the builder, stable & loyal 🏡 · 5 (5,13,21,29) the adventurer ✈️ · 6 (6,14,22,30) calm protector who remembers little things ☕️ ·
 7 (7,15,23,31) the deep soul, feels familiar 🌙 · 8 (8,16,24) the ambitious one, treats you like his biggest win 👑
 Reply format (owner replies manually): "Code X 💫 [days] babies! [line] does that sound like someone you know? 👀"
+- 2026-11-07 — Facebook: 14 API reels with a URL in the description = 0–8 views each (promo 001: 8 views, 1 viewer); the only reel with NO link (Ashley + Ryan, uploaded in the FB web UI) = 450 views. AI-made reels also get Facebook's "AI content" label. Decision: no URLs on Facebook ever ("Link on our Page ✨"); compare FB views over the next 5 days.
