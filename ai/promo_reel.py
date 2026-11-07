@@ -9,7 +9,8 @@ spec: {"hook_text": "STOP CUTTING TIES.", "cta_text": "LINK IN BIO",
 """
 import json, os, subprocess, sys, urllib.request
 
-W, H, FPS, XF, TAIL = 1080, 1920, 30, 0.35, 1.4
+W, H, FPS, XF, TAIL = 1080, 1920, 30, 0.35, 2.2
+GAP = 0.85  # max pause between sentences (owner: 28 s felt slow, 17 s too fast, 21-22 s right)
 FONTDIR = "/usr/share/fonts/truetype/higgsfield"
 
 def sh(*a): subprocess.run(a, check=True)
@@ -25,6 +26,25 @@ def words(voice):
     m = WhisperModel("base.en", device="cpu", compute_type="int8")
     segs, _ = m.transcribe(voice, word_timestamps=True)
     return [(w.start, w.end, w.word.strip()) for s in segs for w in s.words if w.word.strip()]
+
+def tighten(voice, out):
+    """Cut every pause longer than GAP down to GAP, trim leading silence. Returns the new voice path."""
+    ws = words(voice)
+    if not ws: return voice
+    segs, st = [], max(ws[0][0] - 0.08, 0)
+    for a, b in zip(ws, ws[1:]):
+        if b[0] - a[1] > GAP:
+            segs.append((st, a[1] + 0.12)); st = b[0] - 0.08
+    segs.append((st, ws[-1][1] + 0.25))
+    parts, labels = [], []
+    for i, (a, b) in enumerate(segs):
+        parts.append(f"[0:a]atrim={a:.3f}:{b:.3f},asetpts=N/SR/TB,aresample=44100,aformat=channel_layouts=mono[s{i}]"); labels.append(f"[s{i}]")
+        if i < len(segs) - 1:
+            parts.append(f"aevalsrc=0:d={GAP - 0.2:.2f}:s=44100[g{i}]"); labels.append(f"[g{i}]")
+    fc = ";".join(parts) + ";" + "".join(labels) + f"concat=n={len(labels)}:v=0:a=1[o]"
+    dst = f"{out}/voice_tight.wav"
+    sh("ffmpeg", "-y", "-loglevel", "error", "-i", voice, "-filter_complex", fc, "-map", "[o]", dst)
+    return dst
 
 def make_ass(spec, ws, total, path):
     hl = {h.lower() for h in spec.get("highlight", [])}
@@ -68,6 +88,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 def main():
     spec = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
     voice = dl(spec["voice_url"], f"{out}/voice.wav"); music = dl(spec["music_url"], f"{out}/music.wav")
+    if not spec.get("no_tighten"): voice = tighten(voice, out)
     total = dur(voice) + TAIL; sc = spec["scenes"]; n = len(sc)
     fixed = sum(s.get("dur", 0) for s in sc); free = [s for s in sc if not s.get("dur")]
     rest = (total + XF * (n - 1) - fixed) / max(len(free), 1)
