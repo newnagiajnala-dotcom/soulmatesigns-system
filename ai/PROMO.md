@@ -42,8 +42,9 @@ Promo 003 got 167 views + 2 comments in its first hour (best start ever). Cost 0
 3. Post with RUNBOOK 7 + 7b: caption = the check's caption; thumb_offset 7500; FB description = caption with "Link in bio ✨" → "Link on our Page ✨" (NO URLs on Facebook). performance.csv format "promo-check". Mark used=true, promo_id.
 If the sandbox fails, skip the afternoon reel (do not post a fallback) and log it.
 
-## Style D — LOVE % name check (alternates with Style C in the AFTERNOON slot) — from the @soulmatesketch02 teardown (research/soulmatesketch02-2026-11-07.md: 96.8M / 22.7M / 11.5M views)
-- Even US days = Style C (maths check), odd US days = Style D. (Nov 8 = queued promo 004, then alternate.)
+## Style D — LOVE % name check — OWNER FILMS THESE BY HAND (7 Nov: AI version looked fake). The autopilot does NOT make Style D; AFTERNOON slot = Style C every day.
+## (old automated Style D notes kept for reference) — from the @soulmatesketch02 teardown (research/soulmatesketch02-2026-11-07.md: 96.8M / 22.7M / 11.5M views)
+- (inactive) Even US days = Style C, odd = Style D.
 - Names: FIRST look for a REAL comment on our IG reels containing two first names (GET /{media_id}/comments?fields=text,username on the last 10 reels);
   if found, use it and pass "@<username>|<their comment text>" as the 7th argument (reply bubble). NEVER invent a commenter or a bubble.
   If none, use the next unused pair from promo/names.json (popular US names) with NO bubble.
