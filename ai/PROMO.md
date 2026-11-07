@@ -19,10 +19,11 @@ Template proven by promo 001 (148 views in 7 h = 2nd best ever). Morning slot, e
    "👉 https://soulmatesigns.org/sketch?src=fbpromo<NNN>". performance.csv format "promo-voice" / "promo-voice FB" (style B: "promo-text" / "promo-text FB"). Mark the script used=true, promo_id=NNN.
 If Higgsfield is unavailable or balance < 30: post the best template reel instead and log it.
 
-## Style B — text-only story reel (EVENING slot)
-- Script: first style "B" entry in promo/scripts.json with used=false (new ones: hook_text ≤ 6 words, 3–4 lines ≤ 8 words each,
+## Style B — SHORT interactive text reel (EVENING slot) — updated 7 Nov after niche research (research/sales-reels-2026-11-07.md):
+## the top soulmate-sketch affiliate reels (6–18M views) are 5–13 s, interactive (affirm YES / save / pick 1-2-3 / screenshot / comment a word), and sell in the CAPTION + bio.
+- Script: first style "B" entry in promo/scripts.json with used=false (new ones: hook_text ≤ 5 words, 2 lines ≤ 9 words each, line 2 = the interaction ask,
   *word* marks the orange word, last line = curiosity question; dur 1.9 s for short lines, 2.6 s for long; caption with a share/comment ask).
-- Images: 3 × gpt_image_2_5 (same rules as style A). No voice.
+- Images: 2 × gpt_image_2_5 (same rules as style A). No voice. Hook clip dur 3.0 (scene 0 {url, video:true, dur:3.0}). Target 7–10 s total.
 - Spec: {hook_text, cta_text: "LINK IN BIO", lines, scenes: [{url: hook clip, video: true, dur: 4.3}, img1, img2, img3], music_url}.
   promo_reel.py detects "lines" and builds a 11–14 s text reel with music only.
 - performance.csv format "promo-text" (style A rows use "promo-voice"). Never the same hook clip as the morning reel of the same day.
