@@ -36,7 +36,21 @@ def text_img(s, size):
     ImageDraw.Draw(im).text((10, 6), s, font=f, fill=INK)
     return im
 
+def spec_from_check(base, c, bg, music):
+    L = base["layout"]
+    def tx(key, text):
+        x, y, s, t0, d = L[key]; return {"text": text, "x": x, "y": y, "size": s, "t": t0, "d": d}
+    x0, y0, x1, y1, t0, d = L["rule"]; cx0, cy0, cx1, cy1, ct, cd = L["circle"]; hx, hy, hs, ht, hd = L["heart"]
+    return {"bg": bg, "music": music, "label": c["label"], "rot": base["rot"], "dur": base["dur"], "cta_t": base["cta_t"],
+            "steps": [tx("line1", c["line1"]), tx("line2", c["line2"]), {"line": [x0, y0, x1, y1], "t": t0, "d": d},
+                      tx("result", c["result"]), {"circle": [cx0, cy0, cx1, cy1], "t": ct, "d": cd}, {"heart": [hx, hy, hs], "t": ht, "d": hd},
+                      tx("t1", c["t1"]), tx("t2", c["t2"])]}
+
 def main():
+    if sys.argv[1] == "--check":  # python3 check_reel.py --check checks.json <id> page.png music.mp3 outdir
+        d = json.load(open(sys.argv[2])); c = [x for x in d["checks"] if x["id"] == sys.argv[3]][0]
+        sp = spec_from_check(d["base"], c, sys.argv[4], sys.argv[5]); json.dump(sp, open("spec_built.json", "w"))
+        sys.argv = [sys.argv[0], "spec_built.json", sys.argv[6]]
     spec = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(f"{out}/f", exist_ok=True)
     bg = Image.open(spec["bg"]).convert("RGBA")
     s = max(W / bg.width, H / bg.height); bg = bg.resize((int(bg.width * s) + 1, int(bg.height * s) + 1))

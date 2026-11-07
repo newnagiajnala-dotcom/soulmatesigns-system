@@ -83,6 +83,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 
 ## Reel slots (updated 7 Nov 2026 — owner: "improve everything, 100K views this month")
 - MORNING slot (7:41 AM ET) = PROMO reel style A (voice), per ai/PROMO.md (replaces Luna AI reels; Luna paused — same views as free templates).
+- AFTERNOON slot (4:41 PM ET) = SOULMATE CHECK handwriting reel, per ai/PROMO.md "Style C".
 - EVENING slot (7:41 PM ET) = PROMO reel style B (text-only, no voice), per ai/PROMO.md "Style B". AI host is paused.
   If Higgsfield is unavailable or balance < 30, post a free template reel (code / names / sign) instead.
 - First run of each US day: still run the trend step (ai/WORKFLOW.md §1) and save data/trends/<date>.json.
@@ -100,7 +101,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
   POST /1402297082968632/photo_stories photo_id=<id>. If Facebook fails, log and continue.
 - Write stories/<date>/posted with the ids, commit + push. Never post more than 1 story per day.
 
-## Daily carousel post — PAUSED 7 Nov 2026 (6 carousels got 0–1 views each at 0 followers). The AFTERNOON run only appends a "carousel paused" line to data/errors.log and stops.
+## Daily carousel post — PAUSED 7 Nov 2026 (6 carousels got 0–1 views each at 0 followers). The AFTERNOON run (4:41 PM ET) now posts the SOULMATE CHECK reel (ai/PROMO.md Style C) instead.
 ## (old rules kept for when it is switched back on)
 - AFTERNOON run only (16:00–18:59 US Eastern, scheduled 4:41 PM ET). No reel, no story in that run.
   Skip if posts/<today US Eastern>/ already has a "posted" file.
@@ -130,7 +131,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
   (Instagram's own post composer has an 'Add AI label' switch; manual posts of face reels must switch it on.)
 
 ## Safety limits
-- Never more than 2 published reels per calendar day (US Eastern). Check data/performance.csv first.
+- Never more than 3 published reels per calendar day (US Eastern) — owner raised it from 2 to 3 on 7 Nov 2026. Check data/performance.csv first.
   ONE-DAY OWNER EXCEPTION: 2026-11-07 (ET) allows 3 reels = promo 001 (posted), promo 003 (check, posted on owner request) and promo 002 (queued for the 7:41 AM ET slot).
 - If the API returns an error about spam, action blocks or limits: stop, log it, and skip the next 24 h.
 - Never change the bio, follow/like/comment, or DM anyone.

@@ -30,3 +30,16 @@ If Higgsfield is unavailable or balance < 30: post the best template reel instea
 ## Comparing (every Sunday + 12 Nov review)
 - Compare promo-voice vs promo-text vs old templates on views/reel, shares and link clicks (ClickBank tid igbio / fbpromo).
   Double down on the winner style; keep testing new hooks inside it.
+
+## Style C — SOULMATE CHECK handwriting reel (AFTERNOON slot, 4:41 PM ET) — owner 7 Nov: "3 reels per day, soulmate check between both reels"
+Promo 003 got 167 views + 2 comments in its first hour (best start ever). Cost 0 credits (fixed background image).
+1. Pick the first check in promo/checks.json with used=false (formulas rotate: age · initial · love number).
+2. In the Higgsfield sandbox (background:true, poll — rendering ~3 min):
+   R=https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/<commit>
+   curl -sfO $R/reelgen/check_reel.py; curl -sfO $R/reelgen/fonts/Caveat.ttf; curl -sfO $R/promo/checks.json
+   curl -sfo page.png <checks.json base.bg_url>; curl -sfo music.mp3 <music/library.json "playful"[0]>
+   python3 check_reel.py --check checks.json <id> page.png music.mp3 out   → out/reel.mp4 (15 s)
+   Check 2 frames (t=7.5 and t=13.5): numbers and words on the page, nothing cut off. Upload (media_upload → PUT → media_confirm).
+3. Post with RUNBOOK 7 + 7b: caption = the check's caption; thumb_offset 7500; FB description = caption with "Link in bio ✨" →
+   "👉 https://soulmatesigns.org/sketch?src=fbcheck<NNN>". performance.csv format "promo-check". Mark used=true, promo_id.
+If the sandbox fails, skip the afternoon reel (do not post a fallback) and log it.
