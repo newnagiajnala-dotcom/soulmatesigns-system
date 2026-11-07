@@ -16,7 +16,7 @@ Template proven by promo 001 (148 views in 7 h = 2nd best ever). Morning slot, e
     voice_url, music_url: dreamy or emotional track from music/library.json}. The editor cuts pauses to 0.85 s automatically.
    Result must be 18–24 s. Check out/cover.jpg + 2 frames (captions readable). Upload: media_upload → PUT in the same command → media_confirm.
 5. Post with RUNBOOK steps 7 + 7b. Instagram caption = script caption. Facebook description = caption with "Link in bio" replaced by
-   "👉 https://soulmatesigns.org/sketch?src=fbpromo<NNN>". performance.csv format "promo" / "promo FB". Mark the script used=true, promo_id=NNN.
+   "👉 https://soulmatesigns.org/sketch?src=fbpromo<NNN>". performance.csv format "promo-voice" / "promo-voice FB" (style B: "promo-text" / "promo-text FB"). Mark the script used=true, promo_id=NNN.
 If Higgsfield is unavailable or balance < 30: post the best template reel instead and log it.
 
 ## Style B — text-only story reel (EVENING slot)
