@@ -3,7 +3,7 @@ Rule: write both names, count each letter (cross it out as you count, in order o
 | Day | Names | Row 1 (counts) | Row 2 | Row 3 | Row 4 | Result |
 |---|---|---|---|---|---|---|
 | Nov 8 | Isabella + Michael | 213123111 | 32442 | 564 | 96 | 96% |
-| Nov 9 | Emily + Jake | 21111111 | 3222 | — | — | 54% |
+| Nov 9 | Scarlett + Daniel | 1121222111 | 22334 | 653 | 95 | 95% |
 | Nov 10 | Scarlett + William | 1121312121 | 23334 | 663 | 96 | 96% |
 | Nov 11 | Madison + William | 221311112 | 43241 | 572 | — | 77% |
 | Nov 12 | Abigail + Brandon | 322111211 | 43421 | 554 | — | 95% |

@@ -81,3 +81,4 @@ New hooks to use (rotate; keep honest, entertainment framing):
 7 (7,15,23,31) the deep soul, feels familiar 🌙 · 8 (8,16,24) the ambitious one, treats you like his biggest win 👑
 Reply format (owner replies manually): "Code X 💫 [days] babies! [line] does that sound like someone you know? 👀"
 - 2026-11-07 — Facebook: 14 API reels with a URL in the description = 0–8 views each (promo 001: 8 views, 1 viewer); the only reel with NO link (Ashley + Ryan, uploaded in the FB web UI) = 450 views. AI-made reels also get Facebook's "AI content" label. Decision: no URLs on Facebook ever ("Link on our Page ✨"); compare FB views over the next 5 days.
+- 2026-11-07 evening — Soulmate check (handwriting, no AI label) 705 views + 6 comments in 4 h = first reel past the ~150 wall. Promo 002 (AI people, IG 'AI content' label) 1 view in 2 h; promo 001 (AI label) 163. Signal: real-looking handwriting/interactive beats AI-people promo reels.
