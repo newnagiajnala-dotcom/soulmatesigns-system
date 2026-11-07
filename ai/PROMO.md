@@ -47,6 +47,11 @@ If the sandbox fails, skip the afternoon reel (do not post a fallback) and log i
 - Names: FIRST look for a REAL comment on our IG reels containing two first names (GET /{media_id}/comments?fields=text,username on the last 10 reels);
   if found, use it and pass "@<username>|<their comment text>" as the 7th argument (reply bubble). NEVER invent a commenter or a bubble.
   If none, use the next unused pair from promo/names.json (popular US names) with NO bubble.
-- Build: python3 check_reel.py --names <Name1> <Name2> page.png music.mp3 out ["@user|comment"]  (prints the %; ~20 s reel; render ~3 min, background:true).
+- Build (REALISTIC HAND version, owner 7 Nov: "make it feel like a real person is writing"):
+  curl -sfO $R/reelgen/hand_reel.py; curl -sfO $R/reelgen/fonts/Caveat.ttf
+  curl -sfo hand.png https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261107_122005_900b18b5-0df6-416b-b1de-4a8afb99b90a.png
+  curl -sfo paper.png https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261107_121951_48ed0cca-fe8a-4f83-a3f0-eaef735b170e.png
+  python3 hand_reel.py --names <Name1> <Name2> paper.png hand.png music.mp3 out ["@user|comment"]   (prints pct; 25–35 s; render ~4 min, background:true, poll)
+  Check frames at 1/3, 2/3 and the last frame. thumb_offset = (seconds - 2) * 1000.
 - Caption: "<Name1> + <Name2> = <pct>% 💞 Want me to do yours?\n\nDrop your names 👇 (yours + your crush) and I'll write them in the next video ✍️\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns"
 - performance.csv format "promo-love". Same posting/FB rules as Style C (no URL on Facebook).

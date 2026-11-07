@@ -2,13 +2,13 @@
  "format": "promo-love",
  "style": "D (love % name check)",
  "hook": "LOVE % CHECK Madison + Tyler = 84%",
- "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/a97b079a-2a70-40eb-9d05-277a9f079900.mp4",
- "duration_s": 21.1,
- "thumb_offset_ms": 18500,
+ "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/af872f38-390c-4eb4-882b-953947554c61.mp4",
+ "duration_s": 33.4,
+ "thumb_offset_ms": 31000,
  "caption": "Madison + Tyler = 84% 💞 Want me to do yours?\n\nDrop your names 👇 (yours + your crush) and I'll write them in the next video ✍️\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns",
  "fb_description": "Madison + Tyler = 84% 💞 Want me to do yours?\n\nDrop your names 👇 (yours + your crush) and I'll write them in the next video ✍️\n\nCurious what your soulmate looks like? Link on our Page ✨ (just for fun)\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns",
  "queued": true,
  "post_on": "2026-11-08 ET afternoon slot (4:41 PM ET)",
  "posted": false,
- "built_by": "owner session 7 Nov; check_reel.py --names"
+ "built_by": "owner session 7 Nov; reelgen/hand_reel.py (realistic hand, v2)"
 }
