@@ -46,3 +46,5 @@
 2026-11-07T05:31-05:00 tools: higgsfield=yes balance=421.04 run=morning
 2026-11-07T05:42-05:00 morning: promo 003 (owner-requested soulmate check) posted IG Dfb-aEnElNh (media 18051007115630857) + FB reel 1182985698001568 (post 122100020751542532). Stats updated 19 rows; followers_count=1. Reels today: 2/2 - kept to the scheduled task's 2-per-day cap (not the RUNBOOK 3-reel exception); promo 002 deferred to Nov 8 morning slot. Local clone had unrelated stale history again; reset to origin/main.
 2026-11-07T05:50-05:00 manual promo-003 fire: skipped publish - promo 003 already posted this morning (IG Dfb-aEnElNh, FB reel 1182985698001568). No duplicate. Added ig_permalink, relabeled perf rows promo-check; restored promo/002 post_on to Nov 7 7:41 AM slot per owner note (3-reel exception decision left to that run).
+2026-11-07T07:42-05:00 tools: higgsfield=yes balance=419.54 run=morning
+2026-11-07T07:44-05:00 morning: queued promo 002 (style B) posted IG DfcNSH9ARV_ (media 18120695009517904) + FB reel 2710100472743509 (post 122100120117542532). Stats updated 20 rows; followers_count=1. Reels today: 3/3 (cap reached - afternoon/evening slots today must skip).
