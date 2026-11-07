@@ -131,5 +131,6 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 
 ## Safety limits
 - Never more than 2 published reels per calendar day (US Eastern). Check data/performance.csv first.
+  ONE-DAY OWNER EXCEPTION: 2026-11-07 (ET) allows 3 reels = promo 001 (posted), promo 003 (check, posted on owner request) and promo 002 (queued for the 7:41 AM ET slot).
 - If the API returns an error about spam, action blocks or limits: stop, log it, and skip the next 24 h.
 - Never change the bio, follow/like/comment, or DM anyone.
