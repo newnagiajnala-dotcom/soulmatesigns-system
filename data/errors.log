@@ -43,3 +43,5 @@
 2026-11-07T00:25-05:00 tools: higgsfield=yes balance=451.79 run=morning
 2026-11-07T00:28-05:00 morning: promo 001 (owner-approved, red string, 21.5 s) posted IG DfbbaPaDdby (media 18100731071405886) + FB reel 1465701362219327 (post 122099768229542532). Stats updated 18 rows (unchanged); followers_count=0. Trend: ig_hashtag_search still blocked - web notes added. Morning slot used by promo instead of Luna AI reel. Reels today: 1/2.
 2026-11-07T00:28-05:00 manual promo-001 fire: skipped - promo 001 already posted this morning (IG DfbbaPaDdby, FB reel 1465701362219327); spec posted=true. No duplicate. Reels today: 1/2.
+2026-11-07T05:31-05:00 tools: higgsfield=yes balance=421.04 run=morning
+2026-11-07T05:42-05:00 morning: promo 003 (owner-requested soulmate check) posted IG Dfb-aEnElNh (media 18051007115630857) + FB reel 1182985698001568 (post 122100020751542532). Stats updated 19 rows; followers_count=1. Reels today: 2/2 - kept to the scheduled task's 2-per-day cap (not the RUNBOOK 3-reel exception); promo 002 deferred to Nov 8 morning slot. Local clone had unrelated stale history again; reset to origin/main.
