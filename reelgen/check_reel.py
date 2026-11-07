@@ -65,7 +65,8 @@ def love_rows(a, b):
 
 def spec_from_names(a, b, bg, music, reply=None):
     rows, pct = love_rows(a, b)
-    lines = [(a.capitalize(), 1.3), ("+", 0.4), (b.capitalize(), 1.3)] + [("".join(map(str, r)), 0.32 * len(r) + 0.4) for r in rows] + [(f"{pct}%", 1.0)]
+    rr = rows[:-1] if len(rows) > 1 and len(rows[-1]) <= 2 else rows
+    lines = [(a.capitalize(), 1.3), ("+", 0.4), (b.capitalize(), 1.3)] + [("".join(map(str, r)), 0.32 * len(r) + 0.4) for r in rr] + [(f"{pct}%", 1.0)]
     n = len(lines); top, bottom = 430, 1560; h = min(165, (bottom - top) / n)
     steps, t0, y = [], 1.0, top
     for k, (txt, d) in enumerate(lines):
@@ -75,9 +76,10 @@ def spec_from_names(a, b, bg, music, reply=None):
         x = int(540 - f.getlength(txt) / 2) - 10
         steps.append({"text": txt, "x": x, "y": int(y), "size": size, "t": round(t0, 2), "d": round(d, 2)})
         t0 += d + (0.5 if k >= 3 else 0.25); y += h
-    fy = steps[-1]["y"]; fs = steps[-1]["size"]
-    steps.append({"heart": [540, int(fy + fs * 0.55), fs / 26], "t": round(t0, 2), "d": 1.1})
-    end = t0 + 1.1
+    fy = steps[-1]["y"]; fs = steps[-1]["size"]; fx = steps[-1]["x"]; fw = hand(fs).getlength(f"{pct}%")
+    steps.append({"circle": [int(fx - 40), int(fy + fs * 0.12), int(fx + fw + 50), int(fy + fs * 1.02)], "t": round(t0, 2), "d": 1.0})
+    steps.append({"heart": [int(fx + fw + 120), int(fy + fs * 0.5), fs / 40], "t": round(t0 + 1.1, 2), "d": 0.8})
+    end = t0 + 1.9
     sp = {"bg": bg, "music": music, "label": "LOVE % CHECK", "rot": -2, "dur": round(end + 3.5, 1), "cta_t": round(end + 0.3, 1),
           "cta": "COMMENT YOUR NAMES", "steps": steps, "pct": pct}
     if reply: sp["reply"] = reply
