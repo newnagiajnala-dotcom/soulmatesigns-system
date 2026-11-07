@@ -80,8 +80,9 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    one decision for next week. Keep the mix rules updated.
 
 ## Reel slots (updated 7 Nov 2026 — owner: "improve everything, 100K views this month")
-- MORNING slot (7:41 AM ET) = daily PROMO reel, built and posted per ai/PROMO.md (replaces Luna AI reels; Luna paused — same views as free templates).
-- EVENING slot (7:41 PM ET) = best free template reel (rotate code / names / sign; code had the best views). AI host is paused.
+- MORNING slot (7:41 AM ET) = PROMO reel style A (voice), per ai/PROMO.md (replaces Luna AI reels; Luna paused — same views as free templates).
+- EVENING slot (7:41 PM ET) = PROMO reel style B (text-only, no voice), per ai/PROMO.md "Style B". AI host is paused.
+  If Higgsfield is unavailable or balance < 30, post a free template reel (code / names / sign) instead.
 - First run of each US day: still run the trend step (ai/WORKFLOW.md §1) and save data/trends/<date>.json.
 - EVERY reel caption (all formats) must include one SHARE ask, e.g. "Send this to your bestie 💌" / "Tag the friend who…". Shares are what pushes a reel past the first ~150 views.
 

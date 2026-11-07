@@ -1,3 +1,4 @@
+# Daily promo reels — TWO styles A/B (owner 7 Nov: "both reels promo, different hooks, scripts and editing, see what works")
 # Daily promo reel (Soulmate Sketch sales reel) — owner request 7 Nov 2026, goal: break the ~150-view wall, 100K views in Nov
 Template proven by promo 001 (148 views in 7 h = 2nd best ever). Morning slot, every day. Cost ≈ 2.5 credits (4 images + voice); hook clips are reused.
 
@@ -17,3 +18,14 @@ Template proven by promo 001 (148 views in 7 h = 2nd best ever). Morning slot, e
 5. Post with RUNBOOK steps 7 + 7b. Instagram caption = script caption. Facebook description = caption with "Link in bio" replaced by
    "👉 https://soulmatesigns.org/sketch?src=fbpromo<NNN>". performance.csv format "promo" / "promo FB". Mark the script used=true, promo_id=NNN.
 If Higgsfield is unavailable or balance < 30: post the best template reel instead and log it.
+
+## Style B — text-only story reel (EVENING slot)
+- Script: first style "B" entry in promo/scripts.json with used=false (new ones: hook_text ≤ 6 words, 3–4 lines ≤ 8 words each,
+  *word* marks the orange word, last line = curiosity question; dur 1.9 s for short lines, 2.6 s for long; caption with a share/comment ask).
+- Images: 3 × gpt_image_2_5 (same rules as style A). No voice.
+- Spec: {hook_text, cta_text: "LINK IN BIO", lines, scenes: [{url: hook clip, video: true, dur: 4.3}, img1, img2, img3], music_url}.
+  promo_reel.py detects "lines" and builds a 11–14 s text reel with music only.
+- performance.csv format "promo-text" (style A rows use "promo-voice"). Never the same hook clip as the morning reel of the same day.
+## Comparing (every Sunday + 12 Nov review)
+- Compare promo-voice vs promo-text vs old templates on views/reel, shares and link clicks (ClickBank tid igbio / fbpromo).
+  Double down on the winner style; keep testing new hooks inside it.
