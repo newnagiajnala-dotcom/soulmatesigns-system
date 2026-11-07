@@ -5,3 +5,8 @@ B-roll images: 41ef1679 (phone at night), 475d0459 (sketch), cfddc00c (red strin
 Editor: ai/promo_reel.py (Cap 118 / Hook 138 / CTA 104). Cost ≈ 12.5 credits (10 hook + 1 images + 1.5 voice).
 Caption draft: "Stop cutting ties with people because they're not 'the one' ✂️❤️ Your soulmate might already have a face… 👀
 Curious what yours looks like? Link in bio ✨ (just for fun)  #soulmate #redstring #twinflame #soulmatesketch #lovesigns"
+
+## v2 (7 Nov, after owner: "so slow" after line 1 and after "recognized the face later") — 0 credits
+Video (17.2 s): https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/f61132f9-8c9f-4870-ab0b-4aa58769d3e4.mp4
+Fix: voice had two 4.7 s silences ("..." in the script). Cut every pause to 0.25–0.3 s, voice atempo 1.08, hook clip sped to 3.7 s.
+RULE for all promo reels: no "..." in voice scripts; after generating the voice, cut any silence > 0.35 s before building; target 15–20 s.
