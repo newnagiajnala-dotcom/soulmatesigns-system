@@ -58,15 +58,17 @@ class Row:
 
 def build_events(a, b, rng):
     seen, rows, pct = love_rows(a, b)
-    ev = []; y = 300; R = []
-    n1 = Row(a.capitalize(), y, 170, rng); y += 175
-    plus = Row("+", y, 120, rng); y += 135
-    n2 = Row(b.capitalize(), y, 170, rng); y += 200
-    rowsz = 150 if max(len(r) for r in rows) <= 9 else 130
+    ev = []; y = 250; R = []
+    nsz = 215 if max(len(a), len(b)) <= 7 else 185
+    n1 = Row(a.capitalize(), y, nsz, rng); y += nsz * 0.95
+    plus = Row("+", y, 130, rng); y += 140
+    n2 = Row(b.capitalize(), y, nsz, rng); y += nsz * 1.08
+    ml = max(len(r) for r in rows)
+    rowsz = 180 if ml <= 7 else 155 if ml <= 9 else 135 if ml <= 11 else 115
     drows = []
     for r in rows[:-1] if len(rows) > 1 and len(rows[-1]) <= 2 else rows:
         drows.append(Row("".join(map(str, r)), y, rowsz, rng)); y += rowsz * 0.95
-    final = Row(f"{pct}%", y + 10, 200, rng)
+    final = Row(f"{pct}%", y + 30, 235, rng)
     def write(row):
         for ch in row.chars:
             if ch["c"] == " ": continue
@@ -94,7 +96,7 @@ def build_events(a, b, rng):
     for ch in final.chars:
         if not ch["c"].isdigit(): ev.append({"k": "glyph", "ch": ch, "d": 0.25})
     fx0, fx1 = final.chars[0]["x0"], final.chars[-1]["x1"]; fy = final.chars[0]["ymid"]
-    ev.append({"k": "heart", "c": ((fx0 + fx1) / 2, fy - 10), "s": (fx1 - fx0) / 22, "d": 1.3})
+    ev.append({"k": "heart", "c": ((fx0 + fx1) / 2, fy - 18), "s": (fx1 - fx0) / 27, "d": 1.3})
     return ev, pct
 
 def tip_at(e, p):
@@ -129,7 +131,11 @@ def main():
     paper = paper.crop(((paper.width - int(W * 1.08)) // 2, (paper.height - int(H * 1.08)) // 2, (paper.width - int(W * 1.08)) // 2 + int(W * 1.08), (paper.height - int(H * 1.08)) // 2 + int(H * 1.08)))
     paper = Image.eval(paper, lambda v: min(255, int(v * 1.1 + 8))).convert("RGBA")
     PW, PH = paper.size; off = ((PW - W) // 2, (PH - H) // 2)
-    hand = Image.open(hand_p).convert("RGBA"); hand = hand.resize((int(hand.width * HAND_SCALE), int(hand.height * HAND_SCALE)), Image.LANCZOS)
+    hand = Image.open(hand_p).convert("RGBA")
+    ext = Image.new("RGBA", (hand.width, hand.height + 900), (0, 0, 0, 0)); ext.paste(hand, (0, 0))
+    strip = hand.crop((0, hand.height - 6, hand.width, hand.height))
+    for yy in range(hand.height, hand.height + 900, 6): ext.paste(strip, (0, yy))
+    hand = ext; hand = hand.resize((int(hand.width * HAND_SCALE), int(hand.height * HAND_SCALE)), Image.LANCZOS)
     tip = (HAND_TIP[0] * HAND_SCALE, HAND_TIP[1] * HAND_SCALE)
     sh_a = hand.split()[3].filter(ImageFilter.GaussianBlur(18)).point(lambda v: int(v * 0.33))
     shadow = Image.new("RGBA", hand.size, (40, 30, 25, 0)); shadow.putalpha(sh_a)
@@ -137,7 +143,7 @@ def main():
     noise = [Image.effect_noise((W // 2, H // 2), 22).resize((W, H)).convert("L") for _ in range(6)]
     vg = Image.radial_gradient("L").resize((W, H)).point(lambda v: 255 - int(max(0, v - 90) * 0.5))
     vmul = Image.merge("RGB", (vg, vg, vg))
-    done = set(); bubble_f = sans(34); bubble_b = sans(44); end_f = sans(64)
+    done = set(); bubble_f = sans(34); bubble_b = sans(44); end_f = sans(78)
     events = [e for e in tl if e["k"] != "travel"]
     for k in range(int(dur * FPS)):
         tt = k / FPS
