@@ -1,0 +1,80 @@
+{
+ "_rules": "Fallback name pairs for Style D when no real comment has names. Mark used.",
+ "pairs": [
+  {
+   "a": "Emma",
+   "b": "Jake",
+   "used": false
+  },
+  {
+   "a": "Olivia",
+   "b": "Noah",
+   "used": false
+  },
+  {
+   "a": "Ava",
+   "b": "Ethan",
+   "used": false
+  },
+  {
+   "a": "Sophia",
+   "b": "Mason",
+   "used": false
+  },
+  {
+   "a": "Chloe",
+   "b": "Ryan",
+   "used": false
+  },
+  {
+   "a": "Hannah",
+   "b": "Tyler",
+   "used": false
+  },
+  {
+   "a": "Grace",
+   "b": "Logan",
+   "used": false
+  },
+  {
+   "a": "Lily",
+   "b": "Jack",
+   "used": false
+  },
+  {
+   "a": "Zoe",
+   "b": "Aiden",
+   "used": false
+  },
+  {
+   "a": "Mia",
+   "b": "Lucas",
+   "used": false
+  },
+  {
+   "a": "Abby",
+   "b": "Caleb",
+   "used": false
+  },
+  {
+   "a": "Ella",
+   "b": "Owen",
+   "used": false
+  },
+  {
+   "a": "Sarah",
+   "b": "Josh",
+   "used": false
+  },
+  {
+   "a": "Taylor",
+   "b": "Chris",
+   "used": false
+  },
+  {
+   "a": "Katie",
+   "b": "Matt",
+   "used": false
+  }
+ ]
+}

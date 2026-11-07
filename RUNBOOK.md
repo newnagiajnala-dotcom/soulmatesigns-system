@@ -83,7 +83,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 
 ## Reel slots (updated 7 Nov 2026 — owner: "improve everything, 100K views this month")
 - MORNING slot (7:41 AM ET) = PROMO reel style A (voice), per ai/PROMO.md (replaces Luna AI reels; Luna paused — same views as free templates).
-- AFTERNOON slot (4:41 PM ET) = SOULMATE CHECK handwriting reel, per ai/PROMO.md "Style C".
+- AFTERNOON slot (4:41 PM ET) = handwriting reel: SOULMATE CHECK (ai/PROMO.md "Style C") and LOVE % name check ("Style D") on alternate days. Queued promo first.
 - EVENING slot (7:41 PM ET) = PROMO reel style B (text-only, no voice), per ai/PROMO.md "Style B". AI host is paused.
   If Higgsfield is unavailable or balance < 30, post a free template reel (code / names / sign) instead.
 - First run of each US day: still run the trend step (ai/WORKFLOW.md §1) and save data/trends/<date>.json.

@@ -41,3 +41,12 @@ Promo 003 got 167 views + 2 comments in its first hour (best start ever). Cost 0
    Check 2 frames (t=7.5 and t=13.5): numbers and words on the page, nothing cut off. Upload (media_upload → PUT → media_confirm).
 3. Post with RUNBOOK 7 + 7b: caption = the check's caption; thumb_offset 7500; FB description = caption with "Link in bio ✨" → "Link on our Page ✨" (NO URLs on Facebook). performance.csv format "promo-check". Mark used=true, promo_id.
 If the sandbox fails, skip the afternoon reel (do not post a fallback) and log it.
+
+## Style D — LOVE % name check (alternates with Style C in the AFTERNOON slot) — from the @soulmatesketch02 teardown (research/soulmatesketch02-2026-11-07.md: 96.8M / 22.7M / 11.5M views)
+- Even US days = Style C (maths check), odd US days = Style D. (Nov 8 = queued promo 004, then alternate.)
+- Names: FIRST look for a REAL comment on our IG reels containing two first names (GET /{media_id}/comments?fields=text,username on the last 10 reels);
+  if found, use it and pass "@<username>|<their comment text>" as the 7th argument (reply bubble). NEVER invent a commenter or a bubble.
+  If none, use the next unused pair from promo/names.json (popular US names) with NO bubble.
+- Build: python3 check_reel.py --names <Name1> <Name2> page.png music.mp3 out ["@user|comment"]  (prints the %; ~20 s reel; render ~3 min, background:true).
+- Caption: "<Name1> + <Name2> = <pct>% 💞 Want me to do yours?\n\nDrop your names 👇 (yours + your crush) and I'll write them in the next video ✍️\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns"
+- performance.csv format "promo-love". Same posting/FB rules as Style C (no URL on Facebook).
