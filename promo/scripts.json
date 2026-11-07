@@ -1,0 +1,96 @@
+{
+  "_rules": "Use the first script with used=false (in order). After posting set used=true and promo_id. When all are used, write 7 NEW scripts in the same shape (see ai/PROMO.md) before building. Hook clip ids refer to promo/hooks.json.",
+  "scripts": [
+    {
+      "id": "s02", "used": false, "hook_clip": "sketch",
+      "hook_text": "DON'T SCROLL IF YOU'RE SINGLE.",
+      "voice": "Don't scroll if you're single. Imagine someone drawing a face they've never seen. Psychic artist Tina says that's exactly what she does. She sketches your soulmate by hand, just from your energy. Then you keep it, and wait to see who shows up. Curious what yours looks like? Link in bio.",
+      "highlight": ["single", "soulmate", "tina"],
+      "images": [
+        "Candid photo of a young woman in her twenties sitting alone at a cafe window at dusk, looking at couples passing outside, warm city lights, cinematic, photoreal",
+        "Close-up of an artist's hand shading a pencil portrait sketch on cream paper, warm lamp light, eraser crumbs, photoreal",
+        "Young woman at home holding a pencil portrait sketch of a man's face, smiling softly, cozy fairy lights, photoreal",
+        "Young woman walking out of a coffee shop at golden hour, looking back over her shoulder with a hopeful smile, cinematic, photoreal"
+      ],
+      "caption": "Don't scroll if you're single 👀 Imagine seeing their face before you meet them…\n\nSend this to your single bestie 💌\n\nCurious what yours looks like? Link in bio ✨ (just for fun)\n\n#soulmate #singlelife #soulmatesketch #lovesigns #datinglife"
+    },
+    {
+      "id": "s03", "used": false, "hook_clip": "street",
+      "hook_text": "YOU ALREADY WALKED PAST THEM.",
+      "voice": "You may have already walked past your soulmate. A coffee line. A crowded train. Someone you looked at for one second too long. Tina draws that face by hand, just from your energy. So next time, you'll know who to look for. Curious what yours looks like? Link in bio.",
+      "highlight": ["soulmate", "face", "tina"],
+      "images": [
+        "Busy coffee shop line in the morning, a young woman glancing at a man two people ahead of her, soft daylight, candid, photoreal",
+        "Crowded subway car, a young woman and a young man briefly making eye contact across the aisle, cinematic, photoreal",
+        "Top-down view of a pencil portrait sketch of a man's face on paper next to a coffee cup, warm light, photoreal",
+        "Young woman on a city sidewalk at sunset holding a sketch and looking at the crowd, warm glow, cinematic, photoreal"
+      ],
+      "caption": "You may have already walked past them 👀 Coffee line, train, one second too long…\n\nTag the friend who always says 'I'll never meet anyone' 😂\n\nCurious what yours looks like? Link in bio ✨ (just for fun)\n\n#soulmate #redstring #soulmatesketch #lovesigns #fate"
+    },
+    {
+      "id": "s04", "used": false, "hook_clip": "phone",
+      "hook_text": "STOP WAITING FOR HIS TEXT.",
+      "voice": "Stop waiting for him to text back. If he wanted to, he would. Your person won't leave you guessing. Want a hint of who they are? Psychic artist Tina sketches your soulmate's face by hand, just from your energy. Curious what yours looks like? Link in bio.",
+      "highlight": ["text", "person", "tina"],
+      "images": [
+        "Young woman on a couch at night staring at her phone with an unread chat, lonely blue light, photoreal",
+        "Young woman laughing with friends at a rooftop party at night, string lights, candid, photoreal",
+        "Close-up of a hand finishing a pencil portrait sketch of a kind-looking man, warm lamp, photoreal",
+        "Young woman in bed in the morning smiling at a pencil sketch in her hands, soft sunlight, photoreal"
+      ],
+      "caption": "Stop waiting for his text 📵 If he wanted to, he would.\n\nSend this to the friend who needs to hear it 💌\n\nCurious what your person looks like? Link in bio ✨ (just for fun)\n\n#situationship #soulmate #datingadvice #soulmatesketch #lovesigns"
+    },
+    {
+      "id": "s05", "used": false, "hook_clip": "scissors",
+      "hook_text": "THE RED STRING NEVER BREAKS.",
+      "voice": "There's an old legend. An invisible red string ties you to your person. It can stretch. It can tangle. But it never breaks. Tina is an artist who says she can see the face at the other end. Curious what yours looks like? Link in bio.",
+      "highlight": ["red", "string", "face"],
+      "images": [
+        "Two hands far apart on a wooden table with a thin red thread tied between their pinky fingers, warm light, photoreal",
+        "A red thread winding through a busy city street at night, cinematic, magical realism, photoreal",
+        "Close-up of a pencil portrait sketch of a man's face, a red thread lying across the paper, warm lamp, photoreal",
+        "Young woman at a window at sunset holding a sketch, a faint red thread on her pinky, cinematic, photoreal"
+      ],
+      "caption": "The red string never breaks 🧵❤️ It stretches, it tangles… but it holds.\n\nSend this to your person (or the one you hope it is) 👀\n\nCurious what the face at the other end looks like? Link in bio ✨ (just for fun)\n\n#redstring #soulmate #twinflame #soulmatesketch #fate"
+    },
+    {
+      "id": "s06", "used": false, "hook_clip": "sketch",
+      "hook_text": "WOULD YOU WANT TO KNOW?",
+      "voice": "If you could see your soulmate's face today, would you look? Most people say yes, then get nervous. Tina is a psychic artist who sketches that face for you, by hand. Some people frame it. Some hide it in a drawer. Which one are you? Link in bio.",
+      "highlight": ["face", "tina", "you"],
+      "images": [
+        "Young woman holding a sealed envelope nervously at a kitchen table, morning light, photoreal",
+        "Close-up of hands sliding a pencil portrait sketch out of an envelope, warm light, photoreal",
+        "A pencil portrait sketch in a simple wooden frame on a bedside table, cozy bedroom, photoreal",
+        "A pencil sketch half hidden in an open desk drawer, soft lamp light, photoreal"
+      ],
+      "caption": "Would you want to see their face before you meet? 👀 Frame it or hide it?\n\nComment FRAME or DRAWER 👇 and send this to your bestie\n\nCurious what yours looks like? Link in bio ✨ (just for fun)\n\n#soulmate #soulmatesketch #lovesigns #wouldyourather #crush"
+    },
+    {
+      "id": "s07", "used": false, "hook_clip": "street",
+      "hook_text": "NOT YOUR EX. NOT YOUR CRUSH.",
+      "voice": "It's not your ex. It's not your crush. It's someone you haven't really noticed yet. That's what Tina says about most soulmates. She's a psychic artist who sketches the face, so you'd recognize them. Curious what yours looks like? Link in bio.",
+      "highlight": ["ex", "crush", "face"],
+      "images": [
+        "Young woman deleting an old couple photo on her phone, determined look, night, photoreal",
+        "Young woman at a bookstore, a stranger reaching for the same book, soft light, candid, photoreal",
+        "Pencil portrait sketch of a man's face on a desk with colored pencils, warm lamp, photoreal",
+        "Young woman smiling at a sketch while walking in a park in autumn, golden light, photoreal"
+      ],
+      "caption": "Not your ex. Not your crush. 👀 Someone you haven't noticed yet…\n\nSend this to the friend still checking her ex's stories 😭\n\nCurious what yours looks like? Link in bio ✨ (just for fun)\n\n#soulmate #movingon #soulmatesketch #lovesigns #datinglife"
+    },
+    {
+      "id": "s08", "used": false, "hook_clip": "phone",
+      "hook_text": "READ THIS BEFORE YOU TEXT HIM.",
+      "voice": "Read this before you text him again. You deserve someone who texts first. Someone who remembers the small stuff. If you're curious what that person looks like, psychic artist Tina draws your soulmate's face by hand. Just for fun. Link in bio.",
+      "highlight": ["first", "soulmate", "tina"],
+      "images": [
+        "Close-up of a young woman's thumb hovering over a send button on her phone, night, photoreal",
+        "Young man's hand placing a coffee cup with a small note in front of a smiling woman, cafe, photoreal",
+        "Hand shading a pencil portrait sketch of a warm, smiling man, lamp light, photoreal",
+        "Young woman on a balcony at sunset holding a sketch to her chest, calm smile, cinematic, photoreal"
+      ],
+      "caption": "Read this before you text him 📱 You deserve someone who texts first.\n\nSend this to the friend about to double text 😅\n\nCurious what your person looks like? Link in bio ✨ (just for fun)\n\n#situationship #datingadvice #soulmate #soulmatesketch #selflove"
+    }
+  ]
+}

@@ -79,12 +79,11 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 9. Sundays (evening run only): add a dated entry to the Learning log in playbook.md — best and worst format by views/reel,
    one decision for next week. Keep the mix rules updated.
 
-## Luna AI reels (owner request, 2 Nov 2026) — see ai/WORKFLOW.md and ai/STYLE.md
-- First run of each US day: run the trend step (ai/WORKFLOW.md §1) and save data/trends/<date>.json.
-- Reel slots: when Higgsfield tools are available and the balance is ≥ 120 credits, ONE of the day's reel slots
-  (morning on non-face-reel days; morning on face-reel days too, the evening slot stays the AI host) is a Luna AI reel built per ai/WORKFLOW.md.
-  The other slot stays a code template (names / code / sign / tarot …). Max 2 AI reels per day.
-- Post with the normal steps 7 (Instagram) and 7b (Facebook); performance.csv format "ai-luna".
+## Reel slots (updated 7 Nov 2026 — owner: "improve everything, 100K views this month")
+- MORNING slot (7:41 AM ET) = daily PROMO reel, built and posted per ai/PROMO.md (replaces Luna AI reels; Luna paused — same views as free templates).
+- EVENING slot (7:41 PM ET) = best free template reel (rotate code / names / sign; code had the best views) — or the AI host reel on face-reel days.
+- First run of each US day: still run the trend step (ai/WORKFLOW.md §1) and save data/trends/<date>.json.
+- EVERY reel caption (all formats) must include one SHARE ask, e.g. "Send this to your bestie 💌" / "Tag the friend who…". Shares are what pushes a reel past the first ~150 views.
 
 ## Daily story (owner request, 2 Nov 2026): exactly 1 story per US day, Instagram + Facebook
 - MIDDAY run only (the run that starts between 12:00 and 16:00 US Eastern). That run does ONLY the story — no reel, no stats.
@@ -98,7 +97,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
   POST /1402297082968632/photo_stories photo_id=<id>. If Facebook fails, log and continue.
 - Write stories/<date>/posted with the ids, commit + push. Never post more than 1 story per day.
 
-## Daily carousel post (owner request, 2 Nov 2026): exactly 1 feed post per US day, Instagram + Facebook
+## Daily carousel post — PAUSED 7 Nov 2026 (6 carousels got 0–1 views each at 0 followers). The AFTERNOON run only appends a "carousel paused" line to data/errors.log and stops.
+## (old rules kept for when it is switched back on)
 - AFTERNOON run only (16:00–18:59 US Eastern, scheduled 4:41 PM ET). No reel, no story in that run.
   Skip if posts/<today US Eastern>/ already has a "posted" file.
 - Write posts/<YYYY-MM-DD>/spec.json: {title (listicle hook, e.g. "5 signs you've already met your soulmate",

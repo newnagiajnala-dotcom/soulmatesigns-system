@@ -1,0 +1,7 @@
+{
+  "_rules": "Reusable 4-5 s hook clips (Kling 3.0, 10 credits each, already paid). Never use the same hook clip 2 days in a row. Pass as scene 0: {url, video:true, dur:4.3}.",
+  "scissors": {"url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/dce3ed05-f917-4fb9-b1cf-2e576ef3efe4.mp4", "note": "red string cut then heals (already cut + reversed, 4.3 s)", "used_in": ["001"]},
+  "sketch": {"url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261107_073956_ef9c2291-0abf-401c-a055-3ab5aca460ef.mp4", "note": "pencil portrait being sketched", "used_in": []},
+  "street": {"url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261107_073958_01797f62-ae73-4346-bb7a-189b96fcedfa.mp4", "note": "two strangers pass and turn around", "used_in": []},
+  "phone": {"url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261107_073959_b207325f-7c01-4786-bf05-f871040d68a2.mp4", "note": "woman hopeful at phone, then disappointed (no text back)", "used_in": []}
+}
