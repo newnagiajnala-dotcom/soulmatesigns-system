@@ -103,7 +103,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 
 ## Daily carousel post — PAUSED 7 Nov 2026 (6 carousels got 0–1 views each at 0 followers). The AFTERNOON run (4:41 PM ET) now posts the SOULMATE CHECK reel (ai/PROMO.md Style C) instead.
 ## (old rules kept for when it is switched back on)
-- AFTERNOON run only (16:00–18:59 US Eastern, scheduled 4:41 PM ET). No reel, no story in that run.
+- (old carousel rule, inactive while paused) AFTERNOON run only (16:00–18:59 US Eastern). While carousels are paused this run posts the soulmate-check reel instead.
   Skip if posts/<today US Eastern>/ already has a "posted" file.
 - Write posts/<YYYY-MM-DD>/spec.json: {title (listicle hook, e.g. "5 signs you've already met your soulmate",
   "your soulmate's vibe by zodiac element", "3 things your person will notice first"), kicker, items (3–5 × {head ≤ 4 words, body ≤ 12 words}),
