@@ -56,3 +56,14 @@ If the sandbox fails, skip the afternoon reel (do not post a fallback) and log i
   Check frames at 1/3, 2/3 and the last frame. thumb_offset = (seconds - 2) * 1000.
 - Caption: "<Name1> + <Name2> = <pct>% 💞 Want me to do yours?\n\nDrop your names 👇 (yours + your crush) and I'll write them in the next video ✍️\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns"
 - performance.csv format "promo-love". Same posting/FB rules as Style C (no URL on Facebook).
+
+
+## Style E — INITIAL HEART (AFTERNOON slot) — @soulmatesketch02's most-shared format (7.4M views, 127K shares), own version
+- Next unused entry in promo/checks.json "initials". Build: python3 check_reel.py --initial <L> page.png music.mp3 out   (10 s; render ~1.5 min)
+- Caption = the entry's caption. thumb_offset 8000. performance.csv format "promo-initial". Mark used=true.
+## Style D-flat — LOVE % NAME CHECK, ink writes itself on the marble page (EVENING slot)
+- Names: REAL comment with two first names on our last 10 reels (then pass "@user|comment" for the reply bubble), else next unused pair in promo/names.json.
+- Build: python3 check_reel.py --names <A> <B> page.png music.mp3 out ["@user|comment"]   (~20 s; prints the %)
+- Caption: "<A> + <B> = <pct>% 💞 Want me to do yours?\n\nDrop your names 👇 and I'll write them next ✍️\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns"
+- performance.csv format "promo-love". thumb_offset = (seconds - 2) * 1000.
+## Styles A (voice) and B (AI text) are PAUSED (AI-people reels get Instagram's "AI content" label and 1–163 views).
