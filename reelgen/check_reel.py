@@ -85,7 +85,16 @@ def spec_from_names(a, b, bg, music, reply=None):
     if reply: sp["reply"] = reply
     return sp
 
+def spec_from_initial(letter, bg, music, label="THIS INITIAL WILL NEVER\nBREAK YOUR HEART"):
+    f = hand(420); w = f.getlength(letter)
+    return {"bg": bg, "music": music, "label": label, "rot": -3, "dur": 10.0, "cta_t": 6.8, "cta": "SEND THIS TO THEM",
+            "steps": [{"heart": [540, 820, 21], "t": 0.8, "d": 3.0},
+                      {"text": letter, "x": int(540 - w / 2) - 10, "y": 620, "size": 420, "t": 4.2, "d": 1.4}]}
+
 def main():
+    if sys.argv[1] == "--initial":  # python3 check_reel.py --initial M page.png music.mp3 outdir
+        sp = spec_from_initial(sys.argv[2], sys.argv[3], sys.argv[4]); json.dump(sp, open("spec_built.json", "w"))
+        sys.argv = [sys.argv[0], "spec_built.json", sys.argv[5]]
     if sys.argv[1] == "--names":  # python3 check_reel.py --names Ashley Daniel page.png music.mp3 outdir ["@user|their comment text" only if REAL]
         reply = None
         if len(sys.argv) > 7 and "|" in sys.argv[7]:
