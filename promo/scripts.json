@@ -144,7 +144,7 @@
   {
    "id": "t01",
    "style": "B",
-   "used": false,
+   "used": true,
    "hook_clip": "street",
    "hook_text": "IF THIS FOUND YOU…",
    "lines": [
@@ -163,7 +163,8 @@
    ],
    "caption": "If this found you, it's for you 🤍 Type YES and save it.\n\nDraw your soulmate sketch today 👇 Link in bio ✨ (just for fun)\n\n#soulmate #affirmation #lawofattraction #soulmatesketch #twinflame",
    "hook_dur": 2.0,
-   "scenes_note": "hook clip 3.0 s + 2 images"
+   "scenes_note": "hook clip 3.0 s + 2 images",
+   "promo_id": "002"
   },
   {
    "id": "t02",

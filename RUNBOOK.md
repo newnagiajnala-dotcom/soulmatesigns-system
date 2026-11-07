@@ -79,6 +79,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 9. Sundays (evening run only): add a dated entry to the Learning log in playbook.md — best and worst format by views/reel,
    one decision for next week. Keep the mix rules updated.
 
+## QUEUED PROMO FIRST: before building any reel, if a promo/NNN/spec.json has queued=true and posted=false and its post_on matches this slot (or is in the past), post THAT video (video_url, caption, fb_description, thumb_offset_ms) with steps 7 + 7b instead of building, then set posted=true + ids. It counts toward the 2-reel cap.
+
 ## Reel slots (updated 7 Nov 2026 — owner: "improve everything, 100K views this month")
 - MORNING slot (7:41 AM ET) = PROMO reel style A (voice), per ai/PROMO.md (replaces Luna AI reels; Luna paused — same views as free templates).
 - EVENING slot (7:41 PM ET) = PROMO reel style B (text-only, no voice), per ai/PROMO.md "Style B". AI host is paused.
