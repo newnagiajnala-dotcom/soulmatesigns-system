@@ -9,7 +9,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - Facebook Page: Soulmate Signs, https://www.facebook.com/profile.php?id=61596275964324 (created 2 Nov 2026; API page id 1402297082968632; app has pages_manage_posts/pages_read_engagement/pages_show_list; needs the regenerated token)
 - Repo: newnagiajnala-dotcom/soulmatesigns-system (branch main). Public raw base:
   https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/main/
-- Bio link (quiz landing page): https://soulmatesigns.org/ (old github.io URL redirects here)  → hoplink affiliate=abhi10k
+- Bio link (MAIN, since 7 Nov 2026 = sketch sales page): https://soulmatesigns.org/ (same page also at /sketch). Quiz moved to https://soulmatesigns.org/quiz/ (linked at the bottom of the sales page).  → hoplink affiliate=abhi10k
 - Sales page for PROMO reels: https://soulmatesigns.org/sketch (headline matches promo reels; hoplink tid = ?src value + a/b, e.g. ?src=promo1 → tid promo1a). IG bio link #2 (owner adds manually).
   Promo reel captions say "Link in bio ✨"; FB promo descriptions use https://soulmatesigns.org/sketch?src=fbpromo<NNN>. Normal reels keep the quiz link.
 
@@ -72,7 +72,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    c) POST https://rupload.facebook.com/video-upload/v21.0/<video_id> with headers "Authorization: OAuth <page token>" and
       "file_url: <same public raw/CDN video url used for Instagram>".
    d) POST /1402297082968632/video_reels upload_phase=finish video_id=<id> video_state=PUBLISHED access_token=<page token>
-      description=<Instagram caption + "\n\nCurious what your soulmate looks like? 👉 https://soulmatesigns.org"> (face reels: keep "AI host ✨").
+      description=<Instagram caption + "\n\nCurious what your soulmate looks like? 👉 https://soulmatesigns.org/?src=fb"> (face reels: keep "AI host ✨").
    e) If any Facebook step fails (e.g. missing permission or token conflict), log it to data/errors.log and continue — never block Instagram,
       never retry a publish twice. Log a separate performance.csv row with reel_id "FB-<video_id>" and format "<format> FB".
 8. Append to data/performance.csv: `date,media_id,hook,format,,,,,,`. Commit and push.
