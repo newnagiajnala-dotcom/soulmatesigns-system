@@ -10,6 +10,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - Repo: newnagiajnala-dotcom/soulmatesigns-system (branch main). Public raw base:
   https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/main/
 - Bio link (quiz landing page): https://soulmatesigns.org/ (old github.io URL redirects here)  → hoplink affiliate=abhi10k
+- Sales page for PROMO reels: https://soulmatesigns.org/sketch (headline matches promo reels; hoplink tid = ?src value + a/b, e.g. ?src=promo1 → tid promo1a). IG bio link #2 (owner adds manually).
+  Promo reel captions say "Link in bio ✨"; FB promo descriptions use https://soulmatesigns.org/sketch?src=fbpromo<NNN>. Normal reels keep the quiz link.
 
 ## Steps each run
 00. Tool check (every run, 10 s): note whether Higgsfield MCP tools are available (try the Higgsfield balance tool). Append one line to data/errors.log:

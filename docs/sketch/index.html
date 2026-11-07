@@ -21,6 +21,7 @@ body{min-height:100vh;color:var(--ink);font:16px/1.6 "Poppins",system-ui,sans-se
 h1{font-size:clamp(30px,8vw,40px);line-height:1.12;margin:0;font-weight:700;text-wrap:balance}
 h1 span{color:var(--gold)}
 .lede{color:var(--muted);margin:0}
+.hero{margin:0;display:grid;gap:6px}.hero img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:40% 45%;border-radius:18px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.35)}.hero figcaption{font-size:12px;opacity:.6;text-align:center}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 18px}
 .card h2{font-size:17px;margin:0 0 10px}
 .steps{margin:0;padding:0;list-style:none;display:grid;gap:12px}
@@ -38,10 +39,11 @@ ul.facts li{margin:4px 0}
 <body>
 <main class="wrap">
   <div class="brand"><span class="moon" aria-hidden="true"></span>@soulmatesigns.daily</div>
-  <h1>Ever wondered what your <span>soulmate</span> looks like?</h1>
-  <p class="lede">Psychic artist Tina Aldea draws a hand-made sketch of the person she sees for you, with a short personal reading. People get it for fun, for curiosity, or as a moment to think about what they really want in love.</p>
+  <h1>Your <span>soulmate</span> might already have a face 👀</h1>
+  <figure class="hero"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/be33adbc-f1e8-4ab6-8210-d4fe6522b52c.jpg" alt="Pencil portrait sketch on paper" width="720" height="720"><figcaption>Illustration only, not a real reading.</figcaption></figure>
+  <p class="lede">Psychic artist Tina Aldea draws a hand-made sketch of the person she sees for you, with a short personal reading. Some people say they recognized the face later. Curious what yours looks like? Just for fun 💫</p>
 
-  <a class="cta" id="go" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=igbio" rel="sponsored noopener">See my soulmate sketch →<small>Opens Tina's official page</small></a>
+  <a class="cta" id="go" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=igbio" data-tid="a" rel="sponsored noopener">See my soulmate sketch →<small>Opens Tina's official page</small></a>
 
   <section class="card">
     <h2>How it works</h2>
@@ -61,9 +63,19 @@ ul.facts li{margin:4px 0}
     </ul>
   </section>
 
-  <a class="cta" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=igbio2" rel="sponsored noopener">Get my sketch →</a>
+  <a class="cta" href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid=igbio2" data-tid="b" rel="sponsored noopener">Get my sketch →</a>
 
   <p class="fine"><b>Affiliate disclosure:</b> this page is run by Soulmate Signs, an independent fan page. If you buy through these links we may earn a commission at no extra cost to you. We are not Tina Aldea and don't handle orders, payments or support. ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410, Boise, ID 83709, USA, and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.</p>
 </main>
+<script>
+const CLARITY_ID="z6n8ptroub";
+window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments)};
+{const s=document.createElement("script");s.async=1;s.src="https://www.clarity.ms/tag/"+CLARITY_ID;document.head.appendChild(s);}
+const q=new URLSearchParams(location.search);
+const SRC=((q.get("src")||q.get("utm_source")||(/instagram/i.test(document.referrer)?"igbio":/facebook|fb\./i.test(document.referrer)?"fb":"sketch"))).replace(/[^a-z0-9]/gi,"").slice(0,12).toLowerCase();
+try{clarity("set","source",SRC);clarity("event","sketch_view")}catch(e){}
+document.querySelectorAll("a[data-tid]").forEach(a=>{a.href="https://hop.clickbank.net/?affiliate=abhi10k&vendor=tinapsc&tid="+SRC+a.dataset.tid;
+ a.addEventListener("click",()=>{try{clarity("event","sketch_click");clarity("set","clicked","yes")}catch(e){}})});
+</script>
 </body>
 </html>

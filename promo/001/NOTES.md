@@ -15,3 +15,4 @@ RULE for all promo reels: no "..." in voice scripts; after generating the voice,
 Video (21.5 s): https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/939c6e5a-2f47-4acf-9bf8-0af9b2214bcc.mp4
 Settings: normal voice speed (no atempo), 0.85 s gap between sentences, hook 4.3 s, TAIL 2.2 s (CTA hold).
 RULE update: promo reels target 21-22 s; sentence gaps ~0.85 s (not 0.3, not 4+).
+Landing: promo traffic → https://soulmatesigns.org/sketch (headline "Your soulmate might already have a face 👀", sketch image, Clarity, tid from ?src). FB link: /sketch?src=fbpromo001 → tid fbpromo001a.
