@@ -37,3 +37,5 @@
 2026-11-06T16:44-05:00 afternoon: carousel '5 signs your person is the real thing' (7 slides) posted IG DfamcPBCahn (media 17894053707453680) + FB post 122099507409542532. Container again lacked Poppins fonts and a working PIL for py3.11 - installed.
 2026-11-06T19:42-05:00 tools: higgsfield=yes balance=464.59 run=evening
 2026-11-06T19:49-05:00 evening: reel 007 (sign 333, emotional, audio v2) posted IG Dfa7f3Oj-CS (media 18099612290114300) + FB reel 3670311666469067 (post 122099594967542532). Stats updated 17 rows; followers_count=0. Container again lacked Pillow/numpy/scipy for py3.11 and Poppins fonts - installed. Local main was stale/detached again; reset main to pushed HEAD. Reels today: 2/2.
+2026-11-06T23:32-05:00 tools: higgsfield=yes balance=451.79 run=evening
+2026-11-06T23:33-05:00 evening (late extra run): no reel posted - daily cap reached (2/2 reels for Nov 6 ET: DfZpGHjlGZy, Dfa7f3Oj-CS). Updated reel 007 stats (123 views). followers_count=0. Local clone had divergent stale history again; reset to origin/main.
