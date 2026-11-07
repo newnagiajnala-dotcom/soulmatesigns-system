@@ -1,0 +1,50 @@
+{
+ "date": "2026-11-07",
+ "hashtags": [
+  "222",
+  "manifestlove",
+  "lawofattraction",
+  "zodiaclove",
+  "zodiaccompatibility",
+  "astrologymemes"
+ ],
+ "errors": [
+  {
+   "tag": "222",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "manifestlove",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "lawofattraction",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "zodiaclove",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "zodiaccompatibility",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "astrologymemes",
+   "error": "HTTP Error 400: Bad Request"
+  }
+ ],
+ "top": [],
+ "errors_note": "ig_hashtag_search still blocked (HTTP 400 on all 6 tags) - web search only.",
+ "web": [
+  "Red string / invisible string theory: evergreen TikTok/IG love topic (Daily Dot, Essence, Rolling Out coverage); fits promo 001 (red string).",
+  "Moon-phase soulmate test: recurring TikTok trend (UK press); already used in ai_reels (Nov 4).",
+  "Astrology week Nov 2-8 2026: last full week of Venus + Mercury retrograde; New Moon in Scorpio Mon Nov 9 (Grazia, astrology.com, Bustle) - good hook for a 'new moon' sign/love message on Nov 8-9.",
+  "No confirmed new soulmate-specific trend dated Nov 2026 found."
+ ],
+ "chosen": [
+  "invisible/red string (promo 001, morning slot)",
+  "Scorpio new moon Nov 9 (sign/code template or next Luna reel)",
+  "if you're seeing this sign (evening faceless slot)"
+ ]
+}

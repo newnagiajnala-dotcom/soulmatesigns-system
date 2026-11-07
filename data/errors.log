@@ -40,3 +40,5 @@
 2026-11-06T23:32-05:00 tools: higgsfield=yes balance=451.79 run=evening
 2026-11-06T23:33-05:00 evening (late extra run): no reel posted - daily cap reached (2/2 reels for Nov 6 ET: DfZpGHjlGZy, Dfa7f3Oj-CS). Updated reel 007 stats (123 views). followers_count=0. Local clone had divergent stale history again; reset to origin/main.
 2026-11-06T23:33-05:00 promo 001 manual fire: NOT posted. It is still Nov 6 ET and 2/2 reels are already published today (DfZpGHjlGZy, Dfa7f3Oj-CS); RUNBOOK safety limit is max 2 reels per US Eastern day and has no promo exception. promo/001/spec.json left posted=false. Post on/after Nov 7 ET within that day's 2-reel cap once RUNBOOK allows it.
+2026-11-07T00:25-05:00 tools: higgsfield=yes balance=451.79 run=morning
+2026-11-07T00:28-05:00 morning: promo 001 (owner-approved, red string, 21.5 s) posted IG DfbbaPaDdby (media 18100731071405886) + FB reel 1465701362219327 (post 122099768229542532). Stats updated 18 rows (unchanged); followers_count=0. Trend: ig_hashtag_search still blocked - web notes added. Morning slot used by promo instead of Luna AI reel. Reels today: 1/2.
