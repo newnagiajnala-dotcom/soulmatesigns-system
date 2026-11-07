@@ -35,9 +35,9 @@ PlayResY: {H}
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,Montserrat ExtraBold,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
-Style: Hook,Montserrat ExtraBold,104,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,9,4,8,50,50,330,1
-Style: Cta,Montserrat ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H000080FF,&H000080FF,1,0,0,0,100,100,0,0,3,26,0,2,80,80,420,1
+Style: Cap,Montserrat ExtraBold,118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
+Style: Hook,Montserrat ExtraBold,138,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,9,4,8,50,50,330,1
+Style: Cta,Montserrat ExtraBold,104,&H00FFFFFF,&H00FFFFFF,&H000080FF,&H000080FF,1,0,0,0,100,100,0,0,3,26,0,2,80,80,420,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
