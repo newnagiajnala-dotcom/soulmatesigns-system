@@ -46,6 +46,36 @@ def tighten(voice, out):
     sh("ffmpeg", "-y", "-loglevel", "error", "-i", voice, "-filter_complex", fc, "-map", "[o]", dst)
     return dst
 
+def make_lines_ass(spec, total, path):
+    """Style B: no voice. Big text lines that change every ~2 s. *word* = orange."""
+    head = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Montserrat ExtraBold,128,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,9,4,5,70,70,0,1
+Style: Txt,Montserrat ExtraBold,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,7,3,5,80,80,0,1
+Style: Cta,Montserrat ExtraBold,104,&H00FFFFFF,&H00FFFFFF,&H000080FF,&H000080FF,1,0,0,0,100,100,0,0,3,26,0,2,80,80,420,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    import re
+    col = lambda s: re.sub(r"\*(.+?)\*", lambda m: "{\\c&H0080FF&}" + m.group(1) + "{\\r}", s)
+    hd = spec.get("hook_dur", 2.4)
+    ev = [f"Dialogue: 2,{ts(0)},{ts(hd)},Hook,,0,0,0,,{{\\fad(0,150)\\c&H0080FF&}}{spec['hook_text']}"]
+    t0 = hd
+    for ln in spec["lines"]:
+        d = ln.get("dur", 2.4)
+        ev.append(f"Dialogue: 1,{ts(t0)},{ts(t0 + d)},Txt,,0,0,0,,{{\\fad(120,80)\\fscx90\\fscy90\\t(0,160,\\fscx100\\fscy100)}}{col(ln['text'].upper())}")
+        t0 += d
+    if spec.get("cta_text"):
+        ev.append(f"Dialogue: 2,{ts(t0)},{ts(total)},Cta,,0,0,0,,{{\\fad(150,0)}}{spec['cta_text']}")
+    open(path, "w").write(head + "\n".join(ev) + "\n")
+
 def make_ass(spec, ws, total, path):
     hl = {h.lower() for h in spec.get("highlight", [])}
     head = f"""[Script Info]
@@ -87,9 +117,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 def main():
     spec = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
-    voice = dl(spec["voice_url"], f"{out}/voice.wav"); music = dl(spec["music_url"], f"{out}/music.wav")
-    if not spec.get("no_tighten"): voice = tighten(voice, out)
-    total = dur(voice) + TAIL; sc = spec["scenes"]; n = len(sc)
+    music = dl(spec["music_url"], f"{out}/music.wav")
+    text_mode = bool(spec.get("lines"))
+    if text_mode:
+        voice = None; total = spec.get("hook_dur", 2.4) + sum(l.get("dur", 2.4) for l in spec["lines"]) + TAIL
+    else:
+        voice = dl(spec["voice_url"], f"{out}/voice.wav")
+        if not spec.get("no_tighten"): voice = tighten(voice, out)
+        total = dur(voice) + TAIL
+    sc = spec["scenes"]; n = len(sc)
     fixed = sum(s.get("dur", 0) for s in sc); free = [s for s in sc if not s.get("dur")]
     rest = (total + XF * (n - 1) - fixed) / max(len(free), 1)
     clips = []
@@ -116,6 +152,15 @@ def main():
         fc.append(f"[{last}][{i}:v]xfade=transition=fade:duration={XF}:offset={off:.3f}[v{i}]"); last = f"v{i}"
     sh("ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(fc) or "null", "-map", f"[{last}]",
        "-t", f"{total:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", f"{out}/base.mp4")
+    if text_mode:
+        ws = []; make_lines_ass(spec, total, f"{out}/subs.ass")
+        sh("ffmpeg", "-y", "-loglevel", "error", "-i", f"{out}/base.mp4", "-stream_loop", "-1", "-i", music, "-filter_complex",
+           f"[0:v]ass={out}/subs.ass:fontsdir={FONTDIR}[v];[1:a]aresample=44100,aformat=channel_layouts=stereo,volume=0.9,"
+           f"afade=t=out:st={max(total - 1.2, 0):.2f}:d=1.1,loudnorm=I=-14:TP=-1.5:LRA=11[a]",
+           "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+           "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart", f"{out}/reel.mp4")
+        sh("ffmpeg", "-y", "-loglevel", "error", "-ss", "0.8", "-i", f"{out}/reel.mp4", "-frames:v", "1", f"{out}/cover.jpg")
+        print(json.dumps({"ok": True, "seconds": round(total, 1), "mode": "text"})); return
     ws = words(voice); make_ass(spec, ws, total, f"{out}/subs.ass")
     sh("ffmpeg", "-y", "-loglevel", "error", "-i", f"{out}/base.mp4", "-i", voice, "-i", music, "-filter_complex",
        f"[0:v]ass={out}/subs.ass:fontsdir={FONTDIR}[v];"
