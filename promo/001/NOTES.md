@@ -10,3 +10,8 @@ Curious what yours looks like? Link in bio ✨ (just for fun)  #soulmate #redstr
 Video (17.2 s): https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/f61132f9-8c9f-4870-ab0b-4aa58769d3e4.mp4
 Fix: voice had two 4.7 s silences ("..." in the script). Cut every pause to 0.25–0.3 s, voice atempo 1.08, hook clip sped to 3.7 s.
 RULE for all promo reels: no "..." in voice scripts; after generating the voice, cut any silence > 0.35 s before building; target 15–20 s.
+
+## v3 (7 Nov, owner: v2 "good but a little fast, make it 21-22 s") — 0 credits — CURRENT
+Video (21.5 s): https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/939c6e5a-2f47-4acf-9bf8-0af9b2214bcc.mp4
+Settings: normal voice speed (no atempo), 0.85 s gap between sentences, hook 4.3 s, TAIL 2.2 s (CTA hold).
+RULE update: promo reels target 21-22 s; sentence gaps ~0.85 s (not 0.3, not 4+).
