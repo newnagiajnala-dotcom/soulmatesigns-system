@@ -50,3 +50,5 @@
 2026-11-07T07:44-05:00 morning: queued promo 002 (style B) posted IG DfcNSH9ARV_ (media 18120695009517904) + FB reel 2710100472743509 (post 122100120117542532). Stats updated 20 rows; followers_count=1. Reels today: 3/3 (cap reached - afternoon/evening slots today must skip).
 2026-11-07T13:41-05:00 tools: higgsfield=yes balance=419.54 run=midday
 2026-11-07T13:46-05:00 midday story: IG story 18113503445523413 + FB story 4783396361934620. Notes: Poppins fonts + numpy/pillow missing in container (installed); title 'a message from the universe' cut off on story card (used shorter title); first IG media_publish returned 'media not found' (2207006) though container FINISHED - nothing was published, one retry 20 s later succeeded.
+2026-11-07T16:43-05:00 tools: higgsfield=yes balance=419.54 run=afternoon
+2026-11-07T16:43-05:00 afternoon: SKIPPED initial-heart reel - daily cap reached (3/3 reels today ET: promo 001, 003, 002). Initial "M" stays unused for the next afternoon slot (promo/004 queued for Nov 8 afternoon takes precedence).
