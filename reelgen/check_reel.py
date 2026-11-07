@@ -46,7 +46,51 @@ def spec_from_check(base, c, bg, music):
                       tx("result", c["result"]), {"circle": [cx0, cy0, cx1, cy1], "t": ct, "d": cd}, {"heart": [hx, hy, hs], "t": ht, "d": hd},
                       tx("t1", c["t1"]), tx("t2", c["t2"])]}
 
+def love_rows(a, b):
+    """Viral 'name compatibility' method: count each letter (in order of first appearance) across both names,
+    then repeatedly add the outer digits moving inward until 2 digits are left = the love %."""
+    s = [ch for ch in (a + b).lower() if ch.isalpha()]; seen = []
+    for ch in s:
+        if ch not in seen: seen.append(ch)
+    ds = [s.count(ch) for ch in seen]; rows = [ds]
+    for _ in range(8):
+        if len(ds) <= 2: break
+        new, i, j = [], 0, len(ds) - 1
+        while i < j:
+            new += [int(c) for c in str(ds[i] + ds[j])]; i += 1; j -= 1
+        if i == j: new.append(ds[i])
+        ds = new; rows.append(ds)
+    pct = int("".join(map(str, ds[:2])))
+    return rows, pct
+
+def spec_from_names(a, b, bg, music, reply=None):
+    rows, pct = love_rows(a, b)
+    lines = [(a.capitalize(), 1.3), ("+", 0.4), (b.capitalize(), 1.3)] + [("".join(map(str, r)), 0.32 * len(r) + 0.4) for r in rows] + [(f"{pct}%", 1.0)]
+    n = len(lines); top, bottom = 430, 1560; h = min(165, (bottom - top) / n)
+    steps, t0, y = [], 1.0, top
+    for k, (txt, d) in enumerate(lines):
+        size = int(h * (1.25 if k == n - 1 else 1.05))
+        f = hand(size)
+        while f.getlength(txt) > 700 and size > 50: size -= 6; f = hand(size)
+        x = int(540 - f.getlength(txt) / 2) - 10
+        steps.append({"text": txt, "x": x, "y": int(y), "size": size, "t": round(t0, 2), "d": round(d, 2)})
+        t0 += d + (0.5 if k >= 3 else 0.25); y += h
+    fy = steps[-1]["y"]; fs = steps[-1]["size"]
+    steps.append({"heart": [540, int(fy + fs * 0.55), fs / 26], "t": round(t0, 2), "d": 1.1})
+    end = t0 + 1.1
+    sp = {"bg": bg, "music": music, "label": "LOVE % CHECK", "rot": -2, "dur": round(end + 3.5, 1), "cta_t": round(end + 0.3, 1),
+          "cta": "COMMENT YOUR NAMES", "steps": steps, "pct": pct}
+    if reply: sp["reply"] = reply
+    return sp
+
 def main():
+    if sys.argv[1] == "--names":  # python3 check_reel.py --names Ashley Daniel page.png music.mp3 outdir ["@user|their comment text" only if REAL]
+        reply = None
+        if len(sys.argv) > 7 and "|" in sys.argv[7]:
+            u, tx = sys.argv[7].split("|", 1); reply = {"user": u, "text": tx}
+        sp = spec_from_names(sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], reply); json.dump(sp, open("spec_built.json", "w"))
+        print(json.dumps({"pct": sp["pct"], "dur": sp["dur"]}))
+        sys.argv = [sys.argv[0], "spec_built.json", sys.argv[6]]
     if sys.argv[1] == "--check":  # python3 check_reel.py --check checks.json <id> page.png music.mp3 outdir
         d = json.load(open(sys.argv[2])); c = [x for x in d["checks"] if x["id"] == sys.argv[3]][0]
         sp = spec_from_check(d["base"], c, sys.argv[4], sys.argv[5]); json.dump(sp, open("spec_built.json", "w"))
@@ -92,6 +136,11 @@ def main():
         ink = layer.filter(ImageFilter.GaussianBlur(0.8))
         fr = bg.copy(); fr.alpha_composite(ink)
         fd = ImageDraw.Draw(fr)
+        if spec.get("reply"):
+            rf = sans(34); rb = sans(44); u = f"Reply to {spec['reply']['user']}'s comment"; tx = spec["reply"]["text"][:40]
+            bw = max(fd.textlength(u, font=rf), fd.textlength(tx, font=rb)) + 60
+            fd.rounded_rectangle([60, 250, 60 + bw, 380], radius=22, fill=(255, 255, 255, 245))
+            fd.text((90, 268), u, font=rf, fill=(120, 120, 120, 255)); fd.text((90, 312), tx, font=rb, fill=(20, 20, 20, 255))
         lt = spec.get("label", "SOULMATE CHECK")
         for i, line in enumerate(lt.split("\n")):
             fd.text((70, 150 + i * 70), line, font=lab, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 200))
