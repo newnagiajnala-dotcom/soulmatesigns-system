@@ -81,7 +81,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 
 ## Reel slots (updated 7 Nov 2026 — owner: "improve everything, 100K views this month")
 - MORNING slot (7:41 AM ET) = daily PROMO reel, built and posted per ai/PROMO.md (replaces Luna AI reels; Luna paused — same views as free templates).
-- EVENING slot (7:41 PM ET) = best free template reel (rotate code / names / sign; code had the best views) — or the AI host reel on face-reel days.
+- EVENING slot (7:41 PM ET) = best free template reel (rotate code / names / sign; code had the best views). AI host is paused.
 - First run of each US day: still run the trend step (ai/WORKFLOW.md §1) and save data/trends/<date>.json.
 - EVERY reel caption (all formats) must include one SHARE ask, e.g. "Send this to your bestie 💌" / "Tag the friend who…". Shares are what pushes a reel past the first ~150 views.
 
@@ -112,7 +112,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
   POST /1402297082968632/feed message=<caption> attached_media=[{"media_fbid":id},...]. If Facebook fails, log and continue.
 - Write posts/<date>/posted with ids; add a performance.csv row (format "carousel"). Never more than 1 post per day.
 
-## AI host face reels (budget: 10 reels in 30 days)
+## AI host face reels — PAUSED 7 Nov 2026 by owner ("stop AI host reels until we get 100K views"). Do NOT make or post face reels; face-reel days use the normal evening template reel. Resume only if data/approvals.txt contains "host resume".
+## (old rules kept below for when it is resumed; budget was 10 reels in 30 days)
 - Face-reel days (evening slot only): Nov 2, 5, 8, 11, 14, 17, 20, 23, 26, 29 (2026). All other slots stay faceless (0 credits).
 - Nov 2 posts the finished test reel using tests/host001/post.json (caption, video_url, duration). video_url = https://d2ol7oe51mr4n9.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/bcd3d116-436b-4c02-871d-1715cd8d1c48.mp4
   (only after the owner has said "post" — check data/approvals.txt contains "host001 post").
