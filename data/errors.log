@@ -57,3 +57,4 @@
 2026-11-08T07:41-05:00 tools: higgsfield=yes balance=419.54 run=morning
 2026-11-08T07:46-05:00 morning: promo 005 soulmate check init1 (birth day + month = initial) posted IG DfeybmPCSnA (media 18056082233812818) + FB reel 1740551113676581 (post 122101040577542532). Stats updated 21 rows; followers_count=2. Trends: ig_hashtag_search still errors (0 posts). Reels today: 1/3.
 2026-11-08T13:41-05:00 tools: higgsfield=yes balance=372.54 run=midday
+2026-11-08T13:46-05:00 midday: story 555 posted IG 18016816319975977 + FB story 2355162991905616. Env fix: installed pillow/numpy + Poppins fonts; title 'a message from the universe' overflows story_card at 64px (used 'today's love message').
