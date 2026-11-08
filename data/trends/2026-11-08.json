@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-08",
+ "hashtags": [
+  "tarotreading",
+  "pickacard",
+  "situationship",
+  "datingadvice",
+  "relationshipadvice",
+  "lovepsychology"
+ ],
+ "errors": [
+  {
+   "tag": "tarotreading",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "pickacard",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "situationship",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "datingadvice",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "relationshipadvice",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "lovepsychology",
+   "error": "HTTP Error 400: Bad Request"
+  }
+ ],
+ "top": []
+}
