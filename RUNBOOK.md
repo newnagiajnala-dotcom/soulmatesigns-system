@@ -23,6 +23,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    `/{media_id}/insights?metric=views,reach,likes,comments,shares,saved` (fall back to `plays` if `views` errors)
    and write the numbers into that row. Also GET `/17841459940404036?fields=followers_count` and append
    `date,followers` to data/followers.csv.
+   Facebook rows (reel_id "FB-<video_id>"): GET /<video_id>/video_insights?metric=blue_reels_play_count,post_impressions_unique (Page token; never print it)
+   and write the play count into the views column (added 9 Nov — owner: "Facebook is dead", we had no FB numbers).
 3. QUEUED FIRST: if any reels/NNN/spec.json has "queued": true, a post_on date ≤ today (US Eastern), matching slot, and no row in
    data/performance.csv for it, publish that reel (its reel.mp4 + spec caption) at step 7 instead of making a new one; then set queued to false.
    Otherwise decide what to make, using the weekly mix in playbook.md (count what was posted in the last 7 days and fill the
