@@ -66,3 +66,5 @@
 2026-11-09T07:51-05:00 morning: promo 008 love number check num1 posted IG DfhXrWPDSPH (media 18083314202719297) + FB reel 1940478680694140 (post 122101973487542532). First render: '5' of 1+9+9+5 hidden under the pen -> added per-check layout override in check_reel.py, num checks line1 moved left/smaller. Stats updated 24 rows; followers_count=2. Trends: ig_hashtag_search still errors (0 posts). Performance.csv had CRLF after csv rewrite - normalised. Reels today: 1/3.
 2026-11-09T13:42-05:00 tools: higgsfield=yes balance=358.04 run=midday
 2026-11-09T13:48-05:00 midday: story 2026-11-09 (999) posted IG 17979175344156305 + FB story 2206057117004837. Container lacked Poppins fonts/Pillow (installed); story_card now shrinks long titles ("a message from the universe" was cut off). followers_count=2.
+2026-11-09T16:42-05:00 tools: higgsfield=yes balance=358.04 run=afternoon
+2026-11-09T16:46-05:00 afternoon: promo 009 initial heart J posted IG DfiVA3LHBHT (media 18108227837357763) + FB reel 2157222325164298 (post 122102309391542532). Caption now has follow line. followers_count=2. Reels today: 2/3.
