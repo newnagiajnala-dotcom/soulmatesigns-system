@@ -101,7 +101,7 @@
    "t1": "= your love",
    "t2": "number",
    "caption": "LOVE NUMBER CHECK ✍️ Add the digits of your birth year until you get one number 👀\n1 bold · 2 sweet · 3 funny · 4 loyal · 5 adventurous · 6 protective · 7 deep soul · 8 ambitious · 9 old soul\n\nComment your love number 👇 and send this to your bestie\n\nCurious what they look like? Link in bio ✨ (just for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #numerology",
-   "used": false,
+   "used": true,
    "layout": {
     "line1": [
      200,
@@ -110,7 +110,8 @@
      1.0,
      1.3
     ]
-   }
+   },
+   "promo_id": "008"
   },
   {
    "id": "age2",
