@@ -87,10 +87,11 @@ So ALL THREE daily reels are handwriting reels built with reelgen/check_reel.py 
 - QUEUED PROMO FIRST rule above still applies.
 - MORNING slot (7:41 AM ET) = SOULMATE CHECK (ai/PROMO.md "Style C", next unused entry in promo/checks.json "checks").
 - AFTERNOON slot (4:41 PM ET) = INITIAL HEART (ai/PROMO.md "Style E", next unused entry in promo/checks.json "initials").
-- EVENING slot (7:41 PM ET) = LOVE % NAME CHECK, flat ink style (ai/PROMO.md "Style D-flat"): names from a REAL comment if any, else next unused pair in promo/names.json.
+- EVENING slot (7:41 PM ET) = SOULMATE CHECK again (next unused entry in promo/checks.json "checks", a DIFFERENT formula family than this morning's). Changed 9 Nov: love % flat got 134 views vs soulmate checks 2,190 / 1,560 and initial heart 962 (10 shares). Love % checks stay owner-filmed only.
+  If a REAL comment has two first names, tell the owner in the run summary (he films love checks).
 - The owner also films + posts his own love % reel by hand from the app (not counted by the autopilot; ignore it in the cap).
 - First run of each US day: still run the trend step and save data/trends/<date>.json.
-- EVERY caption includes one SHARE or COMMENT ask. Facebook: never a URL ("Link on our Page ✨").
+- EVERY caption includes one SHARE or COMMENT ask AND a follow line: "Follow for tomorrow's check ✨" (9 Nov: ~5K views but only 2 followers). Facebook: never a URL ("Link on our Page ✨").
 - If the Higgsfield sandbox is unavailable: post nothing in that slot and log it (do NOT fall back to AI-people reels).
 
 ## Daily story (owner request, 2 Nov 2026): exactly 1 story per US day, Instagram + Facebook
