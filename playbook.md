@@ -51,6 +51,7 @@ Start state = research from 31 Oct 2026 (research/viral-reels-2026-10-31.md).
 - 2026-11-01 (Sun, week 1) — tested F0 split meme, F2 birth month (cards), names, sign; + 1 carousel. Views/reel: F0 124, F2 124 (identical lifetime values, likely API quirk), names 63 (only ~6 h live), sign just posted, carousel 0. Followers 0. Too early to call best/worst. Decision: keep the 1 Nov mix; next week fill code (0/3) and sign (1/3) first, then compare names/code/sign views at day 7.
 
 - 2026-11-07 — 13 reels: every format stalls at 91–160 views (first test batch), 0 shares, 4 saves, 0 followers; carousels 0–1 views. Promo 001 (real footage + voice, ClickBank style) 148 views in 7 h = 2nd best. Decision: daily promo reel in the morning slot (ai/PROMO.md), share ask in every caption, carousels paused, Luna paused. Goal: 100K views in Nov.
+- 2026-11-08 (Sun, week 2 review, IG views/reel since Nov 2): BEST = promo-check handwriting soulmate check (2 reels, avg 1478; promo 003 = 2.2K). WORST = carousels (5, avg 2) and AI-face/AI-Luna reels (112–135). Decision for next week: keep all 3 daily slots handwriting reels (check / initial heart / love % names); test more check formulas since checks beat initials (196) so far.
 
 ## Audience: Tier-1 (added 1 Nov 2026)
 - Target viewers: US, UK, Canada, Australia — mostly women 18–34. Optimise every hook for them.
