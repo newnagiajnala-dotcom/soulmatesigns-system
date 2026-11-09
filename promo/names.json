@@ -4,7 +4,8 @@
   {
    "a": "Emma",
    "b": "Jake",
-   "used": false
+   "used": true,
+   "promo_id": "007"
   },
   {
    "a": "Olivia",
