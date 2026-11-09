@@ -37,7 +37,7 @@ def text_img(s, size):
     return im
 
 def spec_from_check(base, c, bg, music):
-    L = base["layout"]
+    L = {**base["layout"], **c.get("layout", {})}  # optional per-check override (e.g. long line1)
     def tx(key, text):
         x, y, s, t0, d = L[key]; return {"text": text, "x": x, "y": y, "size": s, "t": t0, "d": d}
     x0, y0, x1, y1, t0, d = L["rule"]; cx0, cy0, cx1, cy1, ct, cd = L["circle"]; hx, hy, hs, ht, hd = L["heart"]
