@@ -64,3 +64,4 @@
 2026-11-08T19:46-05:00 evening: promo 007 love % Emma + Jake (53%) posted IG DfgE2esAvHf (media 17993583441066008) + FB reel 1145408265093598 (post 122101511949542532). No real two-name comment on last 10 reels -> names.json pair. Stats updated 23 rows; followers_count=2. Sunday learning log added. Reels today: 3/3.
 2026-11-09T07:42-05:00 tools: higgsfield=yes balance=358.04 run=morning
 2026-11-09T07:51-05:00 morning: promo 008 love number check num1 posted IG DfhXrWPDSPH (media 18083314202719297) + FB reel 1940478680694140 (post 122101973487542532). First render: '5' of 1+9+9+5 hidden under the pen -> added per-check layout override in check_reel.py, num checks line1 moved left/smaller. Stats updated 24 rows; followers_count=2. Trends: ig_hashtag_search still errors (0 posts). Performance.csv had CRLF after csv rewrite - normalised. Reels today: 1/3.
+2026-11-09T13:42-05:00 tools: higgsfield=yes balance=358.04 run=midday

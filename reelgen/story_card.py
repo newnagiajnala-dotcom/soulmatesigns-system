@@ -30,7 +30,9 @@ def render(spec, out):
     date_s = d.strftime("%A, %b ") + str(d.day)
     def center(img, y): f.alpha_composite(img, (int(W / 2 - img.width / 2), int(y)))
     center(text_block(date_s.upper(), 40, (230, 220, 255, 255), 900, FONT_M), 330)
-    t = glow_text(spec.get("title", "today's love message").upper(), serif(64), GOLD); center(t, 400)
+    title = spec.get("title", "today's love message").upper(); ts = 64
+    while ts > 36 and serif(ts).getlength(title) > W - 120: ts -= 2  # shrink long titles to fit
+    t = glow_text(title, serif(ts), GOLD); center(t, 400 + (64 - ts) // 2)
     num = glow_text(spec.get("number", "222"), serif(230, 800), (255, 236, 190, 255)); center(num, 560)
     msg = text_block(spec["message"], 62, WHITE, 900, FONT_B, gap=0.12)
     card = boxed(msg, 50, 40, (20, 10, 40, 170), 34); center(card, 960)
