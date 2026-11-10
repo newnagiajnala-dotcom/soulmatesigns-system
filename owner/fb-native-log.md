@@ -7,4 +7,4 @@ Method (owner session, VPS Chrome with Claude extension, logged in as the Soulma
 | Date (IST) | Reel | Source | By | Views (later) |
 |---|---|---|---|---|
 | 2026-11-09 21:40 | Soulmate check 1998−1971 (promo 003) | phone | owner | 465 after ~11 h |
-| 2026-11-10 11:25 | Soulmate check birth day + month (promo 005) | VPS Chrome web upload | Claude | |
+| 2026-11-10 11:25 | Soulmate check birth day + month (promo 005) | VPS Chrome web upload | Claude | 233 after ~5 h |
