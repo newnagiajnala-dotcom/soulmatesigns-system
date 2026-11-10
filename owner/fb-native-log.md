@@ -3,7 +3,10 @@ Method (owner session, VPS Chrome with Claude extension, logged in as the Soulma
 1. Pick yesterday's best IG reel (highest views in data/performance.csv, not yet in this log); video_url from promo/NNN/spec.json.
 2. facebook.com/reels/create → in the FB tab add a 'message' listener, window.open(video_url) → in that tab fetch(location.href).arrayBuffer() and
    window.opener.postMessage({kind:'vid',buf},'*',[buf]) → back in FB tab build File, DataTransfer into input[type=file][accept*=video], dispatch change.
-3. Next → Next → caption (IG caption, "Link in bio" → "Comment your …", no URL) → type a space to close hashtag suggestions → Post.
+3. Next → Next → caption (IG caption with "Link in bio ✨" → "Link in the first comment 👇", NO URL) → type a space to close hashtag suggestions → Post.
+4. (10 Nov, owner: ~70% of buyers are on FB) ~1 hour after posting (or at the next run) add the FIRST COMMENT as the Page:
+   "See what your soulmate looks like ✨ https://soulmatesigns.org/sketch?src=fbc (just for fun · affiliate link)". Tracking id = fbca.
+5. Schedule: 2 native uploads a day, 11:30 and 20:30 IST. Prefer the newest retention-fix versions; facebook-only hooks in promo/fb_hooks.json when built.
 | Date (IST) | Reel | Source | By | Views (later) |
 |---|---|---|---|---|
 | 2026-11-09 21:40 | Soulmate check 1998−1971 (promo 003) | phone | owner | 465 after ~11 h |
