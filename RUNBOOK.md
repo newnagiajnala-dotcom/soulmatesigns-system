@@ -68,7 +68,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    video_url=<Higgsfield URL from 6b, else raw url>, caption=<spec caption>. Poll `/{creation_id}?fields=status_code,status` every 10 s up to 5 min.
    On FINISHED → POST `/17841459940404036/media_publish` creation_id=… → GET permalink.
    On ERROR → do not retry publishing; record the error in data/errors.log and stop.
-7b. FACEBOOK (every reel, right after Instagram succeeds; owner wants every reel on both). Page id 1402297082968632 (Soulmate Signs).
+7b. FACEBOOK REELS — STOPPED 10 Nov 2026. Test: the owner hand-uploaded a reel in the Facebook app and it went viral; every API-posted FB reel stayed at ~0. From now on the OWNER uploads Facebook reels himself (he re-uploads the best Instagram reel each day). The autopilot must NOT post reels to Facebook (stories to Facebook may continue). Old instructions kept below for reference only.
+(old) Page id 1402297082968632 (Soulmate Signs).
    a) GET /1402297082968632?fields=access_token → keep the page token in a shell variable only (never print, log or commit it).
    b) POST /1402297082968632/video_reels upload_phase=start access_token=<page token> → video_id.
    c) POST https://rupload.facebook.com/video-upload/v21.0/<video_id> with headers "Authorization: OAuth <page token>" and
