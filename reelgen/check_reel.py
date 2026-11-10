@@ -111,6 +111,21 @@ def main():
     s = max(W / bg.width, H / bg.height); bg = bg.resize((int(bg.width * s) + 1, int(bg.height * s) + 1))
     bg = bg.crop(((bg.width - W) // 2, (bg.height - H) // 2, (bg.width - W) // 2 + W, (bg.height - H) // 2 + H))
     dur = spec.get("dur", 16.0); rot = spec.get("rot", -6)
+    # RETENTION FIX (10 Nov: FB showed 74-82% gone by 0:02 — first second was a blank page + tiny label):
+    # 1) writing is already under way in the very first frame, 2) big hook question on top, 3) slow camera push.
+    if spec.get("fast_start", True):
+        t0min = min(st["t"] for st in spec["steps"]); shift = t0min + 0.3
+        for st in spec["steps"]: st["t"] = round(st["t"] - shift, 2)
+        first = min(spec["steps"], key=lambda s: s["t"])
+        if "text" in first: first["d"] = min(first["d"], 0.9)
+        dur = round(dur - shift, 2); spec["cta_t"] = round(spec.get("cta_t", dur - 3) - shift, 2)
+    lab0 = spec.get("label", "SOULMATE CHECK")
+    HOOKS = {"(use your birth year)": "WHAT AGE WILL YOU\nMEET YOUR SOULMATE?", "(birth day + birth month)": "YOUR SOULMATE'S\nFIRST INITIAL",
+             "(add your birth year)": "WHAT'S YOUR\nLOVE NUMBER?", "LOVE % CHECK": "ARE YOU TWO\nMEANT TO BE?"}
+    hook = spec.get("hook") or next((v for k, v in HOOKS.items() if k in lab0), None)
+    sub = lab0.split("\n")[1] if ("\n" in lab0 and hook) else ""
+    if not hook: hook = lab0
+    hookf = sans(96); subf = sans(50)
     imgs = {i: text_img(st["text"], st.get("size", 170)) for i, st in enumerate(spec["steps"]) if "text" in st}
     lab = sans(58); ctaf = sans(66)
     n = int(dur * FPS)
@@ -152,14 +167,19 @@ def main():
             bw = max(fd.textlength(u, font=rf), fd.textlength(tx, font=rb)) + 60
             fd.rounded_rectangle([60, 250, 60 + bw, 380], radius=22, fill=(255, 255, 255, 245))
             fd.text((90, 268), u, font=rf, fill=(120, 120, 120, 255)); fd.text((90, 312), tx, font=rb, fill=(20, 20, 20, 255))
-        lt = spec.get("label", "SOULMATE CHECK")
-        for i, line in enumerate(lt.split("\n")):
-            fd.text((70, 150 + i * 70), line, font=lab, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 200))
+        hl = hook.split("\n"); y0 = 95
+        for i, line in enumerate(hl):
+            fd.text((W / 2, y0 + i * 112), line, font=hookf, fill=(255, 255, 255, 255), anchor="ma", stroke_width=9, stroke_fill=(0, 0, 0, 255))
+        if sub:
+            fd.text((W / 2, y0 + len(hl) * 112 + 6), sub, font=subf, fill=(255, 214, 102, 255), anchor="ma", stroke_width=6, stroke_fill=(0, 0, 0, 255))
         if t >= spec.get("cta_t", dur - 3):
             c = spec.get("cta", "COMMENT YOUR NUMBER"); w = fd.textlength(c, font=ctaf)
             bx = (W - w) / 2 - 36; by = H - 250
             fd.rounded_rectangle([bx, by, bx + w + 72, by + 120], radius=28, fill=(255, 128, 0, 255))
             fd.text((W / 2, by + 60), c, font=ctaf, fill=(255, 255, 255, 255), anchor="mm")
+        z = 1.07 - 0.07 * min(1.0, t / 1.4) + 0.025 * max(0.0, (t - 1.4) / max(dur - 1.4, 1))  # push in, then slow drift
+        if abs(z - 1.0) > 0.002:
+            cw, ch = W / z, H / z; fr = fr.crop((int((W - cw) / 2), int((H - ch) / 2), int((W + cw) / 2), int((H + ch) / 2))).resize((W, H), Image.BILINEAR)
         fr.convert("RGB").save(f"{out}/f/{k:04d}.jpg", quality=90)
     a = ["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", f"{out}/f/%04d.jpg"]
     if spec.get("music"):
