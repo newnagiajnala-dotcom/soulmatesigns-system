@@ -125,7 +125,9 @@ def main():
     hook = spec.get("hook") or next((v for k, v in HOOKS.items() if k in lab0), None)
     sub = lab0.split("\n")[1] if ("\n" in lab0 and hook) else ""
     if not hook: hook = lab0
-    hookf = sans(96); subf = sans(50)
+    hs = 92
+    while hs > 50 and max(ImageDraw.Draw(Image.new("RGB", (1, 1))).textlength(l, font=sans(hs)) for l in hook.split("\n")) > 940: hs -= 4
+    hookf = sans(hs); subf = sans(48); hstep = int(hs * 1.18)
     imgs = {i: text_img(st["text"], st.get("size", 170)) for i, st in enumerate(spec["steps"]) if "text" in st}
     lab = sans(58); ctaf = sans(66)
     n = int(dur * FPS)
@@ -169,9 +171,9 @@ def main():
             fd.text((90, 268), u, font=rf, fill=(120, 120, 120, 255)); fd.text((90, 312), tx, font=rb, fill=(20, 20, 20, 255))
         hl = hook.split("\n"); y0 = 95
         for i, line in enumerate(hl):
-            fd.text((W / 2, y0 + i * 112), line, font=hookf, fill=(255, 255, 255, 255), anchor="ma", stroke_width=9, stroke_fill=(0, 0, 0, 255))
+            fd.text((W / 2, y0 + i * hstep), line, font=hookf, fill=(255, 255, 255, 255), anchor="ma", stroke_width=9, stroke_fill=(0, 0, 0, 255))
         if sub:
-            fd.text((W / 2, y0 + len(hl) * 112 + 6), sub, font=subf, fill=(255, 214, 102, 255), anchor="ma", stroke_width=6, stroke_fill=(0, 0, 0, 255))
+            fd.text((W / 2, y0 + len(hl) * hstep + 6), sub, font=subf, fill=(255, 214, 102, 255), anchor="ma", stroke_width=6, stroke_fill=(0, 0, 0, 255))
         if t >= spec.get("cta_t", dur - 3):
             c = spec.get("cta", "COMMENT YOUR NUMBER"); w = fd.textlength(c, font=ctaf)
             bx = (W - w) / 2 - 36; by = H - 250
@@ -182,7 +184,7 @@ def main():
             cw, ch = W / z, H / z; fr = fr.crop((int((W - cw) / 2), int((H - ch) / 2), int((W + cw) / 2), int((H + ch) / 2))).resize((W, H), Image.BILINEAR)
         fr.convert("RGB").save(f"{out}/f/{k:04d}.jpg", quality=90)
     a = ["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", f"{out}/f/%04d.jpg"]
-    if spec.get("music"):
+    if spec.get("music") and spec["music"] != "-":
         a += ["-stream_loop", "-1", "-i", spec["music"], "-filter_complex",
               f"[1:a]volume=0.9,afade=t=out:st={dur - 1.2:.2f}:d=1.1,loudnorm=I=-14:TP=-1.5[a]", "-map", "0:v", "-map", "[a]", "-c:a", "aac", "-b:a", "160k"]
     a += ["-t", f"{dur:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-movflags", "+faststart", f"{out}/reel.mp4"]
