@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-10",
+ "hashtags": [
+  "soulmate",
+  "soulmatesigns",
+  "twinflame",
+  "twinflames",
+  "redstring",
+  "invisiblestring"
+ ],
+ "errors": [
+  {
+   "tag": "soulmate",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "soulmatesigns",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "twinflame",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "twinflames",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "redstring",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "invisiblestring",
+   "error": "HTTP Error 400: Bad Request"
+  }
+ ],
+ "top": []
+}
