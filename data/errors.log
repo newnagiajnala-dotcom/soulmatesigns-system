@@ -76,3 +76,5 @@
 2026-11-10T13:52-05:00 midday: story 222 posted IG media 17969513160209006 + FB story 1706225124170756. Note: Pillow/Poppins missing in container, rendered via venv + Poppins from google/fonts.
 2026-11-10T16:42-05:00 tools: higgsfield=yes balance=328.54 run=afternoon
 2026-11-10T16:45-05:00 afternoon: promo 012 initial heart A posted IG Dfk5rFoiYUl (media 18117027815610525). Rendered 7.9 s (not 10 s) so thumb_offset 7600. Facebook reel NOT posted (RUNBOOK 7b). followers_count=2. Reels today: 2/3.
+2026-11-10T19:42-05:00 tools: higgsfield=yes balance=328.54 run=evening
+2026-11-10T19:46-05:00 evening: promo 013 love number check num2 posted IG DflOaFJCu2Z (media 18222293875351128). Facebook reel NOT posted (RUNBOOK 7b). Stats updated 23 IG rows; followers_count=2. No two-name comments on last 10 posts. Reels today: 3/3.
