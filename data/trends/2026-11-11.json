@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-11",
+ "hashtags": [
+  "limerence",
+  "attachmentstyle",
+  "anxiousattachment",
+  "avoidantattachment",
+  "angelnumbers",
+  "1111"
+ ],
+ "errors": [
+  {
+   "tag": "limerence",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "attachmentstyle",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "anxiousattachment",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "avoidantattachment",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "angelnumbers",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "1111",
+   "error": "HTTP Error 400: Bad Request"
+  }
+ ],
+ "top": []
+}
