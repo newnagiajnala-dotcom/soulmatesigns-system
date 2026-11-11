@@ -10,9 +10,10 @@ Method (owner session, VPS Chrome with Claude extension, logged in as the Soulma
 | Date (IST) | Reel | Source | By | Views (later) |
 |---|---|---|---|---|
 | 2026-11-09 21:40 | Soulmate check 1998−1971 (promo 003) | phone | owner | 465 after ~11 h |
-| 2026-11-10 11:25 | Soulmate check birth day + month (promo 005) FB reel 1600136254752587 | VPS Chrome web upload | Claude | 233 after ~5 h; 316 after ~10 h |
+| 2026-11-10 11:25 | Soulmate check birth day + month (promo 005) FB reel 1600136254752587 | VPS Chrome web upload | Claude | 233 after ~5 h; 316 after ~10 h; 377 after ~19 h |
 
-| 2026-11-10 20:32 | Initial heart M (promo 006) FB reel 1148978397709236 | VPS Chrome web upload | Claude | 7 views at +1 h; link comment added 21:35 |
+| 2026-11-10 20:32 | Initial heart M (promo 006) FB reel 1148978397709236 | VPS Chrome web upload | Claude | 7 at +1 h; 220 at +10 h; link comment 21:35 |
+| 2026-11-11 06:25 | Love number check num2 (promo 013, retention-fix version) FB reel 2194567124812162 | VPS Chrome web upload + link comment | Claude (owner asked) | |
 ## 10 Nov 16:50 IST — sales push on Facebook (owner: "get me sales as soon as possible, do whatever")
 - Link comment (src=fbc → tid fbca) added under both native reels (839 + 274 views). Replied to commenters Estrella (1958, 1989).
 - New Page post with the sketch link (src=fbpin → tid fbpina), PINNED as Featured at the top of the Page.
