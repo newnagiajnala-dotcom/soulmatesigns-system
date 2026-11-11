@@ -1,3 +1,8 @@
+# OVERRIDE 11 Nov (owner): URLs in REEL COMMENTS are NOT clickable on Facebook (checked: no <a> tag). Do NOT post the URL comment any more.
+# Instead the first comment is: "👉 Want to see your soulmate's face? Tap Soulmate Signs above → the Learn more button (or the pinned post) ✨ (affiliate link · for fun)"
+# Clickable paths: Page "Learn more" action button → https://soulmatesigns.org/sketch?src=fbbtn (tid fbbtna); pinned post (src=fbpin); Messenger comment-to-message (owner sets up, src=fbdm).
+# Caption ending: "See your soulmate sketch → tap our Page name ✨" (instead of "Link in the first comment").
+
 # Facebook NATIVE uploads (Facebook web uploader in the VPS Chrome, or owner's phone) — API FB reels stopped 10 Nov
 Method (owner session, VPS Chrome with Claude extension, logged in as the Soulmate Signs Page):
 1. Pick yesterday's best IG reel (highest views in data/performance.csv, not yet in this log); video_url from promo/NNN/spec.json.
