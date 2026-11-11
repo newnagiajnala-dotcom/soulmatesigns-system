@@ -4,6 +4,7 @@ The system reads this before making every reel and updates it after reading stat
 Start state = research from 31 Oct 2026 (research/viral-reels-2026-10-31.md).
 
 ## Rules (never break)
+- FACEBOOK: never put a URL in a reel caption or reel comment — Facebook does not make them clickable (owner, 11 Nov: "don't make this mistake"). Send people to the Page "Learn more" button / pinned post / Messenger instead.
 - Honest framing: curiosity/entertainment. Never "guaranteed real soulmate", no fake testimonials,
   no fake "I tried it and it worked" stories, no income/health claims.
 - Never repost or copy another creator's video, audio voice or exact script. Copy FORMATS only.
