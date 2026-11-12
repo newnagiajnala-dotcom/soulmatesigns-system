@@ -1,0 +1,57 @@
+{
+ "hook": "PAUSE & FIND YOUR\nBIRTH MONTH",
+ "sub": "= the month you meet them",
+ "rows": [
+  [
+   "Jan",
+   "Jun"
+  ],
+  [
+   "Feb",
+   "Oct"
+  ],
+  [
+   "Mar",
+   "Aug"
+  ],
+  [
+   "Apr",
+   "Dec"
+  ],
+  [
+   "May",
+   "Mar"
+  ],
+  [
+   "Jun",
+   "Sep"
+  ],
+  [
+   "Jul",
+   "Feb"
+  ],
+  [
+   "Aug",
+   "May"
+  ],
+  [
+   "Sep",
+   "Nov"
+  ],
+  [
+   "Oct",
+   "Jan"
+  ],
+  [
+   "Nov",
+   "Jul"
+  ],
+  [
+   "Dec",
+   "Apr"
+  ]
+ ],
+ "footer": "comment your month",
+ "theme": "blush",
+ "dur": 8
+}
