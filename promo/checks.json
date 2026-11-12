@@ -1,5 +1,5 @@
 {
- "_rules": "Afternoon slot (4:41 PM ET) = next unused check. Build with reelgen/check_reel.py (see ai/PROMO.md Style C). Mark used=true + promo_id after posting. When all used, add 15 more (same 3 formulas, new example numbers; or a new formula with the same layout).",
+ "_rules": "Next unused check, in list order (new families bday/wait first, interleaved). Never post the same formula family twice in a row or twice the same day. Use the per-check 'hook' as the first on-screen line. Mark used=true + promo_id after posting. When all used, add a NEW formula family with a NEW hook (repetition kills reach — Nov 12 review).",
  "base": {
   "bg_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261107_102011_056b2b6b-a428-4cf8-95a7-328020846649.png",
   "rot": -3,
@@ -185,6 +185,118 @@
    "promo_id": "016"
   },
   {
+   "id": "bday1",
+   "family": "bday",
+   "label": "SOULMATE CHECK\n(your birth month + 4)",
+   "hook": "WHEN IS YOUR\nSOULMATE'S BIRTHDAY?",
+   "line1": "7",
+   "line2": "+ 4",
+   "result": "11",
+   "t1": "= November",
+   "t2": "their birthday month",
+   "cta": "COMMENT THEIR MONTH",
+   "caption": "When is your soulmate's birthday? 🎂 Your birth month + 4 = their birthday month (over 12? take away 12) 👀\n\nComment the month you got 👇 and send this to the one you think it is\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #zodiac",
+   "used": false
+  },
+  {
+   "id": "wait1",
+   "family": "wait",
+   "label": "SOULMATE CHECK\n(add your birth day digits)",
+   "hook": "HOW MANY MONTHS UNTIL\nYOU MEET YOUR SOULMATE?",
+   "line1": "day 27",
+   "line2": "2 + 7",
+   "result": "9",
+   "t1": "= months until",
+   "t2": "you meet them",
+   "cta": "COMMENT YOUR NUMBER",
+   "caption": "How many months until you meet your soulmate? ⏳ Add the digits of your birth day (27 → 2+7 = 9) 👀\nAlready in a relationship? Comment your number and see if it matches when you met 👇\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #zodiac",
+   "used": false
+  },
+  {
+   "id": "bday2",
+   "family": "bday",
+   "label": "SOULMATE CHECK\n(your birth month + 4)",
+   "hook": "WHEN IS YOUR\nSOULMATE'S BIRTHDAY?",
+   "line1": "10",
+   "line2": "+ 4",
+   "result": "14",
+   "t1": "= February",
+   "t2": "their birthday month",
+   "cta": "COMMENT THEIR MONTH",
+   "caption": "When is your soulmate's birthday? 🎂 Your birth month + 4 = their birthday month (over 12? take away 12) 👀\n\nComment the month you got 👇 and send this to the one you think it is\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #zodiac",
+   "used": false
+  },
+  {
+   "id": "wait2",
+   "family": "wait",
+   "label": "SOULMATE CHECK\n(add your birth day digits)",
+   "hook": "HOW MANY MONTHS UNTIL\nYOU MEET YOUR SOULMATE?",
+   "line1": "day 14",
+   "line2": "1 + 4",
+   "result": "5",
+   "t1": "= months until",
+   "t2": "you meet them",
+   "cta": "COMMENT YOUR NUMBER",
+   "caption": "How many months until you meet your soulmate? ⏳ Add the digits of your birth day (27 → 2+7 = 9) 👀\nAlready in a relationship? Comment your number and see if it matches when you met 👇\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #zodiac",
+   "used": false
+  },
+  {
+   "id": "bday3",
+   "family": "bday",
+   "label": "SOULMATE CHECK\n(your birth month + 4)",
+   "hook": "WHEN IS YOUR\nSOULMATE'S BIRTHDAY?",
+   "line1": "3",
+   "line2": "+ 4",
+   "result": "7",
+   "t1": "= July",
+   "t2": "their birthday month",
+   "cta": "COMMENT THEIR MONTH",
+   "caption": "When is your soulmate's birthday? 🎂 Your birth month + 4 = their birthday month (over 12? take away 12) 👀\n\nComment the month you got 👇 and send this to the one you think it is\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #zodiac",
+   "used": false
+  },
+  {
+   "id": "wait3",
+   "family": "wait",
+   "label": "SOULMATE CHECK\n(add your birth day digits)",
+   "hook": "HOW MANY MONTHS UNTIL\nYOU MEET YOUR SOULMATE?",
+   "line1": "day 19",
+   "line2": "1 + 9",
+   "result": "10",
+   "t1": "= months until",
+   "t2": "you meet them",
+   "cta": "COMMENT YOUR NUMBER",
+   "caption": "How many months until you meet your soulmate? ⏳ Add the digits of your birth day (27 → 2+7 = 9) 👀\nAlready in a relationship? Comment your number and see if it matches when you met 👇\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #zodiac",
+   "used": false
+  },
+  {
+   "id": "bday4",
+   "family": "bday",
+   "label": "SOULMATE CHECK\n(your birth month + 4)",
+   "hook": "WHEN IS YOUR\nSOULMATE'S BIRTHDAY?",
+   "line1": "8",
+   "line2": "+ 4",
+   "result": "12",
+   "t1": "= December",
+   "t2": "their birthday month",
+   "cta": "COMMENT THEIR MONTH",
+   "caption": "When is your soulmate's birthday? 🎂 Your birth month + 4 = their birthday month (over 12? take away 12) 👀\n\nComment the month you got 👇 and send this to the one you think it is\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #zodiac",
+   "used": false
+  },
+  {
+   "id": "wait4",
+   "family": "wait",
+   "label": "SOULMATE CHECK\n(add your birth day digits)",
+   "hook": "HOW MANY MONTHS UNTIL\nYOU MEET YOUR SOULMATE?",
+   "line1": "day 8",
+   "line2": "8",
+   "result": "8",
+   "t1": "= months until",
+   "t2": "you meet them",
+   "cta": "COMMENT YOUR NUMBER",
+   "caption": "How many months until you meet your soulmate? ⏳ Add the digits of your birth day (27 → 2+7 = 9) 👀\nAlready in a relationship? Comment your number and see if it matches when you met 👇\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #soulmatecheck #lovesigns #soulmatesketch #zodiac",
+   "used": false
+  },
+  {
    "id": "num3",
    "label": "LOVE NUMBER CHECK\n(add your birth year)",
    "line1": "1+9+9+7",
@@ -319,52 +431,52 @@
   {
    "letter": "D",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ D…\n\nSend this to your D 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "This initial will never break your heart ❤️ D…\n\nSend this to your D 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "C",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ C…\n\nSend this to your C 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "If their name starts with C… don't let them go ❤️\n\nSend this to your C 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "L",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ L…\n\nSend this to your L 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "L — the initial that's been on your mind lately? 👀\n\nSend this to your L 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "E",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ E…\n\nSend this to your E 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "Your soulmate's name might start with E ❤️\n\nSend this to your E 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "R",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ R…\n\nSend this to your R 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "Never let a R go ❤️\n\nSend this to your R 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "K",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ K…\n\nSend this to your K 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "The K in your life loves you more than they show 🥹\n\nSend this to your K 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "B",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ B…\n\nSend this to your B 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "This initial will never break your heart ❤️ B…\n\nSend this to your B 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "N",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ N…\n\nSend this to your N 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "If their name starts with N… don't let them go ❤️\n\nSend this to your N 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "T",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ T…\n\nSend this to your T 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "T — the initial that's been on your mind lately? 👀\n\nSend this to your T 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   },
   {
    "letter": "H",
    "used": false,
-   "caption": "This initial will never break your heart ❤️ H…\n\nSend this to your H 💌 (or tag them 👀)\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
+   "caption": "Your soulmate's name might start with H ❤️\n\nSend this to your H 💌 (or tag them 👀)\nComment your soulmate's initial 👇\n\nFollow for tomorrow's check ✨\nCurious what your soulmate looks like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush"
   }
  ]
 }

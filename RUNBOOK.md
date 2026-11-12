@@ -91,7 +91,7 @@ So ALL THREE daily reels are handwriting reels built with reelgen/check_reel.py 
 - QUEUED PROMO FIRST rule above still applies.
 - MORNING slot (7:41 AM ET) = SOULMATE CHECK (ai/PROMO.md "Style C", next unused entry in promo/checks.json "checks").
 - AFTERNOON slot (4:41 PM ET) = INITIAL HEART (ai/PROMO.md "Style E", next unused entry in promo/checks.json "initials").
-- EVENING slot (7:41 PM ET) = SOULMATE CHECK again (next unused entry in promo/checks.json "checks", a DIFFERENT formula family than this morning's). Changed 9 Nov: love % flat got 134 views vs soulmate checks 2,190 / 1,560 and initial heart 962 (10 shares). Love % checks stay owner-filmed only.
+- EVENING slot (7:41 PM ET) = INITIAL HEART again (Nov 12 review: initial heart M = 1,600 views + 14 shares, our top share driver; soulmate checks fell to 120–400 from repetition). Use the next unused letter in promo/checks.json "initials", never the same letter as the afternoon. Morning stays SOULMATE CHECK: take the next unused check in list order (new families bday/wait first) and never the same formula family as the previous check; use its "hook".
   If a REAL comment has two first names, tell the owner in the run summary (he films love checks).
 - The owner also films + posts his own love % reel by hand from the app (not counted by the autopilot; ignore it in the cap).
 - First run of each US day: still run the trend step and save data/trends/<date>.json.
