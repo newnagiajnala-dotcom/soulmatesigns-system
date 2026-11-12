@@ -67,7 +67,8 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    If Higgsfield is unavailable, publish the raw GitHub URL as before and log "audio v2 skipped" to data/errors.log.
 7. Publish ONCE: POST `/17841459940404036/media` media_type=REELS, share_to_feed=true, thumb_offset=(duration_ms − 300),
    video_url=<Higgsfield URL from 6b, else raw url>, caption=<spec caption>.
-   TRENDING SOUND (owner 12 Nov: "use trending music in the USA" — Instagram Audio API, documented at
+   TRENDING SOUND — PAUSED 12 Nov 20:30 IST (test reel 018 with audio_configuration sat at 0 views after 30 min; /ig_audio only offers stock/Indian tracks, not US hits). Do NOT send audio_configuration until data/approvals.txt contains "audio resume". Old instructions kept for reference:
+   (owner 12 Nov: "use trending music in the USA" — Instagram Audio API, documented at
    developers.facebook.com/docs/instagram-platform/content-publishing/audio-api/): BEFORE creating the container,
    GET `/ig_audio?audio_type=music&user_id=17841459940404036` (no search_query = trending list; add `&search_query=<title>` to look up a named track).
    Pick ONE track: prefer romantic / soft / dreamy / upbeat-pop titles that fit love content (this week's US Reels chart, 11 Nov:
