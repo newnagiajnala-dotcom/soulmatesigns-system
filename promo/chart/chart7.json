@@ -1,0 +1,58 @@
+{
+ "hook": "YOUR ZODIAC SIGN",
+ "sub": "= the age you meet your soulmate",
+ "rows": [
+  [
+   "Aries",
+   "24"
+  ],
+  [
+   "Taurus",
+   "27"
+  ],
+  [
+   "Gemini",
+   "22"
+  ],
+  [
+   "Cancer",
+   "29"
+  ],
+  [
+   "Leo",
+   "25"
+  ],
+  [
+   "Virgo",
+   "31"
+  ],
+  [
+   "Libra",
+   "23"
+  ],
+  [
+   "Scorpio",
+   "28"
+  ],
+  [
+   "Sagittarius",
+   "26"
+  ],
+  [
+   "Capricorn",
+   "30"
+  ],
+  [
+   "Aquarius",
+   "21"
+  ],
+  [
+   "Pisces",
+   "27"
+  ]
+ ],
+ "layout": "list",
+ "footer": "already past it? comment",
+ "theme": "cream",
+ "dur": 8
+}

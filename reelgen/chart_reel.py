@@ -24,6 +24,15 @@ def frame(spec):
         while f(s).getlength(line) > 960: s -= 4
         d.text((W / 2, 150 + line_i * (s + 6)), line, font=f(s), fill=ink, anchor="mm")
     d.text((W / 2, 150 + len(spec["hook"].split("\n")) * (hs + 6) + 10), spec["sub"], font=f(64), fill=red, anchor="mm")
+    if spec.get("layout") == "list":  # one column for longer answers ("at a wedding")
+        rows = spec["rows"]; top = 470; bottom = 1700; rh = (bottom - top) / len(rows)
+        for i, (a, b) in enumerate(rows):
+            y = top + i * rh + rh / 2; sz = int(min(rh * .72, 96))
+            while (f(sz).getlength(a) > 330 or f(sz).getlength(b) > 470) and sz > 36: sz -= 4
+            d.text((430, y), a, font=f(sz), fill=ink, anchor="rm"); heart(d, 480, y - 6, min(rh * .18, 24), red)
+            d.text((530, y), b, font=f(sz), fill=red, anchor="lm")
+        d.text((W / 2, 1790), spec["footer"], font=f(66), fill=ink, anchor="mm")
+        return im
     rows = spec["rows"]; n = (len(rows) + 1) // 2; top = 470; bottom = 1700; rh = (bottom - top) / n
     for i, (a, b) in enumerate(rows):
         col, r = divmod(i, n); cx = 290 if col == 0 else 790; y = top + r * rh + rh / 2

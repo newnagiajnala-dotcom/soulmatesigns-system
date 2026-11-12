@@ -1,0 +1,58 @@
+{
+ "hook": "YOUR ZODIAC SIGN",
+ "sub": "= your soulmate's sign",
+ "rows": [
+  [
+   "Aries",
+   "Libra"
+  ],
+  [
+   "Taurus",
+   "Scorpio"
+  ],
+  [
+   "Gemini",
+   "Sagittarius"
+  ],
+  [
+   "Cancer",
+   "Capricorn"
+  ],
+  [
+   "Leo",
+   "Aquarius"
+  ],
+  [
+   "Virgo",
+   "Pisces"
+  ],
+  [
+   "Libra",
+   "Aries"
+  ],
+  [
+   "Scorpio",
+   "Taurus"
+  ],
+  [
+   "Sagittarius",
+   "Gemini"
+  ],
+  [
+   "Capricorn",
+   "Cancer"
+  ],
+  [
+   "Aquarius",
+   "Leo"
+  ],
+  [
+   "Pisces",
+   "Virgo"
+  ]
+ ],
+ "layout": "list",
+ "footer": "tag your sign twin",
+ "theme": "night",
+ "dur": 8
+}

@@ -1,0 +1,50 @@
+{
+ "hook": "YOUR BIRTH DAY",
+ "sub": "= how you meet your soulmate",
+ "rows": [
+  [
+   "1 - 3",
+   "at a wedding"
+  ],
+  [
+   "4 - 6",
+   "through a friend"
+  ],
+  [
+   "7 - 9",
+   "at work"
+  ],
+  [
+   "10 - 12",
+   "on a trip"
+  ],
+  [
+   "13 - 15",
+   "online"
+  ],
+  [
+   "16 - 18",
+   "at a coffee shop"
+  ],
+  [
+   "19 - 21",
+   "at the gym"
+  ],
+  [
+   "22 - 24",
+   "you already know them"
+  ],
+  [
+   "25 - 27",
+   "at a party"
+  ],
+  [
+   "28 - 31",
+   "by total accident"
+  ]
+ ],
+ "layout": "list",
+ "footer": "comment yours",
+ "theme": "cream",
+ "dur": 9
+}

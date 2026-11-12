@@ -1,0 +1,58 @@
+{
+ "hook": "YOUR BIRTH MONTH",
+ "sub": "= your soulmate's eye color",
+ "rows": [
+  [
+   "Jan",
+   "brown"
+  ],
+  [
+   "Feb",
+   "hazel"
+  ],
+  [
+   "Mar",
+   "green"
+  ],
+  [
+   "Apr",
+   "blue"
+  ],
+  [
+   "May",
+   "dark brown"
+  ],
+  [
+   "Jun",
+   "grey"
+  ],
+  [
+   "Jul",
+   "hazel"
+  ],
+  [
+   "Aug",
+   "blue"
+  ],
+  [
+   "Sep",
+   "green"
+  ],
+  [
+   "Oct",
+   "brown"
+  ],
+  [
+   "Nov",
+   "grey"
+  ],
+  [
+   "Dec",
+   "dark brown"
+  ]
+ ],
+ "layout": "list",
+ "footer": "does it match? comment",
+ "theme": "blush",
+ "dur": 8
+}

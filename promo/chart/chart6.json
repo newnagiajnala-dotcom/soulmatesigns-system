@@ -1,0 +1,42 @@
+{
+ "hook": "FIRST LETTER OF\nYOUR NAME",
+ "sub": "= where you meet them",
+ "rows": [
+  [
+   "A - C",
+   "at work"
+  ],
+  [
+   "D - F",
+   "on vacation"
+  ],
+  [
+   "G - I",
+   "at a wedding"
+  ],
+  [
+   "J - L",
+   "through a friend"
+  ],
+  [
+   "M - O",
+   "online"
+  ],
+  [
+   "P - R",
+   "at school"
+  ],
+  [
+   "S - U",
+   "at a concert"
+  ],
+  [
+   "V - Z",
+   "you already met"
+  ]
+ ],
+ "layout": "list",
+ "footer": "send this to your bestie",
+ "theme": "night",
+ "dur": 8
+}

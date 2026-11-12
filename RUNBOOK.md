@@ -67,7 +67,9 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    If Higgsfield is unavailable, publish the raw GitHub URL as before and log "audio v2 skipped" to data/errors.log.
 7. Publish ONCE: POST `/17841459940404036/media` media_type=REELS, share_to_feed=true, thumb_offset=(duration_ms − 300),
    video_url=<Higgsfield URL from 6b, else raw url>, caption=<spec caption>.
-   TRENDING SOUND — PAUSED 12 Nov 20:30 IST (test reel 018 with audio_configuration sat at 0 views after 30 min; /ig_audio only offers stock/Indian tracks, not US hits). Do NOT send audio_configuration until data/approvals.txt contains "audio resume". Old instructions kept for reference:
+   TRENDING SOUND — ON for EVERY reel (12 Nov 21:06 IST, owner: chart reel 018 with Audio API track 'Sunny Day' – Jonny Houlihan "views sky rocketed", avg watch +6 s vs any earlier reel).
+   The plain /ig_audio trending list skews to Indian devotional/festival tracks (account is run from India) — do NOT use those. Instead use search_query
+   (try "love", "romantic", "summer", "happy", "dreamy", plus the named chart songs) and pick an English, upbeat or soft-romantic track; 'Sunny Day' is a proven fallback but don't repeat it twice in a row.
    (owner 12 Nov: "use trending music in the USA" — Instagram Audio API, documented at
    developers.facebook.com/docs/instagram-platform/content-publishing/audio-api/): BEFORE creating the container,
    GET `/ig_audio?audio_type=music&user_id=17841459940404036` (no search_query = trending list; add `&search_query=<title>` to look up a named track).
@@ -100,6 +102,7 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 Evidence 7 Nov: handwriting soulmate check (no AI label) = 705 views + 6 comments in 4 h; AI-people promo reels (Instagram "AI content" label) = 1–163.
 So ALL THREE daily reels are handwriting reels built with reelgen/check_reel.py in the Higgsfield sandbox (0 credits). No AI people, no voice promo.
 - QUEUED PROMO FIRST rule above still applies.
+- 12 Nov 21:06 IST CHANGE: MORNING and EVENING slots = PAUSE & FIND CHART reels (format promo-chart, reelgen/chart_reel.py) — queued as promo/019–025 with post_on dates; post the queued one for the slot. When none is queued, build a NEW chart (new topic + different theme than the last one: cream/blush/night) with chart_reel.py, never repeat a topic within 7 days. AFTERNOON stays INITIAL HEART. Soulmate-check notebook reels are paused (fell to 120–400 views).
 - MORNING slot (7:41 AM ET) = SOULMATE CHECK (ai/PROMO.md "Style C", next unused entry in promo/checks.json "checks").
 - AFTERNOON slot (4:41 PM ET) = INITIAL HEART (ai/PROMO.md "Style E", next unused entry in promo/checks.json "initials").
 - EVENING slot (7:41 PM ET) = INITIAL HEART again (Nov 12 review: initial heart M = 1,600 views + 14 shares, our top share driver; soulmate checks fell to 120–400 from repetition). Use the next unused letter in promo/checks.json "initials", never the same letter as the afternoon. Morning stays SOULMATE CHECK: take the next unused check in list order (new families bday/wait first) and never the same formula family as the previous check; use its "hook".

@@ -1,0 +1,50 @@
+{
+ "hook": "LAST DIGIT OF\nYOUR BIRTH YEAR",
+ "sub": "= your soulmate's initial",
+ "rows": [
+  [
+   "0",
+   "J"
+  ],
+  [
+   "1",
+   "M"
+  ],
+  [
+   "2",
+   "A"
+  ],
+  [
+   "3",
+   "S"
+  ],
+  [
+   "4",
+   "D"
+  ],
+  [
+   "5",
+   "C"
+  ],
+  [
+   "6",
+   "K"
+  ],
+  [
+   "7",
+   "R"
+  ],
+  [
+   "8",
+   "B"
+  ],
+  [
+   "9",
+   "L"
+  ]
+ ],
+ "layout": "list",
+ "footer": "screenshot & send it to them",
+ "theme": "blush",
+ "dur": 8
+}
