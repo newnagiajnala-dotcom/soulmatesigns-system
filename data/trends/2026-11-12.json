@@ -1,0 +1,23 @@
+{
+ "date": "2026-11-12",
+ "hashtags": [
+  "soulmatecheck",
+  "soulmatesketch",
+  "birthmonth"
+ ],
+ "errors": [
+  {
+   "tag": "soulmatecheck",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "soulmatesketch",
+   "error": "HTTP Error 400: Bad Request"
+  },
+  {
+   "tag": "birthmonth",
+   "error": "HTTP Error 400: Bad Request"
+  }
+ ],
+ "top": []
+}
