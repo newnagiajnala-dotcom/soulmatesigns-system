@@ -1,0 +1,16 @@
+{
+ "format": "promo-chart",
+ "style": "F (pause & find chart)",
+ "hook": "YOUR FIRST INITIAL = your soulmate's initial (promo 018)",
+ "video_url": "https://soulmatesigns.org/v/chart1.mp4",
+ "video_url_backup": "https://raw.githubusercontent.com/newnagiajnala-dotcom/soulmatesigns-system/main/promo/chart/chart1.mp4",
+ "duration_s": 8,
+ "thumb_offset_ms": 2000,
+ "caption": "Find your first initial 👀 → that's your soulmate's initial ❤️\n\nScreenshot it 📸 and send it to them 💌 Comment your letters 👇\n\nFollow for tomorrow's check ✨\nCurious what they look like? Link in bio ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush",
+ "fb_description": "Find your first initial 👀 → that's your soulmate's initial ❤️\n\nScreenshot it 📸 and send it to them 💌 Comment your letters 👇\n\nFollow for tomorrow's check ✨\nCurious what they look like? Tap our Page name ✨ (affiliate link · for fun)\n\n#soulmate #initials #lovesigns #soulmatesketch #crush",
+ "queued": true,
+ "posted": false,
+ "post_on": "2026-11-12 ET evening slot",
+ "trending_audio": true,
+ "note": "Test 12 Nov: new look (not notebook) + trending sound via Audio API. Built by reelgen/chart_reel.py (silent; audio comes from audio_configuration)."
+}

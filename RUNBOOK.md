@@ -66,7 +66,17 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    Use that Higgsfield URL as the video_url for steps 7 and 7b, and save it as "video_url" in spec.json.
    If Higgsfield is unavailable, publish the raw GitHub URL as before and log "audio v2 skipped" to data/errors.log.
 7. Publish ONCE: POST `/17841459940404036/media` media_type=REELS, share_to_feed=true, thumb_offset=(duration_ms − 300),
-   video_url=<Higgsfield URL from 6b, else raw url>, caption=<spec caption>. Poll `/{creation_id}?fields=status_code,status` every 10 s up to 5 min.
+   video_url=<Higgsfield URL from 6b, else raw url>, caption=<spec caption>.
+   TRENDING SOUND (owner 12 Nov: "use trending music in the USA" — Instagram Audio API, documented at
+   developers.facebook.com/docs/instagram-platform/content-publishing/audio-api/): BEFORE creating the container,
+   GET `/ig_audio?audio_type=music&user_id=17841459940404036` (no search_query = trending list; add `&search_query=<title>` to look up a named track).
+   Pick ONE track: prefer romantic / soft / dreamy / upbeat-pop titles that fit love content (this week's US Reels chart, 11 Nov:
+   Linger – The Cranberries, Blue Moon – Zara Larsson, Housewife – Tate McRae, Upside Down – Diana Ross, Nicole Kidman – ADÉLA, Everlong – Foo Fighters);
+   skip explicit, sad-breakup and Christmas tracks before 25 Nov; never use the same audio_id as either of the previous 2 reels (data/audio.csv).
+   Add to the container POST: `audio_configuration={"audio_id":"<id>","audio_volume":100,"video_volume":0}` (video_volume 0 mutes our baked-in instrumental).
+   Append `date,reel_id,audio_id,title,artist` to data/audio.csv after publishing.
+   If /ig_audio errors (permission/unsupported) or the container fails WITH audio_configuration: retry ONCE without it, log the exact error to data/errors.log
+   (first line "AUDIO API FAIL"), and say so in the run summary so the owner knows. Poll `/{creation_id}?fields=status_code,status` every 10 s up to 5 min.
    On FINISHED → POST `/17841459940404036/media_publish` creation_id=… → GET permalink.
    On ERROR → do not retry publishing; record the error in data/errors.log and stop.
 7b. FACEBOOK REELS — STOPPED 10 Nov 2026. Test: the owner hand-uploaded a reel in the Facebook app and it went viral; every API-posted FB reel stayed at ~0. From now on the OWNER uploads Facebook reels himself (he re-uploads the best Instagram reel each day). The autopilot must NOT post reels to Facebook (stories to Facebook may continue). Old instructions kept below for reference only.
