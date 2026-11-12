@@ -91,3 +91,4 @@
 2026-11-12T09:06-05:00 tools: higgsfield=yes balance=328.54 run=morning
 2026-11-12T09:07-05:00 morning (2nd run): queued promo 018 chart reel posted IG DfpO3h5jVP5 (media 18116385100853995) with Audio API track 'Sunny Day' - Jonny Houlihan (811408122543043, video_volume 0). /ig_audio trending list was all Indian devotional/festival tracks (not Tier-1 fit); search for Linger / Blue Moon / Upside Down returned only stock tracks, none of the chart songs. soulmatesigns.org/v/chart1.mp4 not reachable from sandbox -> used raw GitHub backup URL. Facebook reel NOT posted (RUNBOOK 7b). followers_count=3. Reels today: 2/3.
 2026-11-12T13:41-05:00 tools: higgsfield=yes balance=328.54 run=midday
+2026-11-12T13:43-05:00 midday: story 2026-11-12 (1111) posted IG 18139755475653655 + FB story 2072600073387847. Env note: system Pillow broken and Poppins fonts missing in container — rendered with a venv Pillow + Poppins from google/fonts.
