@@ -20,8 +20,9 @@ Method (owner session, VPS Chrome with Claude extension, logged in as the Soulma
 | 2026-11-10 20:32 | Initial heart M (promo 006) FB reel 1148978397709236 | VPS Chrome web upload | Claude | 7 at +1 h; 220 at +10 h; link comment 21:35 |
 | 2026-11-11 06:25 | Love number check num2 (promo 013, retention-fix version) FB reel 2194567124812162 | VPS Chrome web upload + link comment | Claude (owner asked) | 107 at +5 h; 201 at +14 h |
 | 2026-11-11 11:32 | Soulmate check age2 (promo 010) FB reel 1605287307589530 | VPS Chrome web upload | Claude (daily 11:30) | 35 at +45 min; 279 at +9 h; 459 at +24 h; link comment 12:20 (not clickable) |
-| 2026-11-11 20:32 | Initial heart A (promo 012) FB reel 1439832341044089 | VPS Chrome web upload, caption → Page name (no URL) | Claude (evening) | 3 at +1 h; Learn-more comment 21:15; 222 at +14 h |
-| 2026-11-12 11:33 | Soulmate check init W (promo 016, retention-fix) FB reel 4290452254432425 | VPS Chrome web upload, caption → Page name | Claude (daily 11:30) | Learn-more comment 11:36 |
+| 2026-11-11 20:32 | Initial heart A (promo 012) FB reel 1439832341044089 | VPS Chrome web upload, caption → Page name (no URL) | Claude (evening) | 3 at +1 h; Learn-more comment 21:15; 222 at +14 h; 223 at +24 h |
+| 2026-11-12 11:33 | Soulmate check init W (promo 016, retention-fix) FB reel 4290452254432425 | VPS Chrome web upload, caption → Page name | Claude (daily 11:30) | Learn-more comment 11:36; 184 at +9 h |
+| 2026-11-12 20:32 | Initial heart S (promo 015) FB reel 1831354797898730 | VPS Chrome web upload, caption → Page name | Claude (evening) | Learn-more comment 20:36 |
 ## 12 Nov 10:20 IST — Messenger "Comment to message" automation LIVE (keywords SKETCH/LINK/YES → DM https://soulmatesigns.org/sketch?src=fbdm, tid fbdma; Messenger channel only). Switching captions/comments to "Comment SKETCH" awaits owner OK.
 ## 10 Nov 16:50 IST — sales push on Facebook (owner: "get me sales as soon as possible, do whatever")
 - Link comment (src=fbc → tid fbca) added under both native reels (839 + 274 views). Replied to commenters Estrella (1958, 1989).
