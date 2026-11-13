@@ -32,3 +32,5 @@ Method (owner session, VPS Chrome with Claude extension, logged in as the Soulma
 - Link comment (src=fbc → tid fbca) added under both native reels (839 + 274 views). Replied to commenters Estrella (1958, 1989).
 - New Page post with the sketch link (src=fbpin → tid fbpina), PINNED as Featured at the top of the Page.
 - Comment-to-message automation: owner sets it up himself in Meta Business Suite (automation clicks blocked for Claude).
+
+- 2026-11-13 12:30 IST: owner banned "(affiliate link · for fun)" everywhere. Removed from FB: 4 reel captions edited, 9 old Learn-more/link comments deleted and replaced with "Comment SKETCH" comments (reels 1876210400204839, 1130488976440671, 1831354797898730, 4290452254432425, 1439832341044089, 1605287307589530, 2194567124812162, 1148978397709236, 1600136254752587, 1454575703550907), pinned post edited. Messenger DM text now ends "(affiliate link)". IG old captions not edited (no IG login here; API cannot edit captions).
