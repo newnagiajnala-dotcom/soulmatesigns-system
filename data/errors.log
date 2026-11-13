@@ -100,3 +100,5 @@
 2026-11-13T07:45-05:00 morning: promo 019 chart (birth month) posted IG DfrqTn_ifG_ (media 18121793485750877) with Audio API track 'Summer Feeling' - Giulio Cercato (580419588408401, video_volume 0). Carried over from Nov 12 evening; 020-025 queue shifts one slot. Facebook reel NOT posted (RUNBOOK 7b). Stats: 017=606 views, 018=175, 026=124. followers_count=4. Reels today: 1/3.
 2026-11-13T13:44-05:00 tools: higgsfield=yes balance=306.84 run=midday
 2026-11-13T13:50-05:00 midday: story 777 posted IG (media 17954850972296064) + FB Page story (post 1715219503358098). Note: env needed python3 -m pip pillow/numpy + Poppins fonts from google/fonts before story_card.py would render.
+2026-11-13T16:42-05:00 tools: higgsfield=yes balance=306.84 run=afternoon
+2026-11-13T16:47-05:00 afternoon: promo 027 initial heart C posted IG DfsoVYOEg_3 (media 18103535027437703) with Audio API track 'Cherry Blossom' - Ella Joy Meir (388232958426545, video_volume 0). Facebook reel NOT posted (RUNBOOK 7b). Stats: 017=648 views (7.8 s avg watch), 018=175, 026=127, 019=143. followers_count=4. Reels today: 2/3.
