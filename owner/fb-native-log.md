@@ -24,7 +24,8 @@ Method (owner session, VPS Chrome with Claude extension, logged in as the Soulma
 | 2026-11-11 20:32 | Initial heart A (promo 012) FB reel 1439832341044089 | VPS Chrome web upload, caption → Page name (no URL) | Claude (evening) | 3 at +1 h; Learn-more comment 21:15; 222 at +14 h; 223 at +24 h |
 | 2026-11-12 11:33 | Soulmate check init W (promo 016, retention-fix) FB reel 4290452254432425 | VPS Chrome web upload, caption → Page name | Claude (daily 11:30) | Learn-more comment 11:36; 184 at +9 h |
 | 2026-11-12 20:32 | Initial heart S (promo 015) FB reel 1831354797898730 | VPS Chrome web upload, caption → Page name | Claude (evening) | Learn-more comment 20:36; 76 at +3 h |
-| 2026-11-12 23:40 | Chart 'Your first initial' (promo 018) + Music 'Sunny Day' – Jonny Houlihan FB reel 1876210400204839 | VPS Chrome web upload, caption → Page name | Claude (owner test) | Learn-more comment 23:44 |
+| 2026-11-12 23:40 | Chart 'Your first initial' (promo 018) + Music 'Sunny Day' – Jonny Houlihan FB reel 1876210400204839 | VPS Chrome web upload, caption → Page name | Claude (owner test) | Learn-more comment 23:44; 516 at +10 h; 744 at +12 h |
+| 2026-11-13 11:35 | Chart 'birth month → month you meet' (chart2) + Music 'Let Me Love You (feat. Ariza)' – Julia Gartha FB reel 1130488976440671 | VPS Chrome web upload, caption → Page name | Claude (daily 11:30) | Learn-more comment 11:40 |
 ## 12 Nov 10:20 IST — Messenger "Comment to message" automation LIVE (keywords SKETCH/LINK/YES → DM https://soulmatesigns.org/sketch?src=fbdm, tid fbdma; Messenger channel only). Switching captions/comments to "Comment SKETCH" awaits owner OK.
 ## 10 Nov 16:50 IST — sales push on Facebook (owner: "get me sales as soon as possible, do whatever")
 - Link comment (src=fbc → tid fbca) added under both native reels (839 + 274 views). Replied to commenters Estrella (1958, 1989).
