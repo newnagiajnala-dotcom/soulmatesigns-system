@@ -98,6 +98,9 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 
 ## QUEUED PROMO FIRST: before building any reel, if a promo/NNN/spec.json has queued=true and posted=false and its post_on matches this slot (or is in the past), post THAT video (video_url, caption, fb_description, thumb_offset_ms) with steps 7 + 7b instead of building, then set posted=true + ids. It counts toward the 2-reel cap.
 
+## Captions (owner 13 Nov)
+- NEVER add "(affiliate link · for fun)" / "(just for fun)" to captions or comments — owner hates it. End IG captions with "Curious what they look like? Link in bio ✨". The disclosure is on the sketch page (soulmatesigns.org/sketch) and in the FB Messenger auto-reply, where the actual affiliate link is.
+
 ## Reel slots (updated 7 Nov 2026, 8:30 PM IST — owner: "do what worked")
 Evidence 7 Nov: handwriting soulmate check (no AI label) = 705 views + 6 comments in 4 h; AI-people promo reels (Instagram "AI content" label) = 1–163.
 So ALL THREE daily reels are handwriting reels built with reelgen/check_reel.py in the Higgsfield sandbox (0 credits). No AI people, no voice promo.

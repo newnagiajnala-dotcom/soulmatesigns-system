@@ -6,7 +6,7 @@ Template proven by promo 001 (148 views in 7 h = 2nd best ever). Morning slot, e
    hook_text ≤ 6 words CAPS (no emoji); voice 44–50 words, short sentences, NO "..." (pauses are added by the editor),
    beats = hook (≤ 9 words, first sentence ≤ 4 s) → relatable twist → "psychic artist Tina sketches your soulmate's face by hand, from your energy"
    → one curiosity line → "Curious what yours looks like? Link in bio."; never guarantees, never fake reviews/testimonials, never say the clip/images are Tina's work.
-   Caption: hook line + emoji · a SHARE ask ("Send this to …" / "Tag the friend who …") · "Curious what yours looks like? Link in bio ✨ (just for fun)" · 5 hashtags.
+   Caption: hook line + emoji · a SHARE ask ("Send this to …" / "Tag the friend who …") · "Curious what yours looks like? Link in bio ✨" · 5 hashtags.
    Rotate the 4 hook clips in promo/hooks.json (never the same clip 2 days running). Write promo/NNN/spec.json (NNN = next number).
 2. Images: 4 × generate_image model gpt_image_2_5, aspect_ratio 9:16, prompt = the script's image line + ", vertical 9:16, natural skin, no text, no watermark".
    get_cost first; abort (post a template reel instead) if one image > 0.5 credits.
@@ -54,7 +54,7 @@ If the sandbox fails, skip the afternoon reel (do not post a fallback) and log i
   curl -sfo paper.png https://d8j0ntlcm91z4.cloudfront.net/user_3EzwJnQsE5b12PUKFrt1rTGUePG/hf_20261107_121951_48ed0cca-fe8a-4f83-a3f0-eaef735b170e.png
   python3 hand_reel.py --names <Name1> <Name2> paper.png hand.png music.mp3 out ["@user|comment"]   (prints pct; 25–35 s; render ~4 min, background:true, poll)
   Check frames at 1/3, 2/3 and the last frame. thumb_offset = (seconds - 2) * 1000.
-- Caption: "<Name1> + <Name2> = <pct>% 💞 Want me to do yours?\n\nDrop your names 👇 (yours + your crush) and I'll write them in the next video ✍️\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns"
+- Caption: "<Name1> + <Name2> = <pct>% 💞 Want me to do yours?\n\nDrop your names 👇 (yours + your crush) and I'll write them in the next video ✍️\n\nCurious what your soulmate looks like? Link in bio ✨\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns"
 - performance.csv format "promo-love". Same posting/FB rules as Style C (no URL on Facebook).
 
 
@@ -64,6 +64,6 @@ If the sandbox fails, skip the afternoon reel (do not post a fallback) and log i
 ## Style D-flat — LOVE % NAME CHECK, ink writes itself on the marble page (EVENING slot)
 - Names: REAL comment with two first names on our last 10 reels (then pass "@user|comment" for the reply bubble), else next unused pair in promo/names.json.
 - Build: python3 check_reel.py --names <A> <B> page.png music.mp3 out ["@user|comment"]   (~20 s; prints the %)
-- Caption: "<A> + <B> = <pct>% 💞 Want me to do yours?\n\nDrop your names 👇 and I'll write them next ✍️\n\nCurious what your soulmate looks like? Link in bio ✨ (just for fun)\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns"
+- Caption: "<A> + <B> = <pct>% 💞 Want me to do yours?\n\nDrop your names 👇 and I'll write them next ✍️\n\nCurious what your soulmate looks like? Link in bio ✨\n\n#namecompatibility #lovecalculator #soulmate #couple #lovesigns"
 - performance.csv format "promo-love". thumb_offset = (seconds - 2) * 1000.
 ## Styles A (voice) and B (AI text) are PAUSED (AI-people reels get Instagram's "AI content" label and 1–163 views).
