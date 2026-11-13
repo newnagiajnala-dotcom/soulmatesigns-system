@@ -94,3 +94,5 @@
 2026-11-12T13:43-05:00 midday: story 2026-11-12 (1111) posted IG 18139755475653655 + FB story 2072600073387847. Env note: system Pillow broken and Poppins fonts missing in container — rendered with a venv Pillow + Poppins from google/fonts.
 2026-11-12T16:48-05:00 tools: higgsfield=yes balance=328.54 run=afternoon
 2026-11-12T16:55-05:00 afternoon: promo 026 initial heart D posted IG DfqD7fPmG_K (media 18136351018708605) with Audio API track 'Let Me Love You (feat. Ariza)' - Julia Gartha (2301778509958269, video_volume 0). Rendered 7.9 s, thumb_offset 7600. Facebook reel NOT posted (RUNBOOK 7b). 017=159 views, 018=175 views/1 share so far. followers_count=3. Reels today: 3/3.
+2026-11-12T19:42-05:00 tools: higgsfield=yes balance=328.54 run=evening
+2026-11-12T19:50-05:00 evening: NOTHING POSTED - daily cap reached (Nov 12 ET already has 3 reels: 017, 018, 026). Queued promo 019 (post_on 2026-11-12 evening) left queued=true for the next slot. Stats refreshed: 017=170, 018=175 (avg watch 6.2 s), 026=105 (3.3 s). followers_count=3.
