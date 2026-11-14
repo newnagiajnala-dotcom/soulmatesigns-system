@@ -45,11 +45,39 @@ def frame(spec):
     d.line([(W / 2, top + 10), (W / 2, bottom - 10)], fill=ink, width=3)
     d.text((W / 2, 1790), spec["footer"], font=f(66), fill=ink, anchor="mm")
     return im
+def card(base, spec, lines, big=None):
+    """Dim the chart and put a centred card on top (intro question / end CTA)."""
+    bg, ink, red = THEMES[spec.get("theme", "cream")]
+    im = base.copy().filter(ImageFilter.GaussianBlur(6))
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 120)); im = Image.alpha_composite(im.convert("RGBA"), ov)
+    d = ImageDraw.Draw(im); x0, x1 = 70, W - 70
+    hts = [(t, 96) for t in lines]
+    if big: hts.insert(big[0], (big[1], 230))
+    total = sum(sz + 24 for _, sz in hts) + 120; y0 = (H - total) // 2
+    d.rounded_rectangle([x0, y0, x1, y0 + total], 48, fill=bg + (255,))
+    y = y0 + 70
+    for t, sz in hts:
+        s2 = sz
+        while f(s2).getlength(t) > x1 - x0 - 90: s2 -= 4
+        d.text((W / 2, y + s2 / 2), t, font=f(s2), fill=red if sz > 150 else ink, anchor="mm"); y += s2 + 24
+    return im.convert("RGB")
+def seg(png, dur, out, zoom):
+    vf = (f"scale=1188:-1,zoompan=z='min(1.0+{zoom}*on,1.10)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={int(dur*30)}:s=1080x1920:fps=30,format=yuv420p")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", png, "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+                    "-vf", vf, "-t", str(dur), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-shortest", out], check=True)
 def main(sp, out):
     spec = json.load(open(sp)); im = frame(spec); png = out + ".png"; im.save(png)
     dur = spec.get("dur", 8)
-    vf = (f"scale=1188:-1,zoompan=z='min(1.0+0.0009*on,1.10)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={int(dur*30)}:s=1080x1920:fps=30,format=yuv420p")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", png, "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-                    "-vf", vf, "-t", str(dur), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-shortest", out], check=True)
+    intro = spec.get("intro", ["Who's the first person", "that came to your mind?"])
+    end = spec.get("end", ["if you want to see", "your soulmate's face"])
+    if spec.get("cards", True):
+        tmp = out + "_parts"; os.makedirs(tmp, exist_ok=True)
+        card(im, spec, intro).save(f"{tmp}/a.png"); card(im, spec, end, big=(0, "Type YES")).save(f"{tmp}/c.png")
+        seg(f"{tmp}/a.png", 2.0, f"{tmp}/a.mp4", 0.0004); seg(png, dur, f"{tmp}/b.mp4", 0.0009); seg(f"{tmp}/c.png", 3.0, f"{tmp}/c.mp4", 0.0004)
+        open(f"{tmp}/l.txt", "w").write("".join(f"file '{os.path.abspath(tmp)}/{x}.mp4'\n" for x in "abc"))
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{tmp}/l.txt", "-c", "copy", out], check=True)
+        import shutil; shutil.rmtree(tmp)
+    else:
+        seg(png, dur, out, 0.0009)
     print(out)
 if __name__ == "__main__": main(*sys.argv[1:3])
