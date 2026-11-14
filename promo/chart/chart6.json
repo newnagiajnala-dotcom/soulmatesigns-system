@@ -38,5 +38,6 @@
  "layout": "list",
  "footer": "send this to your bestie",
  "theme": "night",
- "dur": 8
+ "dur": 8,
+ "trigger": "ME"
 }

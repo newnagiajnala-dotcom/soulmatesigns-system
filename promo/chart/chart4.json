@@ -46,5 +46,6 @@
  "layout": "list",
  "footer": "comment yours",
  "theme": "cream",
- "dur": 9
+ "dur": 9,
+ "trigger": "YES"
 }

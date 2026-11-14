@@ -54,5 +54,6 @@
  "layout": "list",
  "footer": "tag your sign twin",
  "theme": "night",
- "dur": 8
+ "dur": 8,
+ "trigger": "SKETCH"
 }

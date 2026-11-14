@@ -46,5 +46,6 @@
  "layout": "list",
  "footer": "screenshot & send it to them",
  "theme": "blush",
- "dur": 8
+ "dur": 8,
+ "trigger": "FACE"
 }

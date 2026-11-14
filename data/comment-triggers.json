@@ -1,0 +1,44 @@
+{
+ "_how": "reel_id -> trigger words. The comment bot DMs the link (via 'Send message' under the comment) to anyone whose comment contains one of the words. Add a row for every new FB reel.",
+ "message": "Hi 💖 Here's your soulmate sketch link ✨ https://soulmatesigns.org/sketch?src=fbdm (affiliate link)",
+ "default_words": [
+  "SKETCH",
+  "LINK"
+ ],
+ "reels": {
+  "1876210400204839": [
+   "YES",
+   "SKETCH"
+  ],
+  "2338941796644862": [
+   "SKETCH"
+  ],
+  "1130488976440671": [
+   "SKETCH"
+  ],
+  "1831354797898730": [
+   "SKETCH"
+  ],
+  "4290452254432425": [
+   "SKETCH"
+  ],
+  "1439832341044089": [
+   "SKETCH"
+  ],
+  "1605287307589530": [
+   "SKETCH"
+  ],
+  "2194567124812162": [
+   "SKETCH"
+  ],
+  "1148978397709236": [
+   "SKETCH"
+  ],
+  "1600136254752587": [
+   "SKETCH"
+  ],
+  "1454575703550907": [
+   "SKETCH"
+  ]
+ }
+}

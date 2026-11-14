@@ -54,5 +54,6 @@
  "layout": "list",
  "footer": "does it match? comment",
  "theme": "blush",
- "dur": 8
+ "dur": 8,
+ "trigger": "LOVE"
 }
