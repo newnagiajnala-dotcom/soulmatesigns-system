@@ -69,10 +69,10 @@ def main(sp, out):
     spec = json.load(open(sp)); im = frame(spec); png = out + ".png"; im.save(png)
     dur = spec.get("dur", 8)
     intro = spec.get("intro", ["Who's the first person", "that came to your mind?"])
-    end = spec.get("end", ["if you want to see", "your soulmate's face"])
+    end = spec.get("end", ["Want to see your", "soulmate's face?", "Message us"])
     if spec.get("cards", True):
         tmp = out + "_parts"; os.makedirs(tmp, exist_ok=True)
-        card(im, spec, intro).save(f"{tmp}/a.png"); card(im, spec, end, big=(0, "Type YES")).save(f"{tmp}/c.png")
+        card(im, spec, intro).save(f"{tmp}/a.png"); card(im, spec, end, big=(3, "SKETCH")).save(f"{tmp}/c.png")
         seg(f"{tmp}/a.png", 2.0, f"{tmp}/a.mp4", 0.0004); seg(png, dur, f"{tmp}/b.mp4", 0.0009); seg(f"{tmp}/c.png", 3.0, f"{tmp}/c.mp4", 0.0004)
         open(f"{tmp}/l.txt", "w").write("".join(f"file '{os.path.abspath(tmp)}/{x}.mp4'\n" for x in "abc"))
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{tmp}/l.txt", "-c", "copy", out], check=True)
