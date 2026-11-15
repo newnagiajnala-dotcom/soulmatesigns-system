@@ -117,3 +117,4 @@
 2026-11-15T07:45-05:00 stats: Facebook video_insights failed for all FB rows ('(#100) Tried accessing nonexisting field (video_insights)' / invalid metric) — FB views not updated.
 2026-11-15T07:45-05:00 morning: promo 023 chart (first letter of name = where you meet them) posted IG Dfwz2BEiYJM (media 18236484952318553) with Audio API track 'Let Me Love You (feat. Ariza)' - Julia Gartha (2301778509958269, video_volume 0). Caption end changed to owner's 13 Nov line. Queue still shifted one slot (024 -> Nov 15 evening, 025 -> Nov 16 morning). Facebook reel NOT posted (RUNBOOK 7b). Stats: 020=4061 views (7.6 s avg watch), 017=650, 018=177, 021=128, 028=126, 022=112 (3.7 s). followers_count=5. Reels today: 1/3.
 2026-11-15T13:42-05:00 tools: higgsfield=yes balance=306.84 run=midday
+2026-11-15T13:50-05:00 midday: story 888 posted IG 18350880817255143 + FB story 967072292826792. Fixed env: installed Poppins fonts + venv Pillow (system PIL broken). followers_count=5.
