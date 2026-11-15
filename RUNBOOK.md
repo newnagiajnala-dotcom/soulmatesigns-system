@@ -13,6 +13,28 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
 - Sales page for PROMO reels: https://soulmatesigns.org/sketch (headline matches promo reels; hoplink tid = ?src value + a/b, e.g. ?src=promo1 → tid promo1a).
   Promo reel captions say "Link in bio ✨". NO URLs in Facebook descriptions (7 Nov 2026 finding: the only FB reel without a link got 450 views; every reel with a link got 0-8 — Facebook buries reels with outside links). FB description = the Instagram caption with "Link in bio ✨" replaced by "Link on our Page ✨". The Page intro already links soulmatesigns.org.
 
+## DAILY PLAN (owner confirmed 15 Nov 2026 22:56 IST: "1 reel, carousel and post") — OVERRIDES the run mapping below
+Autopilot runs at 7:41, 9:41, 11:41, 13:41 US Eastern. Map by US Eastern start time:
+- 07:00–08:59 = CAROUSEL run → "Daily chart carousel" section only (Instagram + Facebook).
+- 09:00–10:59 = REEL run → ONE chart reel (Reel slots rules + TOP-20 RULE in step 7). Instagram only — the Facebook reel is uploaded natively by the 20:30 IST browser task.
+- 11:00–12:59 = PHOTO POST run → "Daily chart photo post" section only (Instagram + Facebook).
+- 13:00–15:59 = STORY run → "Daily story" section only.
+- Any other time: do nothing, log "off-slot run".
+Content = ONLY formats proven viral (owner 15 Nov: "copy from other pages, same viral reels, not new"): your month + their month pairs; love matches for <SIGN> part N (12-sign series); first initial = soulmate's initial; match your initials (soulmates or besties?); zodiac → soulmate's sign. Own design (reelgen/chart_reel.py look), never reupload anyone's video. Use the SAME chart topic for that day's carousel, reel and photo post (spec = the day's promo/chart/chartN.json; build the next one if none is unused — next sign in the "love matches" series first).
+Caps: 1 reel + 1 carousel + 1 photo post + 1 story per day per platform.
+
+## Daily chart carousel (ON again 15 Nov — chart look, not the old nebula listicle)
+- Skip if posts/<today ET>/carousel_posted exists. Render: python3 reelgen/chart_carousel.py promo/chart/chartN.json posts/<date> → slide1..k.jpg, slideN_fb.jpg, slideN_ig.jpg, post_fb.jpg, post_ig.jpg. Commit + push; wait for raw URLs (200).
+- Instagram: children = slide1..k + slideN_ig (is_carousel_item=true) → CAROUSEL container, caption = "<hook in one line> 👀 swipe to find yours 👉\nTag your person 💌 Follow for tomorrow's chart ✨\nCurious what your soulmate looks like? Link in bio ✨" + 4 hashtags → publish.
+- Facebook (page token as in 7b, never print it): photos published=false for slide1..k + slideN_fb → POST /1402297082968632/feed message=<caption ending "💬 Comment YES and we'll message you the link 💌"> attached_media=[...]. NO URL in the FB caption. YES = owner's Comment-to-message keyword (works on feed posts, sends the link in Messenger).
+- Write posts/<date>/carousel_posted with ids; performance.csv row (format "chart-carousel").
+
+## Daily chart photo post (new 15 Nov)
+- Skip if posts/<today ET>/photo_posted exists. Use posts/<date>/post_ig.jpg and post_fb.jpg (render with chart_carousel.py if missing).
+- Instagram: IMAGE container image_url=<raw post_ig.jpg>, caption "<hook> 👀 find yours ⬇️\nScreenshot + send it to your person 💌\nCurious what your soulmate looks like? Link in bio ✨" → publish.
+- Facebook: POST /1402297082968632/photos url=<raw post_fb.jpg> caption="<hook> 👀 find yours\n💬 Comment YES below and we'll send you the link in Messenger ✨" (no URL).
+- Write posts/<date>/photo_posted; performance.csv row (format "chart-photo").
+
 ## Steps each run
 00. Tool check (every run, 10 s): note whether Higgsfield MCP tools are available (try the Higgsfield balance tool). Append one line to data/errors.log:
     "<ISO time> tools: higgsfield=<yes|no> balance=<n|-> run=<morning|midday|afternoon|evening>".
@@ -130,7 +152,7 @@ So ALL THREE daily reels are handwriting reels built with reelgen/check_reel.py 
   POST /1402297082968632/photo_stories photo_id=<id>. If Facebook fails, log and continue.
 - Write stories/<date>/posted with the ids, commit + push. Never post more than 1 story per day.
 
-## Daily carousel post — PAUSED 7 Nov 2026 (6 carousels got 0–1 views each at 0 followers). The AFTERNOON run (4:41 PM ET) now posts the SOULMATE CHECK reel (ai/PROMO.md Style C) instead.
+## (OLD) Daily carousel post — PAUSED 7 Nov 2026 — replaced by 'Daily chart carousel' above (6 carousels got 0–1 views each at 0 followers). The AFTERNOON run (4:41 PM ET) now posts the SOULMATE CHECK reel (ai/PROMO.md Style C) instead.
 ## (old rules kept for when it is switched back on)
 - (old carousel rule, inactive while paused) AFTERNOON run only (16:00–18:59 US Eastern). While carousels are paused this run posts the soulmate-check reel instead.
   Skip if posts/<today US Eastern>/ already has a "posted" file.
