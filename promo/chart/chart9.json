@@ -1,0 +1,59 @@
+{
+ "hook": "YOUR BIRTH MONTH\n+ THEIR BIRTH MONTH",
+ "sub": "= your love story",
+ "layout": "list",
+ "footer": "tag your person",
+ "theme": "night",
+ "dur": 9,
+ "trigger": "MATCH",
+ "rows": [
+  [
+   "Jan + Jul",
+   "soulmates"
+  ],
+  [
+   "Feb + Aug",
+   "best couple"
+  ],
+  [
+   "Mar + Sep",
+   "married forever"
+  ],
+  [
+   "Apr + Oct",
+   "crazy in love"
+  ],
+  [
+   "May + Nov",
+   "true love"
+  ],
+  [
+   "Jun + Dec",
+   "meant to be"
+  ],
+  [
+   "Jan + Jun",
+   "best friends first"
+  ],
+  [
+   "Mar + Nov",
+   "fire & passion"
+  ],
+  [
+   "Apr + Aug",
+   "sweetest couple"
+  ],
+  [
+   "Feb + Oct",
+   "love at first sight"
+  ],
+  [
+   "May + Sep",
+   "perfect match"
+  ],
+  [
+   "Jul + Dec",
+   "forever us"
+  ]
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "hook": "LOVE MATCHES FOR\nSAGITTARIUS",
+ "sub": "part 1 · find your partner's sign",
+ "layout": "list",
+ "footer": "tag your Sagittarius",
+ "theme": "night",
+ "dur": 9,
+ "trigger": "SIGN",
+ "rows": [
+  [
+   "Leo",
+   "soulmate"
+  ],
+  [
+   "Aries",
+   "wild love"
+  ],
+  [
+   "Aquarius",
+   "best friends"
+  ],
+  [
+   "Libra",
+   "sweet & easy"
+  ],
+  [
+   "Gemini",
+   "opposites attract"
+  ],
+  [
+   "Sagittarius",
+   "double trouble"
+  ],
+  [
+   "Taurus",
+   "slow burn"
+  ],
+  [
+   "Cancer",
+   "needs work"
+  ],
+  [
+   "Scorpio",
+   "intense"
+  ],
+  [
+   "Capricorn",
+   "complicated"
+  ],
+  [
+   "Virgo",
+   "hard match"
+  ],
+  [
+   "Pisces",
+   "confusing"
+  ]
+ ]
+}
