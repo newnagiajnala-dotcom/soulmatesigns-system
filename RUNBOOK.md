@@ -73,6 +73,9 @@ reels made by this system to @soulmatesigns.daily (max 2 per day), following the
    (owner 12 Nov: "use trending music in the USA" — Instagram Audio API, documented at
    developers.facebook.com/docs/instagram-platform/content-publishing/audio-api/): BEFORE creating the container,
    GET `/ig_audio?audio_type=music&user_id=17841459940404036` (no search_query = trending list; add `&search_query=<title>` to look up a named track).
+   TOP-20 RULE (owner 15 Nov 16:58 IST: "use one of the Top 20 songs for reel"): FIRST search_query each of this week's US Reels top-20 in order and use the first EXACT title+artist match:
+   Housewife – Tate McRae; Nicole Kidman – ADÉLA; Upside Down – Diana Ross; Linger – The Cranberries; Blue Moon – Zara Larsson; Training Season – Dua Lipa; BbY WOW – KAROL G; good mood – room waves; Everlong – Foo Fighters; Angel of My Dreams – JADE; What You Waiting For? – Gwen Stefani; Hold On, We're Going Home – Drake; Fade Into You – Mazzy Star; Time – Pink Floyd; Pure – SIENNA SPIRO; Autumn Days – Morunas; Cozy at Home – ALOHI STYLE; Little Life – Robert Gromotka; Patient Zero – Taylor Swift; November Rain – Guns N' Roses.
+   Log which top-20 titles returned an exact match vs stock-only in data/errors.log ("TOP20 CHECK"). Business accounts may only get stock tracks (12 Nov test) — if no exact match, fall back to the rule below AND put the reel + the chosen top-20 song name in data/phone-finish.csv so the owner can add the real song in the Instagram app.
    Pick ONE track: prefer romantic / soft / dreamy / upbeat-pop titles that fit love content (this week's US Reels chart, 11 Nov:
    Linger – The Cranberries, Blue Moon – Zara Larsson, Housewife – Tate McRae, Upside Down – Diana Ross, Nicole Kidman – ADÉLA, Everlong – Foo Fighters);
    skip explicit, sad-breakup and Christmas tracks before 25 Nov; never use the same audio_id as either of the previous 2 reels (data/audio.csv).
