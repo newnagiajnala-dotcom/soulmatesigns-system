@@ -1,0 +1,10 @@
+{
+ "hook": "LOVE MATCHES FOR\nLEO",
+ "sub": "part 2 · find your partner's sign",
+ "layout": "list",
+ "footer": "tag your Leo",
+ "theme": "night",
+ "dur": 9,
+ "trigger": "LEO",
+ "rows": [["Sagittarius", "soulmate"], ["Aries", "wild love"], ["Libra", "sweet & easy"], ["Gemini", "best friends"], ["Aquarius", "opposites attract"], ["Leo", "double the drama"], ["Cancer", "slow burn"], ["Virgo", "needs work"], ["Pisces", "dreamy"], ["Taurus", "stubborn love"], ["Scorpio", "intense"], ["Capricorn", "hard match"]]
+}

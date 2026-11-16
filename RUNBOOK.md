@@ -21,7 +21,7 @@ Autopilot runs at 7:41, 9:41, 11:41, 13:41 US Eastern. Map by US Eastern start t
 - 13:00–15:59 = STORY run → "Daily story" section only.
 - Any other time: do nothing, log "off-slot run".
 Content = ONLY formats proven viral (owner 15 Nov: "copy from other pages, same viral reels, not new"): your month + their month pairs; love matches for <SIGN> part N (12-sign series); first initial = soulmate's initial; match your initials (soulmates or besties?); zodiac → soulmate's sign. Own design (reelgen/chart_reel.py look), never reupload anyone's video. Use the SAME chart topic for that day's carousel, reel and photo post (spec = the day's promo/chart/chartN.json; build the next one if none is unused — next sign in the "love matches" series first).
-TODAY 16 Nov (US Eastern) topic = promo/chart/chart10.json (Love matches for Sagittarius) for carousel, reel and photo post; chart9 on 17 Nov.
+DAY TOPIC = data/calendar.json "days"[<today US Eastern>] (30-day calendar, owner 16 Nov). If the entry starts with TODO or the date is missing, build the next chart per the 'love matches' series / owner's calendar and add it to calendar.json.
 Caps: 1 reel + 1 carousel + 1 photo post + 1 story per day per platform.
 
 ## Daily chart carousel (ON again 15 Nov — chart look, not the old nebula listicle)

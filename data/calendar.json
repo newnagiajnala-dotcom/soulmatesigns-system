@@ -1,0 +1,13 @@
+{
+ "note": "30-day calendar (owner confirmed 16 Nov 2026). Each US Eastern date = one chart spec used for that day's carousel, reel and photo post. Entries starting with TODO need a spec built before that date (next sign in the 'love matches' series or the topic in the owner's content doc). chart12 = first initial in blush (build from chart1 with theme blush if missing).",
+ "days": {
+  "2026-11-16": "promo/chart/chart10.json",
+  "2026-11-17": "promo/chart/chart9.json",
+  "2026-11-18": "promo/chart/chart11.json",
+  "2026-11-19": "promo/chart/chart12.json",
+  "2026-11-20": "promo/chart/chart3.json",
+  "2026-11-21": "TODO sketch-reveal reel (doc script: pause on your initial -> pencil face, Comment SKETCH); carousel + photo = promo/chart/chart1.json",
+  "2026-11-22": "promo/chart/chart13.json",
+  "2026-11-23": "promo/chart/chart2.json"
+ }
+}

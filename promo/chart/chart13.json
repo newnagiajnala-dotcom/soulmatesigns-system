@@ -1,0 +1,10 @@
+{
+ "hook": "LOVE MATCHES FOR\nSCORPIO",
+ "sub": "part 3 · find your partner's sign",
+ "layout": "list",
+ "footer": "tag your Scorpio",
+ "theme": "night",
+ "dur": 9,
+ "trigger": "SCORPIO",
+ "rows": [["Cancer", "soulmate"], ["Pisces", "deep love"], ["Virgo", "loyal match"], ["Capricorn", "power couple"], ["Taurus", "opposites attract"], ["Scorpio", "intense"], ["Libra", "sweet but tricky"], ["Leo", "fire & drama"], ["Aries", "hot & cold"], ["Gemini", "confusing"], ["Sagittarius", "needs work"], ["Aquarius", "hard match"]]
+}
