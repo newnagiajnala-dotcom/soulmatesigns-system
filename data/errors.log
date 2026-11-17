@@ -130,3 +130,4 @@
 2026-11-17T07:43-05:00 tools: higgsfield=yes balance=282.84 run=carousel
 2026-11-17T07:45-05:00 ACTION BLOCK: IG media_publish (carousel chart9) returned code 4 subcode 2207051 "Application request limit reached" / "Action is blocked" — but the carousel DID publish (18069910898788930, Df19hqBF-87). Per RUNBOOK safety limits: stopped, FB carousel NOT posted, all publishing paused until 2026-11-18T07:45-05:00 (data/API_PAUSE_UNTIL).
 2026-11-17T09:44-05:00 paused run (REEL slot): data/API_PAUSE_UNTIL = 2026-11-18T07:45-05:00 after the 07:45 ET action block. No IG/FB API calls made; today's chart9 reel not posted.
+2026-11-17T11:41:52-05:00 paused run (PHOTO POST slot): data/API_PAUSE_UNTIL = 2026-11-18T07:45-05:00 after the 07:45 ET action block. No IG/FB API calls made; today's chart9 photo post not posted.
