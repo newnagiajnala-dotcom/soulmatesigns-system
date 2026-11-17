@@ -3,6 +3,8 @@
 Every scheduled run follows these steps exactly. Owner: Malkiat. He approved automatic publishing of
 reels made by this system to @soulmatesigns.daily (max 2 per day), following the rules below.
 
+## API PAUSE CHECK (every run, first): if data/API_PAUSE_UNTIL exists and its timestamp is in the future, publish NOTHING (no IG/FB API writes), log "paused run" to data/errors.log and stop. Delete the file once the time has passed.
+
 ## Constants
 - Instagram API: https://graph.facebook.com/v21.0  (the environment's network secret adds the token; never print or log tokens)
 - IG user id: 17841459940404036
