@@ -26,6 +26,8 @@ Content = ONLY formats proven viral (owner 15 Nov: "copy from other pages, same 
 DAY TOPIC = data/calendar.json "days"[<today US Eastern>] (30-day calendar, owner 16 Nov). If the entry starts with TODO or the date is missing, build the next chart per the 'love matches' series / owner's calendar and add it to calendar.json.
 Caps: 1 reel + 1 carousel + 1 photo post + 1 story per day per platform.
 
+## INSTAGRAM CAROUSEL PAUSED (19 Nov 2026, safety): IG media_publish of the carousel returned "Action is blocked" (code 4 / 2207051) on BOTH 17 Nov and 19 Nov, each time freezing all API posting for 24 h (reel, photo post and story lost). Until the owner says otherwise: in the CAROUSEL run post the carousel to the FACEBOOK Page ONLY (feed with attached_media, caption ending "Comment YES"); do NOT create or publish any Instagram carousel container. IG still gets the reel, the photo post and the story.
+
 ## Daily chart carousel (ON again 15 Nov — chart look, not the old nebula listicle)
 - Skip if posts/<today ET>/carousel_posted exists. Render: python3 reelgen/chart_carousel.py promo/chart/chartN.json posts/<date> → slide1..k.jpg, slideN_fb.jpg, slideN_ig.jpg, post_fb.jpg, post_ig.jpg. Commit + push; wait for raw URLs (200).
 - Instagram: children = slide1..k + slideN_ig (is_carousel_item=true) → CAROUSEL container, caption = "<hook in one line> 👀 swipe to find yours 👉\nTag your person 💌 Follow for tomorrow's chart ✨\nCurious what your soulmate looks like? Link in bio ✨" + 4 hashtags → publish.
