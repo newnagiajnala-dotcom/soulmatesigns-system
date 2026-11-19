@@ -1,0 +1,59 @@
+{
+ "layout": "list",
+ "theme": "night",
+ "dur": 9,
+ "hook": "LOVE MATCHES FOR\nARIES",
+ "sub": "part 4 · find your partner's sign",
+ "footer": "tag your Aries",
+ "trigger": "ARIES",
+ "rows": [
+  [
+   "Leo",
+   "soulmate"
+  ],
+  [
+   "Sagittarius",
+   "wild love"
+  ],
+  [
+   "Gemini",
+   "best friends"
+  ],
+  [
+   "Aquarius",
+   "fun & free"
+  ],
+  [
+   "Libra",
+   "opposites attract"
+  ],
+  [
+   "Aries",
+   "double fire"
+  ],
+  [
+   "Scorpio",
+   "intense"
+  ],
+  [
+   "Taurus",
+   "slow burn"
+  ],
+  [
+   "Pisces",
+   "sweet but tricky"
+  ],
+  [
+   "Virgo",
+   "needs work"
+  ],
+  [
+   "Capricorn",
+   "power struggle"
+  ],
+  [
+   "Cancer",
+   "hard match"
+  ]
+ ]
+}

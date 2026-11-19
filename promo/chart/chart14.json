@@ -1,0 +1,59 @@
+{
+ "layout": "list",
+ "theme": "blush",
+ "dur": 9,
+ "hook": "YOUR INITIAL\n+ THEIR INITIAL",
+ "sub": "soulmates or just besties?",
+ "footer": "tag your person",
+ "trigger": "PAIR",
+ "rows": [
+  [
+   "A + J",
+   "soulmates"
+  ],
+  [
+   "B + M",
+   "besties"
+  ],
+  [
+   "C + S",
+   "married"
+  ],
+  [
+   "D + A",
+   "crush forever"
+  ],
+  [
+   "E + R",
+   "soulmates"
+  ],
+  [
+   "J + K",
+   "besties"
+  ],
+  [
+   "L + T",
+   "true love"
+  ],
+  [
+   "M + D",
+   "married"
+  ],
+  [
+   "N + C",
+   "slow burn"
+  ],
+  [
+   "R + L",
+   "soulmates"
+  ],
+  [
+   "S + J",
+   "besties"
+  ],
+  [
+   "T + A",
+   "meant to be"
+  ]
+ ]
+}

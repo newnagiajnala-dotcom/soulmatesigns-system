@@ -1,0 +1,59 @@
+{
+ "layout": "list",
+ "theme": "cream",
+ "dur": 9,
+ "hook": "WHAT YOUR SIGN\nIS GRATEFUL FOR",
+ "sub": "in love this Thanksgiving",
+ "footer": "tag who you're thankful for",
+ "trigger": "THANKS",
+ "rows": [
+  [
+   "Aries",
+   "their passion"
+  ],
+  [
+   "Taurus",
+   "the little things"
+  ],
+  [
+   "Gemini",
+   "long talks"
+  ],
+  [
+   "Cancer",
+   "feeling safe"
+  ],
+  [
+   "Leo",
+   "being adored"
+  ],
+  [
+   "Virgo",
+   "being understood"
+  ],
+  [
+   "Libra",
+   "sweet moments"
+  ],
+  [
+   "Scorpio",
+   "loyalty"
+  ],
+  [
+   "Sagittarius",
+   "adventures"
+  ],
+  [
+   "Capricorn",
+   "a steady love"
+  ],
+  [
+   "Aquarius",
+   "a best friend"
+  ],
+  [
+   "Pisces",
+   "a dreamy love"
+  ]
+ ]
+}

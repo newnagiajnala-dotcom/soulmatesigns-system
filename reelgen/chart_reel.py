@@ -26,11 +26,13 @@ def frame(spec):
     d.text((W / 2, 150 + len(spec["hook"].split("\n")) * (hs + 6) + 10), spec["sub"], font=f(64), fill=red, anchor="mm")
     if spec.get("layout") == "list":  # one column for longer answers ("at a wedding")
         rows = spec["rows"]; top = 470; bottom = 1700; rh = (bottom - top) / len(rows)
+        sx = spec.get("split", 480); lw = sx - 150; rw = W - sx - 110  # heart x; widths of the two columns
+        sz = int(min(rh * .72, 96))  # ONE size for every row (19 Nov: mixed sizes looked broken)
+        while any(f(sz).getlength(a) > lw or f(sz).getlength(b) > rw for a, b in rows) and sz > 36: sz -= 4
         for i, (a, b) in enumerate(rows):
-            y = top + i * rh + rh / 2; sz = int(min(rh * .72, 96))
-            while (f(sz).getlength(a) > 330 or f(sz).getlength(b) > 470) and sz > 36: sz -= 4
-            d.text((430, y), a, font=f(sz), fill=ink, anchor="rm"); heart(d, 480, y - 6, min(rh * .18, 24), red)
-            d.text((530, y), b, font=f(sz), fill=red, anchor="lm")
+            y = top + i * rh + rh / 2
+            d.text((sx - 50, y), a, font=f(sz), fill=ink, anchor="rm"); heart(d, sx, y - 6, min(rh * .18, 24), red)
+            d.text((sx + 50, y), b, font=f(sz), fill=red, anchor="lm")
         d.text((W / 2, 1790), spec["footer"], font=f(66), fill=ink, anchor="mm")
         return im
     rows = spec["rows"]; n = (len(rows) + 1) // 2; top = 470; bottom = 1700; rh = (bottom - top) / n

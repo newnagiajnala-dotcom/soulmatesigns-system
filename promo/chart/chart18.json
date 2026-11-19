@@ -1,0 +1,59 @@
+{
+ "layout": "list",
+ "theme": "night",
+ "dur": 9,
+ "hook": "SIGNS MOST LIKELY\nTO GET ENGAGED",
+ "sub": "this December",
+ "footer": "tag your future fiance",
+ "trigger": "RING",
+ "rows": [
+  [
+   "Taurus",
+   "the ring is coming"
+  ],
+  [
+   "Cancer",
+   "yes!"
+  ],
+  [
+   "Libra",
+   "very likely"
+  ],
+  [
+   "Capricorn",
+   "planned it already"
+  ],
+  [
+   "Pisces",
+   "dreamy proposal"
+  ],
+  [
+   "Leo",
+   "big surprise"
+  ],
+  [
+   "Virgo",
+   "sweet & simple"
+  ],
+  [
+   "Scorpio",
+   "secret plans"
+  ],
+  [
+   "Aries",
+   "spontaneous yes"
+  ],
+  [
+   "Gemini",
+   "maybe next year"
+  ],
+  [
+   "Sagittarius",
+   "not yet"
+  ],
+  [
+   "Aquarius",
+   "on their own time"
+  ]
+ ]
+}

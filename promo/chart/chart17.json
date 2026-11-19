@@ -1,0 +1,60 @@
+{
+ "layout": "list",
+ "theme": "blush",
+ "dur": 9,
+ "hook": "YOUR SIGN\n+ HIS SIGN",
+ "sub": "marriage, situationship or run?",
+ "footer": "tag him",
+ "trigger": "HIM",
+ "rows": [
+  [
+   "Aries + Leo",
+   "marriage"
+  ],
+  [
+   "Taurus + Virgo",
+   "marriage"
+  ],
+  [
+   "Gemini + Libra",
+   "situationship"
+  ],
+  [
+   "Cancer + Scorpio",
+   "marriage"
+  ],
+  [
+   "Leo + Sagittarius",
+   "marriage"
+  ],
+  [
+   "Virgo + Capricorn",
+   "marriage"
+  ],
+  [
+   "Libra + Aquarius",
+   "situationship"
+  ],
+  [
+   "Scorpio + Pisces",
+   "marriage"
+  ],
+  [
+   "Aries + Cancer",
+   "run"
+  ],
+  [
+   "Taurus + Aquarius",
+   "run"
+  ],
+  [
+   "Gemini + Virgo",
+   "situationship"
+  ],
+  [
+   "Capricorn + Pisces",
+   "marriage"
+  ]
+ ],
+ "split": 620
+}
