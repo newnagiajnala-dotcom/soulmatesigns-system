@@ -57,7 +57,8 @@ def cta(spec, platform):
 
 def render(spec, out):
     os.makedirs(out, exist_ok=True); rows = spec["rows"]
-    chunks = [rows[i:i + 3] for i in range(0, len(rows), 3)]
+    per = max(3, -(-len(rows) // 8))  # IG carousel max 10 items: cover + <=8 row slides + CTA
+    chunks = [rows[i:i + per] for i in range(0, len(rows), per)]
     n = len(chunks) + 2
     im, d, ink, red = base(spec); y = hook_block(d, spec, ink, red, 430, 150)
     d.text((W / 2, y + 150), "swipe to find yours  >>", font=f(64), fill=ink, anchor="mm"); handle(d, ink, 1, n)
