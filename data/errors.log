@@ -138,4 +138,6 @@
 2026-11-19T09:42:24-05:00 paused run (REEL slot): data/API_PAUSE_UNTIL = 2026-11-20T07:45-05:00 after the 07:45 ET action block. No IG/FB API calls made; today's chart12 reel not posted.
 2026-11-19T11:41:52-05:00 paused run (PHOTO POST slot): data/API_PAUSE_UNTIL = 2026-11-20T07:45-05:00 after the 07:45 ET action block. No IG/FB API calls made; today's chart12 photo post not posted.
 2026-11-19T13:42:08-05:00 paused run (STORY slot): data/API_PAUSE_UNTIL = 2026-11-20T07:45-05:00 after the 07:45 ET action block. No IG/FB API calls made; today's story not posted.
-2026-11-20T07:50-05:00 tools: higgsfield=yes balance=250.54 run=carousel
+2026-11-20T07:43-05:00 tools: higgsfield=yes balance=250.54 run=carousel
+2026-11-20T07:45-05:00 API pause expired (2026-11-20T07:45-05:00) — data/API_PAUSE_UNTIL removed
+2026-11-20T07:47-05:00 carousel: chart3 'Your zodiac sign = your soulmate's sign' posted to FB Page only (IG carousel paused per RUNBOOK 19 Nov), FB post 1402297082968632_122111813793542532, 6 slides, Comment YES, no URL. Env fix: pip install pillow (system PIL broken) to render.
