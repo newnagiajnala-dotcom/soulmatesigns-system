@@ -76,7 +76,17 @@ def render(spec, out):
         handle(d, ink, n, n); im.save(f"{out}/slide{n}_{p}.jpg", quality=92)
         # single photo post
         im, d, ink, red = base(spec); y = hook_block(d, spec, ink, red, 110, 96)
-        rows_block(d, rows, ink, red, y + 10, H - 190, 80)
+        if len(rows) > 13:  # long lists (A-Z): two columns so text stays readable
+            half = -(-len(rows) // 2); rh = (H - 190 - y - 10) / half
+            for col, chunk in enumerate((rows[:half], rows[half:])):
+                cx = 270 + col * 540
+                for i, (a, b) in enumerate(chunk):
+                    yy = y + 10 + i * rh + rh / 2; sz = int(min(rh * .8, 64))
+                    while (f(sz).getlength(a) > 190 or f(sz).getlength(b) > 200) and sz > 24: sz -= 2
+                    d.text((cx - 30, yy), a, font=f(sz), fill=ink, anchor="rm"); heart(d, cx, yy - 4, min(rh * .16, 16), red)
+                    d.text((cx + 30, yy), b, font=f(sz), fill=red, anchor="lm")
+        else:
+            rows_block(d, rows, ink, red, y + 10, H - 190, 80)
         line = f"comment {spec.get('post_trigger', 'YES')} to see their face" if p == "fb" else (spec.get("footer") or "send this to your person")
         d.text((W / 2, H - 130), line, font=f(fit(d, line, 62, 960)), fill=ink, anchor="mm"); handle(d, ink)
         im.save(f"{out}/post_{p}.jpg", quality=92)
