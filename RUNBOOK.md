@@ -3,7 +3,7 @@
 Every scheduled run follows these steps exactly. Owner: Malkiat. He approved automatic publishing of
 reels made by this system to @soulmatesigns.daily (max 2 per day), following the rules below.
 
-## API PAUSE CHECK (every run, first): if data/API_PAUSE_UNTIL exists and its timestamp is in the future, publish NOTHING (no IG/FB API writes), log "paused run" to data/errors.log and stop. Delete the file once the time has passed.
+## API PAUSE CHECK (every run, first): if data/API_PAUSE_UNTIL exists and its timestamp is in the future, publish NOTHING to INSTAGRAM (no IG API writes) and log "IG paused" to data/errors.log — but STILL publish the FACEBOOK Page part of the slot (carousel / photo post / story on the FB Page via graph.facebook.com), because the block is Instagram-only (owner 20 Nov 2026: "are u posting every thing" — FB must not stop when IG is blocked). Delete the file once the time has passed.
 
 ## Constants
 - Instagram API: https://graph.facebook.com/v21.0  (the environment's network secret adds the token; never print or log tokens)
