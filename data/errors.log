@@ -148,3 +148,4 @@
 2026-11-20T11:44-05:00 ACTION BLOCK: IG media_publish (photo chart3) returned code 4 subcode 2207051 'Action is blocked' — post DID publish (18145997587520847, Df-HDRrFw_-). Third block (11-17, 11-19, 11-20), this time on a single-image post after a reel earlier today. IG paused until 2026-11-21T11:43-05:00 (data/API_PAUSE_UNTIL); FB continues per pause rule. FB photo posted 1402297082968632_122111907921542532 (no URL, Comment YES).
 2026-11-20T13:42-05:00 tools: higgsfield=yes balance=250.54 run=story
 2026-11-20T13:50-05:00 story: IG paused (data/API_PAUSE_UNTIL 2026-11-21T11:43-05:00) - IG story NOT posted. FB Page story posted (photo 122111968815542532, story 1829831301617450), 999 'a message from the universe'. Env fixes: Pillow via pip --target, Poppins fonts fetched from google/fonts.
+2026-11-21T07:42-05:00 tools: higgsfield=yes balance=250.54 run=carousel
