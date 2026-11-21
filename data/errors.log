@@ -155,3 +155,4 @@
 2026-11-21T09:43-05:00 IG paused (data/API_PAUSE_UNTIL 2026-11-21T11:43-05:00) — REEL run is Instagram-only (FB reel = browser task), so nothing published. Today's reel (calendar: SKETCH reveal docs/v/sketch1.mp4) not posted. Read-only stats: followers_count=7; yesterday reel Df95m3Tlczl=123 views, photo Df-HDRrFw_-=5 views.
 2026-11-21T11:41-05:00 tools: higgsfield=yes balance=250.54 run=photo
 2026-11-21T11:44-05:00 ACTION BLOCK: IG media_publish (photo chart1) returned code 4 subcode 2207051 'Action is blocked' right after the previous pause expired — post DID publish (18389446753233352, DgAr_UfjENq). Fourth block (11-17, 11-19, 11-20, 11-21). IG paused until 2026-11-22T11:45-05:00; FB continues. FB photo posted 1402297082968632_122112520983542532 (no URL, Comment YES). Stats: followers=7; 11-20 photo Df-HDRrFw_- 5 views.
+2026-11-21T13:42-05:00 tools: higgsfield=yes balance=250.54 run=story
