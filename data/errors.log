@@ -149,3 +149,5 @@
 2026-11-20T13:42-05:00 tools: higgsfield=yes balance=250.54 run=story
 2026-11-20T13:50-05:00 story: IG paused (data/API_PAUSE_UNTIL 2026-11-21T11:43-05:00) - IG story NOT posted. FB Page story posted (photo 122111968815542532, story 1829831301617450), 999 'a message from the universe'. Env fixes: Pillow via pip --target, Poppins fonts fetched from google/fonts.
 2026-11-21T07:42-05:00 tools: higgsfield=yes balance=250.54 run=carousel
+2026-11-21T07:44-05:00 IG paused (data/API_PAUSE_UNTIL 2026-11-21T11:43-05:00) — no IG writes this run (carousel is FB-only anyway).
+2026-11-21T07:44-05:00 carousel: chart1 'Your first initial = soulmate's initial' posted to FB Page only, FB post 1402297082968632_122112444273542532, 9 slides, Comment YES, no URL. Note: same topic as chart12 carousel on 11-19 (calendar assigned chart1). Env: system PIL broken -> venv pillow; raw main CDN lagged, used commit-pinned raw URLs.
