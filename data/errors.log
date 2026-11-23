@@ -172,3 +172,4 @@
 2026-11-23T11:42-05:00 tools: higgsfield=yes balance=250.54 run=photo
 2026-11-23T11:45-05:00 photo: IG paused (data/API_PAUSE_UNTIL 2026-11-23T11:47-05:00 still in future at run start) - IG photo NOT posted (also avoids the repeat block pattern on first publish right after a pause). FB photo posted 1402297082968632_122113542489542532 (chart2 birth month, no URL, Comment YES). Stats: IG followers=7, FB Page followers=29. API_PAUSE_UNTIL kept; next run deletes it.
 2026-11-23T13:43-05:00 tools: higgsfield=yes balance=250.54 run=story
+2026-11-23T13:44-05:00 story: IG pause expired (file deleted) - IG story posted 17907961728395298, no action block. FB Page story posted (photo 122113582377542532, story 3044902042544352), 444 'your sign for tonight'. Stats: IG followers=7, FB Page followers=29; 11-22 photo DgDRE7SDolO 1 view. Env: venv pillow; Poppins fetched from google/fonts.
