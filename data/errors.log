@@ -174,3 +174,4 @@
 2026-11-23T13:43-05:00 tools: higgsfield=yes balance=250.54 run=story
 2026-11-23T13:44-05:00 story: IG pause expired (file deleted) - IG story posted 17907961728395298, no action block. FB Page story posted (photo 122113582377542532, story 3044902042544352), 444 'your sign for tonight'. Stats: IG followers=7, FB Page followers=29; 11-22 photo DgDRE7SDolO 1 view. Env: venv pillow; Poppins fetched from google/fonts.
 2026-11-24T07:42-05:00 tools: higgsfield=yes balance=216.04 run=carousel
+2026-11-24T07:43-05:00 carousel: FB Page carousel posted (chart14 'Your initial + their initial', 6 slides, no URL, Comment YES) 1402297082968632_122113945701542532. IG carousel not attempted (paused since 19 Nov); no IG API pause active. Stats: IG followers=7, FB Page followers=29; 11-23 IG story insights unavailable (#10 not enough viewers). Env: system PIL broken -> venv pillow.
