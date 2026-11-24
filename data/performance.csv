@@ -15,7 +15,7 @@ date,reel_id,hook,format,views,likes,saves,shares,profile_visits,link_clicks
 2026-11-03,FB-122096596443542532,your soulmate's vibe by zodiac element [Facebook],carousel FB,,,,,,
 2026-11-03,DfTMy7WgJJl,Who will be your Future Husband? (birth-date code),code,169,2,0,0,,
 2026-11-03,FB-1615333957288485,Who will be your Future Husband? (birth-date code) [Facebook],code FB,,,,,,
-2026-11-04,DfUzgsQCRCl,moon-phase soulmate match (Luna AI),ai-luna,100,2,1,0,,
+2026-11-04,DfUzgsQCRCl,moon-phase soulmate match (Luna AI),ai-luna,105,2,1,0,,
 2026-11-04,FB-990966946771979,moon-phase soulmate match (Luna AI) [Facebook],ai-luna FB,,,,,,
 2026-11-04,DfVcxRQF57Q,5 tiny signs they're thinking about you,carousel,0,0,0,0,,
 2026-11-04,FB-122097525975542532,5 tiny signs they're thinking about you [Facebook],carousel FB,,,,,,
@@ -41,7 +41,7 @@ date,reel_id,hook,format,views,likes,saves,shares,profile_visits,link_clicks
 2026-11-07,FB-2710100472743509,IF THIS FOUND YOU… (promo 002) [Facebook],promo-text FB,,,,,,
 2026-11-08,DfeybmPCSnA,SOULMATE CHECK (birth day + birth month = initial) (promo 005),promo-check,1571,8,2,2,,
 2026-11-08,FB-1740551113676581,SOULMATE CHECK (promo 005) [Facebook],promo-check FB,,,,,,
-2026-11-08,DffwDh4gqC1,THIS INITIAL WILL NEVER BREAK YOUR HEART (M) (promo 006),promo-initial,1628,33,11,14,,
+2026-11-08,DffwDh4gqC1,THIS INITIAL WILL NEVER BREAK YOUR HEART (M) (promo 006),promo-initial,1638,33,11,14,,
 2026-11-08,FB-2603308336784824,INITIAL HEART M (promo 006) [Facebook],promo-initial FB,,,,,,
 2026-11-08,DfgE2esAvHf,LOVE % CHECK Emma + Jake = 53% (promo 007),promo-love,136,2,1,0,,
 2026-11-08,FB-1145408265093598,LOVE % CHECK Emma + Jake (promo 007) [Facebook],promo-love FB,,,,,,
@@ -49,7 +49,7 @@ date,reel_id,hook,format,views,likes,saves,shares,profile_visits,link_clicks
 2026-11-09,FB-1940478680694140,LOVE NUMBER CHECK (promo 008) [Facebook],promo-check FB,,,,,,
 2026-11-09,DfiVA3LHBHT,THIS INITIAL WILL NEVER BREAK YOUR HEART (J) (promo 009),promo-initial,234,2,0,0,,
 2026-11-09,FB-2157222325164298,INITIAL HEART J (promo 009) [Facebook],promo-initial FB,,,,,,
-2026-11-09,Dfipp_vEeJD,SOULMATE CHECK (birth year - 1971 / 2000) (promo 010),promo-check,397,0,1,0,,
+2026-11-09,Dfipp_vEeJD,SOULMATE CHECK (birth year - 1971 / 2000) (promo 010),promo-check,399,0,1,0,,
 2026-11-09,FB-1812465766746949,SOULMATE CHECK age2 (promo 010) [Facebook],promo-check FB,,,,,,
 2026-11-10,FB-native-owner-1,SOULMATE CHECK (1998-1971) hand-uploaded by owner in FB app,promo-check FB-native,465,,,,,
 2026-11-10,Dfj8MzYDSUO,SOULMATE CHECK (birth day + birth month = initial) (promo 011),promo-check,145,2,0,0,,
@@ -62,8 +62,8 @@ date,reel_id,hook,format,views,likes,saves,shares,profile_visits,link_clicks
 2026-11-12,DfpO3h5jVP5,YOUR FIRST INITIAL = your soulmate's initial chart (promo 018),promo-chart,178,2,0,1,,
 2026-11-12,DfqD7fPmG_K,THIS INITIAL WILL NEVER BREAK YOUR HEART (D) (promo 026),promo-initial,131,2,0,0,,
 2026-11-13,DfrqTn_ifG_,PAUSE & FIND YOUR BIRTH MONTH = the month you meet them (promo 019),promo-chart,153,2,0,0,,
-2026-11-13,DfsoVYOEg_3,IF THEIR NAME STARTS WITH C (initial heart C) (promo 027),promo-initial,134,2,0,3,,
-2026-11-13,Dfs8w-PEyUn,YOUR ZODIAC SIGN = your soulmate's sign (promo 020),promo-chart,4126,26,10,8,,
+2026-11-13,DfsoVYOEg_3,IF THEIR NAME STARTS WITH C (initial heart C) (promo 027),promo-initial,139,2,0,3,,
+2026-11-13,Dfs8w-PEyUn,YOUR ZODIAC SIGN = your soulmate's sign (promo 020),promo-chart,4141,26,10,8,,
 2026-11-14,DfuPGMpFdvO,YOUR BIRTH DAY = how you meet your soulmate (promo 021),promo-chart,128,3,0,1,,
 2026-11-14,DfvM8ZZj_n0,L — THE INITIAL ON YOUR MIND (initial heart L) (promo 028),promo-initial,126,0,0,0,,
 2026-11-14,DfvhUIMlPM-,YOUR BIRTH MONTH = your soulmate's eye color (promo 022),promo-chart,116,1,0,0,,
@@ -73,18 +73,19 @@ date,reel_id,hook,format,views,likes,saves,shares,profile_visits,link_clicks
 2026-11-16,DfzmRovmX2n,LOVE MATCHES FOR SAGITTARIUS (chart10) reel (promo 029),promo-chart,137,3,3,0,,
 2026-11-16,Dfzz28LEp-j,LOVE MATCHES FOR SAGITTARIUS (chart10) photo,chart-photo,8,3,1,0,,
 2026-11-16,FB-1402297082968632_122109413943542532,LOVE MATCHES FOR SAGITTARIUS (chart10) photo,chart-photo FB,,,,,,
-2026-11-17,Df19hqBF-87,YOUR BIRTH MONTH + THEIR BIRTH MONTH (chart9) carousel,chart-carousel,6,2,0,0,,
+2026-11-17,Df19hqBF-87,YOUR BIRTH MONTH + THEIR BIRTH MONTH (chart9) carousel,chart-carousel,9,3,0,0,,
 2026-11-19,Df7HB6UG0Pb,YOUR FIRST INITIAL = SOULMATE'S INITIAL (chart12) carousel,chart-carousel,7,0,0,0,,
 2026-11-20,FB-1402297082968632_122111813793542532,YOUR ZODIAC SIGN = SOULMATE'S SIGN (chart3) carousel,chart-carousel FB,,,,,,
-2026-11-20,Df95m3Tlczl,YOUR ZODIAC SIGN = SOULMATE'S SIGN (chart3) reel (promo 030),promo-chart,123,108,1,0,0,1
-2026-11-20,Df-HDRrFw_-,YOUR ZODIAC SIGN = SOULMATE'S SIGN (chart3) photo,chart-photo,5,2,2,0,0,0
+2026-11-20,Df95m3Tlczl,YOUR ZODIAC SIGN = SOULMATE'S SIGN (chart3) reel (promo 030),promo-chart,125,1,1,0,0,1
+2026-11-20,Df-HDRrFw_-,YOUR ZODIAC SIGN = SOULMATE'S SIGN (chart3) photo,chart-photo,5,2,0,0,0,0
 2026-11-20,FB-1402297082968632_122111907921542532,YOUR ZODIAC SIGN = SOULMATE'S SIGN (chart3) photo,chart-photo FB,,,,,,
 2026-11-21,FB-1402297082968632_122112444273542532,YOUR FIRST INITIAL = SOULMATE'S INITIAL (chart1) carousel,chart-carousel FB,,,,,,
-2026-11-21,DgAr_UfjENq,YOUR FIRST INITIAL = SOULMATE'S INITIAL (chart1) photo,chart-photo,3,2,1,0,0,0
+2026-11-21,DgAr_UfjENq,YOUR FIRST INITIAL = SOULMATE'S INITIAL (chart1) photo,chart-photo,3,1,0,0,0,0
 2026-11-21,FB-1402297082968632_122112520983542532,YOUR FIRST INITIAL = SOULMATE'S INITIAL (chart1) photo,chart-photo FB,,,,,,
 2026-11-22,FB-1402297082968632_122112870033542532,LOVE MATCHES FOR SCORPIO (chart13) carousel,chart-carousel FB,,,,,,
-2026-11-22,DgDRE7SDolO,LOVE MATCHES FOR SCORPIO (chart13) photo,chart-photo,1,0,1,0,0,0
+2026-11-22,DgDRE7SDolO,LOVE MATCHES FOR SCORPIO (chart13) photo,chart-photo,2,1,0,0,0,0
 2026-11-22,FB-1402297082968632_122112948303542532,LOVE MATCHES FOR SCORPIO (chart13) photo,chart-photo FB,,,,,,
 2026-11-23,FB-1402297082968632_122113408305542532,PAUSE & FIND YOUR BIRTH MONTH (chart2) carousel,chart-carousel FB,,,,,,
 2026-11-23,FB-1402297082968632_122113542489542532,PAUSE & FIND YOUR BIRTH MONTH (chart2) photo,chart-photo FB,,,,,,
 2026-11-24,FB-1402297082968632_122113945701542532,YOUR INITIAL + THEIR INITIAL (chart14) carousel,chart-carousel FB,,,,,,
+2026-11-24,DgIM1toj3pQ,YOUR INITIAL + THEIR INITIAL (chart14) reel (promo 031),promo-chart,,,,,,
