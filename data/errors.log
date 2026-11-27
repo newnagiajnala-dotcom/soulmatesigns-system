@@ -193,3 +193,5 @@
 2026-11-26T13:41-05:00 tools: higgsfield=yes balance=216.04 run=story
 2026-11-26T13:41-05:00 story: IG paused (API_PAUSE_UNTIL 2026-11-27T11:42-05:00) — Instagram story skipped, Facebook story only
 2026-11-26T13:43-05:00 story: FB Page story posted (photo 122115357369542532, story post 1178087988130583); IG story skipped (paused). Env fix: installed Pillow/numpy for python3.11 + Poppins fonts to render.
+2026-11-27T07:42-05:00 tools: higgsfield=yes balance=190.54 run=carousel
+2026-11-27T07:55-05:00 carousel: IG paused (API_PAUSE_UNTIL 2026-11-27T11:42-05:00, still active - file kept); IG carousel paused anyway since 19 Nov. FB Page carousel posted (chart16 'Love matches for Aries' part 4, 6 slides, no URL, Comment YES) 1402297082968632_122115825093542532. Stats (read-only): IG followers=7, FB Page followers=55; 11-26 reel DgNWVxUmw7m 1,219 views/1,034 reach/8 likes/2 shares/2 saves; 11-26 photo DgNjzjqn85L 5 views. Env: system PIL broken -> venv pillow; detached HEAD at start (fixed with checkout -B main).
